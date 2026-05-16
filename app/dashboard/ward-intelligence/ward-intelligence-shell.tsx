@@ -87,7 +87,7 @@ export default function WardIntelligenceShell({
 
   return (
     <section className="surface h-[calc(100vh-230px)] min-h-[620px] overflow-hidden p-0">
-      <div className="grid h-full lg:grid-cols-[230px_minmax(0,1fr)_280px] xl:grid-cols-[250px_minmax(0,1fr)_300px]">
+      <div className="grid h-full lg:grid-cols-[260px_minmax(0,1fr)] xl:grid-cols-[280px_minmax(0,1fr)]">
         <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">Map layers</h2>
           <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
@@ -137,59 +137,74 @@ export default function WardIntelligenceShell({
         </aside>
 
         <article className="border-b border-zinc-200 p-3 sm:p-4 lg:border-b-0">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <h2 className="text-base font-semibold text-[#051b3a]">Swansea ward map</h2>
-              <p className="text-xs text-zinc-500">Click a ward to inspect local context.</p>
+          <section className="relative h-full min-h-[620px] overflow-hidden rounded-xl bg-slate-50 p-4">
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-2 pr-24">
+              <div>
+                <h2 className="text-base font-semibold text-[#051b3a]">Swansea ward map</h2>
+                <p className="text-xs text-zinc-500">Click a ward to inspect local context.</p>
+              </div>
+              <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-[#0f52b0]">
+                2021 Census
+              </span>
             </div>
-            <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-[#0f52b0]">
-              2021 Census
-            </span>
-          </div>
-          {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
-          <div className="relative h-[540px] overflow-hidden rounded-xl bg-slate-50 lg:h-full">
-            <div className="absolute inset-4 flex items-center justify-center -translate-y-1">
-              <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+            {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
+
+            <div className="lg:absolute lg:right-4 lg:top-4 lg:z-20 lg:w-[280px]">
+              <div className="rounded-lg border border-zinc-200 bg-white/95 p-3 shadow-sm backdrop-blur">
+                {!selectedWard ? (
+                  <>
+                    <p className="text-sm font-semibold text-[#051b3a]">Select a ward</p>
+                    <p className="mt-1 text-xs text-zinc-600">Click the map to inspect local context.</p>
+                  </>
+                ) : (
+                  <div className="space-y-2">
+                    <div className="flex items-start justify-between gap-2">
+                      <div>
+                        <p className="text-sm font-semibold text-[#051b3a]">{selectedWard.wardName}</p>
+                        <p className="text-xs font-medium tracking-wide text-zinc-500">{selectedWard.wardCode}</p>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedWardCode(null)}
+                        className="rounded-md border border-zinc-200 px-2 py-1 text-xs font-medium text-zinc-600 transition hover:bg-zinc-100"
+                        aria-label="Clear selected ward"
+                      >
+                        Clear
+                      </button>
+                    </div>
+                    <div>
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Selected layer</p>
+                      <p className="mt-0.5 text-xs font-medium text-zinc-700">{selectedMetric?.label ?? 'Not available'}</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-semibold text-[#051b3a]">
+                        {selectedWardMetric
+                          ? formatMetricValue(selectedWardMetric.metric_value, selectedWardMetric.metric_unit)
+                          : 'No value available for this layer.'}
+                      </p>
+                      {selectedWardMetric?.metric_value !== null && minValue !== null && maxValue !== null && minValue !== maxValue ? (
+                        <p className="mt-1 text-xs text-zinc-500">
+                          {selectedWardMetric.metric_value <= minValue + (maxValue - minValue) / 3
+                            ? 'Lower range'
+                            : selectedWardMetric.metric_value >= maxValue - (maxValue - minValue) / 3
+                              ? 'Higher range'
+                              : 'Mid range'}
+                        </p>
+                      ) : null}
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+
+            <div className="relative h-[520px] overflow-hidden rounded-xl bg-slate-50 lg:h-[calc(100%-2.25rem)]">
+              <div className="absolute inset-2 flex items-center justify-center lg:inset-4">
+                <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+              </div>
+            </div>
+          </section>
         </article>
 
-        <aside className="p-4 sm:p-6 lg:border-l lg:border-zinc-200">
-          <h2 className="text-base font-semibold text-[#051b3a]">Ward details</h2>
-          {!selectedWard ? (
-            <div className="mt-4 rounded-lg border border-dashed border-zinc-300 bg-slate-50 p-4 text-sm text-zinc-600">
-              Select a ward to inspect local context.
-            </div>
-          ) : (
-            <div className="mt-4 space-y-4">
-              <div className="rounded-lg border-l-4 border-[#0f52b0] bg-slate-50 p-4">
-                <p className="text-lg font-semibold text-[#051b3a]">{selectedWard.wardName}</p>
-                <p className="mt-1 text-xs font-medium tracking-wide text-zinc-500">{selectedWard.wardCode}</p>
-              </div>
-              <div className="rounded-lg border border-zinc-200 bg-slate-50 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Value</p>
-                <p className="mt-2 text-3xl font-semibold text-[#051b3a]">
-                  {selectedWardMetric
-                    ? formatMetricValue(selectedWardMetric.metric_value, selectedWardMetric.metric_unit)
-                    : 'No value available for this layer.'}
-                </p>
-                {selectedWardMetric?.metric_value !== null && minValue !== null && maxValue !== null && minValue !== maxValue ? (
-                  <p className="mt-2 text-xs text-zinc-500">
-                    {selectedWardMetric.metric_value <= minValue + (maxValue - minValue) / 3
-                      ? 'Lower range'
-                      : selectedWardMetric.metric_value >= maxValue - (maxValue - minValue) / 3
-                        ? 'Higher range'
-                        : 'Mid range'}
-                  </p>
-                ) : null}
-              </div>
-              <div className="rounded-lg border border-zinc-200 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Selected layer</p>
-                <p className="mt-1 text-sm font-medium text-zinc-800">{selectedMetric?.label ?? 'Not available'}</p>
-              </div>
-            </div>
-          )}
-        </aside>
       </div>
     </section>
   )
