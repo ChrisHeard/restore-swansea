@@ -7,8 +7,8 @@ import wardMap from '@/lib/ward-map/swansea-ward-paths.json'
 import type { WardIntelligenceMetricRow } from './page'
 
 type Props = {
-  metricRows: WardIntelligenceMetricRow[]
-  metricsError: string | null
+  metricRows?: WardIntelligenceMetricRow[] | null
+  metricsError?: string | null
 }
 
 function colourForValue(value: number | null, min: number, max: number) {
@@ -19,12 +19,16 @@ function colourForValue(value: number | null, min: number, max: number) {
   return `hsl(214 90% ${lightness}%)`
 }
 
-export default function WardIntelligenceShell({ metricRows, metricsError }: Props) {
+export default function WardIntelligenceShell({
+  metricRows,
+  metricsError = null,
+}: Props) {
+  const safeMetricRows = Array.isArray(metricRows) ? metricRows : []
   const [selectedWardCode, setSelectedWardCode] = useState<string | null>(null)
 
   const metricOptions = useMemo(() => {
     const byKey = new Map<string, { key: string; label: string; year: number | null; unit: string | null }>()
-    for (const row of metricRows) {
+    for (const row of safeMetricRows) {
       if (!byKey.has(row.metric_key)) {
         byKey.set(row.metric_key, {
           key: row.metric_key,
@@ -35,7 +39,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
       }
     }
     return Array.from(byKey.values())
-  }, [metricRows])
+  }, [safeMetricRows])
 
   const defaultMetric = useMemo(() => {
     if (metricOptions.length === 0) return null
@@ -51,8 +55,8 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
   )
 
   const selectedMetricRows = useMemo(
-    () => metricRows.filter((row) => row.metric_key === activeMetricKey),
-    [metricRows, activeMetricKey]
+() => safeMetricRows.filter((row) => row.metric_key === activeMetricKey),
+[safeMetricRows, activeMetricKey]
   )
 
   const numericValues = useMemo(
@@ -77,7 +81,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
 
   const mapStateMessage = metricsError
     ? 'Ward intelligence metrics are not available yet.'
-    : metricRows.length === 0
+    : safeMetricRows.length === 0
       ? 'No ward intelligence metrics found.'
       : null
 
