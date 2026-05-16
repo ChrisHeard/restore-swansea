@@ -114,20 +114,20 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
 
   return (
     <section className="surface overflow-hidden p-0">
-      <div className="grid min-h-[620px] lg:grid-cols-[210px_minmax(0,1fr)] xl:grid-cols-[220px_minmax(0,1fr)]">
+      <div className="grid min-h-[620px] lg:grid-cols-[190px_minmax(0,1fr)] xl:grid-cols-[200px_minmax(0,1fr)]">
         <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">Map layers</h2>
           <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
           <fieldset className="mt-3 flex-1 overflow-hidden" disabled={metricOptions.length === 0}>
             <legend className="sr-only">Ward map layer options</legend>
-            <div className="h-full space-y-1.5 overflow-y-auto pr-1">
+            <div className="h-full space-y-1 overflow-y-auto pr-1">
               {metricOptions.map((option) => {
                 const isActive = activeMetricKey === option.key
                 return (
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-md border px-2.5 py-1.5 text-[13px] leading-snug transition-colors ${
+                    className={`block cursor-pointer rounded-md border px-2 py-1.5 text-[12px] leading-snug transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -142,8 +142,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                       onChange={(event) => setSelectedMetricKey(event.target.value)}
                       className="sr-only"
                     />
-                    <span className="block text-[13px] font-medium leading-snug">{option.label}</span>
-                    {option.year ? <span className="mt-0.5 block text-[10px] leading-3 text-zinc-500">Source: {option.year}</span> : null}
+                    <span className="block text-[12px] font-medium leading-snug">{option.label}</span>
                   </label>
                 )
               })}
@@ -176,28 +175,20 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
             </div>
             {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
 
-            <div className="pointer-events-none absolute bottom-4 right-4 z-30">
+            <div className="pointer-events-none absolute left-4 top-20 z-30">
               <div
-                className={`w-56 rounded-xl border border-zinc-200 bg-white/95 p-3 shadow-lg backdrop-blur transition-all duration-200 ease-out ${
+                className={`rounded-md bg-white/80 px-2.5 py-1.5 text-xs shadow-sm backdrop-blur transition-all duration-200 ease-out ${
                   popupWard && isPopupVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-1 opacity-0'
                 }`}
               >
                 {popupWard ? (
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-sm font-semibold text-[#051b3a]">{popupWard.wardName}</p>
-                      <p className="text-xs font-medium tracking-wide text-zinc-500">{popupWard.wardCode}</p>
-                    </div>
-                    <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">
-                        {selectedMetric?.label ?? 'Selected layer'}
-                      </p>
-                      <p className="mt-0.5 text-sm font-semibold text-[#051b3a]">
-                        {popupWardMetric
-                          ? formatMetricValue(popupWardMetric.metric_value, popupWardMetric.metric_unit)
-                          : 'No value available'}
-                      </p>
-                    </div>
+                  <div>
+                    <p className="font-semibold text-[#051b3a]">{popupWard.wardName}</p>
+                    <p className="mt-0.5 font-medium text-[#051b3a]">
+                      {popupWardMetric
+                        ? formatMetricValue(popupWardMetric.metric_value, popupWardMetric.metric_unit)
+                        : 'No value available'}
+                    </p>
                   </div>
                 ) : null}
               </div>
