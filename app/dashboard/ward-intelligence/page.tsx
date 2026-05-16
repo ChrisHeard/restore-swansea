@@ -3,6 +3,16 @@ import { redirect } from 'next/navigation'
 import WardIntelligenceShell from './ward-intelligence-shell'
 import { createClient } from '@/lib/supabase/server'
 
+export type WardIntelligenceMetricRow = {
+  ward_code: string
+  ward_name: string
+  metric_key: string
+  metric_label: string
+  metric_value: number | null
+  metric_unit: string | null
+  source_year: number | null
+}
+
 export default async function WardIntelligencePage() {
   const supabase = await createClient()
   const {
@@ -10,6 +20,14 @@ export default async function WardIntelligencePage() {
   } = await supabase.auth.getUser()
 
   if (!user) redirect('/')
+
+  const { data, error } = await supabase
+    .from('ward_intelligence_metrics')
+    .select('ward_code, ward_name, metric_key, metric_label, metric_value, metric_unit, source_year')
+    .order('metric_label', { ascending: true })
+    .order('ward_name', { ascending: true })
+
+  const metricRows: WardIntelligenceMetricRow[] = Array.isArray(data) ? data : []
 
   return (
     <main className="mx-auto max-w-6xl space-y-6 p-4 sm:p-6 lg:py-8">
@@ -26,7 +44,7 @@ export default async function WardIntelligencePage() {
         </p>
       </header>
 
-      <WardIntelligenceShell />
+      <WardIntelligenceShell metricRows={metricRows} metricsError={error?.message ?? null} />
     </main>
   )
 }

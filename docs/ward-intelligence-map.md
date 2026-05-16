@@ -75,14 +75,32 @@ Includes:
 
 - dashboard-style protected route via existing Supabase auth check.
 - map + selected ward panel layout (desktop split / mobile stacked).
-- placeholder map colouring explicitly marked as placeholder.
-- future layer list for planned data layers.
+- server-side query of `public.ward_intelligence_metrics` and safe handoff to client shell.
+- client metric selector (defaults to `total_population_2021` when available, otherwise first metric).
+- selected metric drives ward shading via a simple light-to-dark blue scale.
+- legend with low/high bounds and unit-aware formatting.
+- clear empty/error states when ward intelligence metrics are unavailable.
+
+## Ward intelligence dataset contract
+
+The map now reads from `public.ward_intelligence_metrics` (not directly from the wide census table).
+
+Expected columns:
+
+- `ward_code`
+- `ward_name`
+- `metric_key`
+- `metric_label`
+- `metric_value`
+- `metric_unit`
+- `source_year`
+
+Future datasets should follow the same long-form shape so the selector and choropleth renderer can reuse the same pipeline:
+
+`ward_code, ward_name, metric_key, metric_label, metric_value, metric_unit, source_year`
 
 ## Deferred for later iterations
 
-- database-backed choropleth layers
-- dynamic legends and scales
-- server-driven ward intelligence datasets
 - advanced label placement and zoom/pan interactions
 
 Future datasets should join by ward code (`WD25CD`) and display names should come from `WD25NM`.

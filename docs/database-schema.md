@@ -119,3 +119,28 @@ This document summarizes what the app currently expects from Supabase based on r
 - **Uncertainty / Observed app usage**:
   - Observed app usage probes table existence before read path.
   - Exact constraints/permissions are not inferable from app code alone.
+
+## ward_census_2021_characteristics
+
+- **Purpose**: Imported wide 2021 Census table at ward level.
+- **Likely object type**: **Table** (external import process).
+- **App usage**:
+  - The app does **not** query this table directly for mapping.
+  - It is treated as the source for transformation into a map-friendly long-form view.
+
+## ward_intelligence_metrics
+
+- **Purpose**: Map-friendly long-form ward intelligence metrics used for choropleth layers.
+- **Likely object type**: **View** (`public.ward_intelligence_metrics`).
+- **Expected columns queried by the app**:
+  - `ward_code text`
+  - `ward_name text`
+  - `metric_key text`
+  - `metric_label text`
+  - `metric_value numeric`
+  - `metric_unit text`
+  - `source_year integer`
+- **App usage**:
+  - Ward Intelligence page queries this object server-side, orders by metric then ward, and passes plain rows to the client shell.
+  - Client-side selector and map shading are driven by `metric_key`/`metric_label` plus ward-level numeric values.
+  - Empty/error states are handled in-app when the view is missing or returns no rows.
