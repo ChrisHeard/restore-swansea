@@ -86,30 +86,34 @@ export default function WardIntelligenceShell({
       : null
 
   return (
-    <section className="grid items-start gap-4 lg:grid-cols-[2fr_1fr]">
-      <article className="surface p-4 sm:p-6">
-        <div className="mb-4 space-y-2">
-          <label htmlFor="metric-layer" className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Map layer</label>
-          <select
-            id="metric-layer"
-            value={activeMetricKey ?? ''}
-            onChange={(event) => setSelectedMetricKey(event.target.value)}
-            className="w-full max-w-sm rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm"
-            disabled={metricOptions.length === 0}
-          >
+    <section className="grid items-start gap-4 lg:grid-cols-[260px_minmax(0,1fr)_320px]">
+      <aside className="surface p-4 sm:p-6">
+        <h2 className="text-lg font-semibold">Map layers</h2>
+        <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
+        <fieldset className="mt-4" disabled={metricOptions.length === 0}>
+          <legend className="sr-only">Ward map layer options</legend>
+          <div className="max-h-[280px] space-y-2 overflow-y-auto pr-1">
             {metricOptions.map((option) => (
-              <option key={option.key} value={option.key}>
-                {option.year ? `${option.label}, ${option.year}` : option.label}
-              </option>
+              <label
+                key={option.key}
+                htmlFor={`metric-layer-${option.key}`}
+                className="flex cursor-pointer items-start gap-2 rounded-md border border-transparent px-2 py-1 hover:bg-zinc-50"
+              >
+                <input
+                  id={`metric-layer-${option.key}`}
+                  type="radio"
+                  name="metric-layer"
+                  value={option.key}
+                  checked={activeMetricKey === option.key}
+                  onChange={(event) => setSelectedMetricKey(event.target.value)}
+                  className="mt-0.5 h-4 w-4"
+                />
+                <span className="text-sm text-zinc-700">{option.year ? `${option.label}, ${option.year}` : option.label}</span>
+              </label>
             ))}
-          </select>
-          <p className="text-xs text-zinc-500">Shading reflects the selected ward-level metric.</p>
-        </div>
-        {mapStateMessage ? <p className="mb-4 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
-        <div className="h-[520px] overflow-hidden rounded-lg bg-[#f8fafc] sm:h-[600px] lg:h-[640px]">
-          <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
-        </div>
-        <div className="mt-3 rounded-md bg-slate-50 p-3 text-xs text-zinc-700">
+          </div>
+        </fieldset>
+        <div className="mt-4 rounded-md bg-slate-50 p-3 text-xs text-zinc-700">
           <p className="font-semibold">{selectedMetric?.label ?? 'Selected layer'}</p>
           {minValue === null || maxValue === null ? (
             <p className="mt-1">No values available for this layer.</p>
@@ -119,9 +123,16 @@ export default function WardIntelligenceShell({
             </p>
           )}
         </div>
+      </aside>
+
+      <article className="surface p-3 sm:p-4">
+        {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
+        <div className="h-[520px] overflow-hidden rounded-lg bg-[#f8fafc] lg:h-[620px] xl:h-[680px]">
+          <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+        </div>
       </article>
 
-      <aside className="surface min-h-[220px] p-4 sm:p-6">
+      <aside className="surface min-h-[320px] p-4 sm:p-6">
         <h2 className="text-lg font-semibold">Ward details</h2>
         {!selectedWard ? (
           <p className="mt-3 text-sm text-zinc-600">Select a ward to begin exploring local context.</p>
