@@ -38,8 +38,8 @@ const dashboardModules: DashboardModule[] = [
     title: 'Leafletting Operations',
     description: 'Plan routes, update street status, and monitor ward progress.',
     status: 'Active',
-    href: '#leafletting-operations',
-    actionLabel: 'Open module',
+    href: '#ward-grid',
+    actionLabel: 'Choose a ward',
   },
   {
     title: 'Ward Intelligence',
@@ -184,10 +184,10 @@ export default async function DashboardPage() {
         </p>
         <div className="mt-5 flex flex-col gap-3 sm:flex-row">
           <Link
-            href="#leafletting-operations"
+            href="#ward-grid"
             className="inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-sky-950 transition hover:bg-zinc-100"
           >
-            Open leafletting operations
+            Choose a ward
           </Link>
           <a
             href="#coming-soon"
@@ -200,20 +200,38 @@ export default async function DashboardPage() {
 
       <section aria-label="Dashboard modules">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {dashboardModules.map((module) => (
-            <a
-              key={module.title}
-              href={module.href}
-              className="surface group flex min-h-40 flex-col justify-between p-5 transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">{module.status}</p>
-                <h2 className="mt-2 text-lg font-semibold">{module.title}</h2>
-                <p className="mt-2 text-sm text-zinc-600">{module.description}</p>
-              </div>
-              <p className="mt-5 text-sm font-medium text-sky-900">{module.actionLabel}</p>
-            </a>
-          ))}
+          {dashboardModules.map((module) => {
+            if (module.status === 'Active') {
+              return (
+                <a
+                  key={module.title}
+                  href={module.href}
+                  className="surface group flex min-h-40 flex-col justify-between p-5 transition hover:-translate-y-1 hover:shadow-xl"
+                >
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">{module.status}</p>
+                    <h2 className="mt-2 text-lg font-semibold">{module.title}</h2>
+                    <p className="mt-2 text-sm text-zinc-600">{module.description}</p>
+                  </div>
+                  <p className="mt-5 text-sm font-medium text-sky-900">{module.actionLabel}</p>
+                </a>
+              )
+            }
+
+            return (
+              <article
+                key={module.title}
+                className="surface flex min-h-40 flex-col justify-between p-5 opacity-85"
+              >
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">{module.status}</p>
+                  <h2 className="mt-2 text-lg font-semibold">{module.title}</h2>
+                  <p className="mt-2 text-sm text-zinc-600">{module.description}</p>
+                </div>
+                <p className="mt-5 text-sm font-medium text-zinc-500">Coming soon</p>
+              </article>
+            )
+          })}
         </div>
       </section>
 
@@ -254,7 +272,7 @@ export default async function DashboardPage() {
           <p className="mt-2 text-xs text-zinc-500">{overallPct}% delivered</p>
         </section>
 
-        <section>
+        <section id="ward-grid">
           <h3 className="mb-3 text-lg font-medium text-white">Wards</h3>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
