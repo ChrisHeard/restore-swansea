@@ -20,7 +20,7 @@ export default function WardMap({ data = [], selectedWardCode = null, onWardSele
   const datumByCode = useMemo(() => new Map(data.map((d) => [d.wardCode, d])), [data])
 
   return (
-    <svg viewBox={wardMap.viewBox} role="img" aria-label="Swansea ward map" className="h-auto w-full rounded-lg bg-[#f8fafc]">
+    <svg viewBox={wardMap.viewBox} preserveAspectRatio="xMidYMid meet" role="img" aria-label="Swansea ward map" className="block h-full w-full">
       {wardMap.wards.map((ward) => {
         const datum = datumByCode.get(ward.wardCode)
         const selected = ward.wardCode === selectedWardCode
