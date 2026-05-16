@@ -8,7 +8,10 @@
 
 html,
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(15, 82, 176, 0.35), transparent 35%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 30%),
+    var(--background);
   color: var(--foreground);
   min-height: 100vh;
 }
