@@ -1,25 +1,43 @@
-# Leafletting Tracker MVP
+# Restore Swansea
 
-## Features
+Restore Swansea is a private member platform for coordinating Restore Britain activity in Swansea, including ward dashboards, street-level leafletting progress, member access, and local campaign operations.
 
-- Email/password login with Supabase Auth using `@supabase/ssr`.
-- Optional email magic-link fallback for one-off sign-ins.
-- Protected `/dashboard` route for authenticated users.
-- Create and update streets with status, notes, and last-updated timestamp.
-- All street data scoped to the logged-in user.
+## Current features
 
-## Supabase Auth setup for local development
+- Supabase authentication
+- Protected dashboard
+- Ward-level progress overview
+- Street-level delivery status tracking
+- Mission planner / route shortlist
+- Ward context and local election data
+- Ward message board where enabled
 
-For stable local testing, enable password auth and use a fixed development user:
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production checks
+
+```bash
+npm run lint
+npm run build
+```
+
+## Supabase setup
+
+For stable local development, enable password auth and use a fixed development user:
 
 1. In Supabase Dashboard, go to **Authentication → Providers → Email**.
 2. Enable **Email** provider with **email/password sign-in** enabled.
 3. Go to **Authentication → Users** and manually create a development user.
 4. Sign in locally using that email/password on `/`.
 
-> Magic links can hit Supabase email rate limits during rapid local testing. Keep them as optional fallback, not your primary local auth flow.
+> Magic links can hit Supabase email rate limits during rapid local testing. Keep them as optional fallback rather than your primary local auth flow.
 
-## Supabase SQL setup
+### Supabase SQL setup
 
 Run this in the Supabase SQL editor:
 
@@ -76,9 +94,6 @@ before update on public.streets
 for each row execute function public.handle_updated_at();
 ```
 
-## Run
+## Migration note
 
-```bash
-npm install
-npm run dev
-```
+This repository supersedes `ChrisHeard/leafletting-app`, which is now treated as retired/historical. Active development should continue here in `ChrisHeard/restore-swansea`.
