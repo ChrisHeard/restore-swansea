@@ -13,10 +13,20 @@ export type WardMapDatum = {
 export type WardMapProps = {
   data?: WardMapDatum[]
   selectedWardCode?: string | null
+  hoveredWardCode?: string | null
   onWardSelect?: (wardCode: string) => void
+  onWardHover?: (wardCode: string) => void
+  onWardLeave?: () => void
 }
 
-export default function WardMap({ data = [], selectedWardCode = null, onWardSelect }: WardMapProps) {
+export default function WardMap({
+  data = [],
+  selectedWardCode = null,
+  hoveredWardCode = null,
+  onWardSelect,
+  onWardHover,
+  onWardLeave,
+}: WardMapProps) {
   const datumByCode = useMemo(() => new Map(data.map((d) => [d.wardCode, d])), [data])
 
   return (
@@ -24,6 +34,7 @@ export default function WardMap({ data = [], selectedWardCode = null, onWardSele
       {wardMap.wards.map((ward) => {
         const datum = datumByCode.get(ward.wardCode)
         const selected = ward.wardCode === selectedWardCode
+        const hovered = ward.wardCode === hoveredWardCode
         const fill = datum?.colour ?? (selected ? '#0f52b0' : '#dbeafe')
 
         return (
@@ -31,10 +42,16 @@ export default function WardMap({ data = [], selectedWardCode = null, onWardSele
             key={ward.wardCode}
             d={ward.path}
             fill={fill}
-            stroke={selected ? '#051b3a' : '#1e3a8a'}
-            strokeWidth={selected ? 2 : 1}
-            className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-80"
+            stroke={hovered || selected ? '#051b3a' : '#1e3a8a'}
+            strokeWidth={hovered || selected ? 2 : 1}
+            opacity={hovered ? 0.9 : 1}
+            tabIndex={0}
+            className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-80 focus-visible:opacity-80 focus-visible:outline-none"
             onClick={() => onWardSelect?.(ward.wardCode)}
+            onMouseEnter={() => onWardHover?.(ward.wardCode)}
+            onMouseLeave={() => onWardLeave?.()}
+            onFocus={() => onWardHover?.(ward.wardCode)}
+            onBlur={() => onWardLeave?.()}
           >
             <title>{`${ward.wardName} (${ward.wardCode})${datum?.label ? ` - ${datum.label}` : ''}`}</title>
           </path>
