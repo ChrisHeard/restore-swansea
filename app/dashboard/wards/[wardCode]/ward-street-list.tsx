@@ -3,13 +3,14 @@
 import { useMemo, useState } from 'react'
 import { StreetUpdateForm } from './street-update-form'
 import { updateStreetAction } from './actions'
+import { streetStatusOptions, type StreetStatus } from '@/lib/domain/street-status'
 
 type Street = {
   id: string
   street_name: string
   road_type: string | null
   ward_code: string
-  status: 'not_started' | 'delivered' | 'needs_revisit' | 'no_residences'
+  status: StreetStatus
   notes: string | null
   updated_at: string
 }
@@ -143,10 +144,11 @@ export function WardStreetList({ streets }: { streets: Street[] }) {
                         defaultValue={street.status}
                         className="rounded border px-2 py-1 text-sm"
                       >
-                        <option value="not_started">Not started</option>
-                        <option value="delivered">Delivered</option>
-                        <option value="needs_revisit">Needs revisit</option>
-                        <option value="no_residences">No residences</option>
+                        {streetStatusOptions.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
+                          </option>
+                        ))}
                       </select>
 
                       <button

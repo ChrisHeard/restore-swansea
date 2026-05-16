@@ -2,19 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
-
-const allowedStatuses = [
-  'not_started',
-  'delivered',
-  'needs_revisit',
-  'no_residences',
-] as const
-
-type StreetStatus = (typeof allowedStatuses)[number]
-
-function isStreetStatus(value: string): value is StreetStatus {
-  return allowedStatuses.includes(value as StreetStatus)
-}
+import { isStreetStatus } from '@/lib/domain/street-status'
 
 export async function updateStreetAction(formData: FormData) {
   const supabase = await createClient()
