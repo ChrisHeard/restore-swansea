@@ -30,15 +30,15 @@ export default async function WardIntelligencePage() {
   const metricRows: WardIntelligenceMetricRow[] = Array.isArray(data) ? data : []
 
   return (
-    <main className="mx-auto max-w-6xl space-y-6 p-4 sm:p-6 lg:py-8">
+    <main className="mx-auto max-w-6xl space-y-4 p-4 sm:p-6 lg:space-y-5 lg:py-6">
       <div>
         <Link href="/dashboard" className="text-sm text-zinc-200 hover:underline">
           ← Back to dashboard
         </Link>
       </div>
 
-      <header className="space-y-2 text-white">
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Ward Intelligence</h1>
+      <header className="space-y-1.5 text-white">
+        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">Ward Intelligence</h1>
         <p className="max-w-3xl text-sm text-zinc-200 sm:text-base">
           Explore Swansea ward context, local data, and campaign intelligence.
         </p>

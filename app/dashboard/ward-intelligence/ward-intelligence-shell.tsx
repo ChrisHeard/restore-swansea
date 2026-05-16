@@ -82,21 +82,21 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
       : null
 
   return (
-    <section className="surface overflow-hidden p-0">
-      <div className="grid lg:grid-cols-[240px_minmax(0,1fr)_300px] xl:grid-cols-[260px_minmax(0,1fr)_320px]">
-        <aside className="border-b border-zinc-200 p-4 sm:p-6 lg:max-h-[700px] lg:overflow-hidden lg:border-r lg:border-b-0">
+    <section className="surface h-[calc(100vh-230px)] min-h-[620px] overflow-hidden p-0">
+      <div className="grid h-full lg:grid-cols-[230px_minmax(0,1fr)_280px] xl:grid-cols-[250px_minmax(0,1fr)_300px]">
+        <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">Map layers</h2>
           <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
-          <fieldset className="mt-4" disabled={metricOptions.length === 0}>
+          <fieldset className="mt-3 flex-1 overflow-hidden" disabled={metricOptions.length === 0}>
             <legend className="sr-only">Ward map layer options</legend>
-            <div className="max-h-[380px] space-y-2 overflow-y-auto pr-1">
+            <div className="h-full space-y-1.5 overflow-y-auto pr-1">
               {metricOptions.map((option) => {
                 const isActive = activeMetricKey === option.key
                 return (
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-lg border px-3 py-2 transition-colors ${
+                    className={`block cursor-pointer rounded-lg border px-3 py-1.5 transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -111,15 +111,15 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                       onChange={(event) => setSelectedMetricKey(event.target.value)}
                       className="sr-only"
                     />
-                    <span className="block text-sm font-medium">{option.label}</span>
-                    {option.year ? <span className="mt-0.5 block text-xs opacity-80">Source: {option.year}</span> : null}
+                    <span className="block text-sm/5 font-medium">{option.label}</span>
+                    {option.year ? <span className="mt-0.5 block text-[11px] leading-4 text-zinc-500">Source: {option.year}</span> : null}
                   </label>
                 )
               })}
             </div>
           </fieldset>
 
-          <div className="mt-4 rounded-lg border border-zinc-200 bg-slate-50 p-3 text-xs text-zinc-700">
+          <div className="mt-3 rounded-lg border border-zinc-200 bg-slate-50 p-3 text-xs text-zinc-700">
             <p className="font-semibold text-[#051b3a]">{selectedMetric?.label ?? 'Selected layer'}</p>
             <div className="mt-2 h-2 w-full rounded-full bg-gradient-to-r from-blue-100 via-blue-300 to-blue-700" aria-hidden="true" />
             {minValue === null || maxValue === null ? (
@@ -143,8 +143,8 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
             </span>
           </div>
           {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
-          <div className="relative h-[540px] overflow-hidden rounded-xl bg-slate-50 lg:h-[620px]">
-            <div className="absolute inset-4 flex items-center justify-center">
+          <div className="relative h-[540px] overflow-hidden rounded-xl bg-slate-50 lg:h-full">
+            <div className="absolute inset-4 flex items-center justify-center -translate-y-1">
               <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
             </div>
           </div>
@@ -162,17 +162,26 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                 <p className="text-lg font-semibold text-[#051b3a]">{selectedWard.wardName}</p>
                 <p className="mt-1 text-xs font-medium tracking-wide text-zinc-500">{selectedWard.wardCode}</p>
               </div>
-              <div className="rounded-lg border border-zinc-200 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Selected layer</p>
-                <p className="mt-1 text-sm font-medium text-zinc-800">{selectedMetric?.label ?? 'Not available'}</p>
-              </div>
               <div className="rounded-lg border border-zinc-200 bg-slate-50 p-4">
                 <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Value</p>
-                <p className="mt-2 text-2xl font-semibold text-[#051b3a]">
+                <p className="mt-2 text-3xl font-semibold text-[#051b3a]">
                   {selectedWardMetric
                     ? formatMetricValue(selectedWardMetric.metric_value, selectedWardMetric.metric_unit)
                     : 'No value available for this layer.'}
                 </p>
+                {selectedWardMetric?.metric_value !== null && minValue !== null && maxValue !== null && minValue !== maxValue ? (
+                  <p className="mt-2 text-xs text-zinc-500">
+                    {selectedWardMetric.metric_value <= minValue + (maxValue - minValue) / 3
+                      ? 'Lower range'
+                      : selectedWardMetric.metric_value >= maxValue - (maxValue - minValue) / 3
+                        ? 'Higher range'
+                        : 'Mid range'}
+                  </p>
+                ) : null}
+              </div>
+              <div className="rounded-lg border border-zinc-200 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Selected layer</p>
+                <p className="mt-1 text-sm font-medium text-zinc-800">{selectedMetric?.label ?? 'Not available'}</p>
               </div>
             </div>
           )}
