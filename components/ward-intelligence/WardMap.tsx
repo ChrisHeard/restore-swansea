@@ -48,8 +48,8 @@ export default function WardMap({
             tabIndex={0}
             className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-80 focus-visible:opacity-80 focus-visible:outline-none"
             onClick={() => onWardSelect?.(ward.wardCode)}
-            onMouseEnter={() => onWardHover?.(ward.wardCode)}
-            onMouseLeave={() => onWardLeave?.()}
+            onPointerEnter={() => onWardHover?.(ward.wardCode)}
+            onPointerLeave={() => onWardLeave?.()}
             onFocus={() => onWardHover?.(ward.wardCode)}
             onBlur={() => onWardLeave?.()}
           >
