@@ -33,7 +33,7 @@ export default function WardMap({ data = [], selectedWardCode = null, onWardSele
             fill={fill}
             stroke={selected ? '#051b3a' : '#1e3a8a'}
             strokeWidth={selected ? 2 : 1}
-            className="cursor-pointer transition-opacity hover:opacity-80"
+            className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-80"
             onClick={() => onWardSelect?.(ward.wardCode)}
           >
             <title>{`${ward.wardName} (${ward.wardCode})${datum?.label ? ` - ${datum.label}` : ''}`}</title>
