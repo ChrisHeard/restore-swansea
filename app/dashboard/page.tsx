@@ -3,6 +3,8 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import SignOutLink from '@/app/dashboard/sign-out-link'
 import Image from 'next/image'
+import { accountRoleDescription, accountRoleLabel } from '@/lib/domain/account-role'
+import { getCurrentUserProfile } from '@/lib/domain/current-user-profile'
 
 type WardProgress = {
   ward_code: string
@@ -36,6 +38,8 @@ export default async function DashboardPage() {
   } = await supabase.auth.getUser()
 
   if (!user) redirect('/')
+
+  const currentUser = await getCurrentUserProfile(supabase, user)
 
   const { data: wards, error: wardsError } = await supabase
     .from('ward_progress')
@@ -94,9 +98,14 @@ export default async function DashboardPage() {
   </div>
 
   <div className="flex flex-col items-start gap-2 lg:items-end">
-    <p className="text-sm text-zinc-200">
-      Signed in as {user.email}
-    </p>
+    <div className="rounded-xl border border-white/20 bg-sky-950/60 px-4 py-3 text-sm text-zinc-100">
+      <p className="text-xs uppercase tracking-[0.14em] text-zinc-300">Signed in as</p>
+      <p className="mt-1 break-all font-medium text-white">{currentUser.email ?? user.email ?? 'Unknown user'}</p>
+      <p className="mt-2 text-xs text-zinc-200">
+        Account type: <span className="font-semibold text-white">{accountRoleLabel(currentUser.accountRole)}</span>
+      </p>
+      <p className="mt-1 text-xs text-zinc-300">{accountRoleDescription(currentUser.accountRole)}</p>
+    </div>
 
     <SignOutLink />
   </div>

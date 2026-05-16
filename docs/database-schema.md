@@ -7,11 +7,18 @@ This document summarizes what the app currently expects from Supabase based on r
 ## profiles
 
 - **Purpose**: Intended member profile metadata linked to auth users.
-- **Key fields currently used by the app**: No active runtime references found in current app routes/components.
+- **Key fields currently used by the app**:
+  - `id`
+  - `email`
+  - `display_name`
+  - `global_role` (validated as `administrator | member | guest` for display fallback logic)
 - **Likely object type**: Likely a **table** (based on historical setup docs and naming convention).
 - **Uncertainty / Observed app usage**:
-  - Observed app usage does not currently query `profiles` directly.
-  - Presence is inferred as part of intended identity/permissions model and prior setup guidance.
+  - Observed app usage now attempts to read `profiles` for dashboard account display, but falls back safely when profile rows/table are unavailable.
+  - Schema details remain intended design unless confirmed directly from the live database.
+- **Intended design note (not authoritative SQL)**:
+  - Intended eventual role column shape: `global_role text not null default 'member'`
+  - Intended eventual role constraint: `check (global_role in ('administrator', 'member', 'guest'))`
 
 ## streets
 

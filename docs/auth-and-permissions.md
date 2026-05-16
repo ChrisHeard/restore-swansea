@@ -2,11 +2,21 @@
 
 This document describes the intended permissions model for upcoming work. It is a design baseline and does **not** imply completed role enforcement yet.
 
+## Current branch scope
+
+This branch only adds account-type display groundwork in the dashboard header.
+
+- No feature permissions are enforced yet.
+- No role-based UI hiding is implemented yet.
+- No Supabase RLS policy changes are implemented in this branch.
+
+Role enforcement is intentionally deferred until team policy is agreed.
+
 ## Roles model
 
 ### Global roles
 
-- `admin`
+- `administrator`
 - `member`
 - `guest`
 
@@ -23,7 +33,7 @@ This document describes the intended permissions model for upcoming work. It is 
 - `id`
 - `email`
 - `display_name`
-- `global_role` (`admin | member | guest`)
+- `global_role` (`administrator | member | guest`)
 
 ### ward_memberships
 
@@ -32,9 +42,9 @@ This document describes the intended permissions model for upcoming work. It is 
 - `ward_code`
 - `ward_role` (`ward_leader | member`)
 
-## Intended permissions
+## Intended permissions (future)
 
-### admin
+### administrator
 
 - Manage all wards
 - Manage users
@@ -55,8 +65,16 @@ This document describes the intended permissions model for upcoming work. It is 
 
 ### guest
 
-- Restricted access
+- Demonstration/review access for senior organisers or people from other branches evaluating a potential branch deployment
 - No authority to alter production campaign data unless explicitly permitted later
+
+## SQL note (intended eventual profile role field)
+
+```sql
+-- Intended eventual shape for profiles.global_role (documentation only)
+global_role text not null default 'member'
+check (global_role in ('administrator', 'member', 'guest'))
+```
 
 ## Enforcement requirements
 
