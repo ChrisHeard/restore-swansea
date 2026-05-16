@@ -86,7 +86,7 @@ export default function WardIntelligenceShell({
       : null
 
   return (
-    <section className="grid gap-4 lg:grid-cols-[2fr_1fr]">
+    <section className="grid items-start gap-4 lg:grid-cols-[2fr_1fr]">
       <article className="surface p-4 sm:p-6">
         <div className="mb-4 space-y-2">
           <label htmlFor="metric-layer" className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Map layer</label>
@@ -106,7 +106,9 @@ export default function WardIntelligenceShell({
           <p className="text-xs text-zinc-500">Shading reflects the selected ward-level metric.</p>
         </div>
         {mapStateMessage ? <p className="mb-4 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
-        <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+        <div className="h-[520px] overflow-hidden rounded-lg bg-[#f8fafc] sm:h-[600px] lg:h-[640px]">
+          <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+        </div>
         <div className="mt-3 rounded-md bg-slate-50 p-3 text-xs text-zinc-700">
           <p className="font-semibold">{selectedMetric?.label ?? 'Selected layer'}</p>
           {minValue === null || maxValue === null ? (
@@ -119,7 +121,7 @@ export default function WardIntelligenceShell({
         </div>
       </article>
 
-      <aside className="surface p-4 sm:p-6">
+      <aside className="surface min-h-[220px] p-4 sm:p-6">
         <h2 className="text-lg font-semibold">Ward details</h2>
         {!selectedWard ? (
           <p className="mt-3 text-sm text-zinc-600">Select a ward to begin exploring local context.</p>
