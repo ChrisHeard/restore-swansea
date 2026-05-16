@@ -1,0 +1,85 @@
+:root {
+  --ink: #111827;
+  --muted: #6b7280;
+  --panel: rgba(255, 255, 255, 0.92);
+  --stroke: #051b3a;
+  --highlight: #facc15;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+#map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: manipulation;
+}
+
+#panel {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  max-width: 340px;
+  padding: 12px 14px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+}
+
+#panel h1 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+#status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+#feature-readout {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.map-feature {
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill-opacity 120ms ease, stroke-width 120ms ease;
+}
+
+.map-feature:hover,
+.map-feature.is-selected {
+  fill-opacity: 0.9;
+  stroke-width: 2;
+}
+
+.map-feature.is-selected {
+  stroke: var(--highlight);
+}
+
+.error {
+  color: #991b1b;
+}

@@ -1,0 +1,177 @@
+@id,name,highway
+10305146,Neath Road,secondary
+10305212,Ffordd Cwm Tawe,primary
+10305488,Neath Road,unclassified
+10305508,Pentre Mawr Road,tertiary
+10633406,Heol Nant Gelli,residential
+10633407,Bryn Terrace,residential
+11089071,The Strand,tertiary
+22817143,Brunel Way,unclassified
+23116926,Bridge Road,secondary
+23116929,Neath Road,secondary
+23152227,Brunel Way,unclassified
+23152228,Brunel Way,unclassified
+23152231,Brunel Way,unclassified
+23152232,Upper Strand,residential
+23152234,Cwm Road,residential
+23170098,Bridge Street,secondary
+23170100,Bridge Street,secondary
+23170101,Bridge Street,secondary
+23170118,Villiers Street,residential
+23170119,Jersey Street,residential
+23612737,Llangyfelach Road,secondary
+23865970,Beaufort Road,unclassified
+24044835,Aberdyberthi Street,residential
+24044836,Morgan Street,residential
+24044838,Gerald Street,residential
+24044840,Bowen Street,residential
+24044870,Graham Street,residential
+24045995,Vivian Street,residential
+24046053,Hafod Park,residential
+24255249,Aberdyberthi Street,residential
+24255255,Aberdyberthi Street,residential
+24272131,Monger Street,residential
+24272138,Earl Street,residential
+24272139,Tawe Avenue,residential
+24272142,Tawe Avenue,residential
+24272144,Hafod Park,unclassified
+24280082,Hafod Street,residential
+24466002,Plough Road,residential
+24492240,Grandison Street,residential
+24492241,Grandison Street,residential
+24492268,Vernon Street,residential
+24492338,Glyn Street,residential
+24605468,Clayton Street,residential
+24605469,Saddler Street,residential
+24605487,Mysydd Road,residential
+24605501,Byng Street,residential
+25772180,Neath Road,secondary
+25772181,Neath Road,secondary
+26195577,Davis Street,residential
+26195578,Landeg Street,residential
+26195580,Forbes Street,residential
+26195582,Dinas Street,residential
+26195584,Millbrook Street,residential
+26195585,Idris Terrace,residential
+26195586,Britannia Road,residential
+26195589,Dyrus Road,residential
+26195597,Essex Terrace,residential
+26195598,Alfred Road,residential
+26195601,Emlyn Terrace,residential
+26195602,Roseberry Terrace,residential
+26195603,Plasmarl Terrace,residential
+26195606,Smyrna Street,residential
+26431716,Salem Road,residential
+28486600,Pentre Treharne Hill,residential
+28871874,Maliphant Street,residential
+37090837,New Cut Road,primary
+41432524,Neath Road,secondary
+41474762,Cwm Level Road,tertiary
+41530029,Pentre Treharne Road,residential
+46829815,Trewyddfa Road,residential
+47267419,Siloh Road,residential
+47267579,Pentre Treharne Road,residential
+47267615,Mysydd Terrace,residential
+47269117,Wern Road,residential
+47269278,Sharpsburg Place,residential
+47269579,Station Road,residential
+47269659,Field Street,residential
+47492776,Brunel Way,unclassified
+48981685,Heol y Cnap,residential
+48981690,Cwmlan Terrace,residential
+48981698,Pen y Wern Terrace,residential
+48981699,Pwll Street,residential
+49013268,Grey Street,residential
+49066038,Station Road,residential
+49066040,Bennett Street,residential
+49066041,Hamilton Street,residential
+49066042,Station Road,residential
+49619012,Cnap Llwyd Road,residential
+49619014,Trewyddfa Terrace,residential
+49620038,Trewyddfa Road,residential
+49876863,Siloh Road,residential
+49876872,Siloh Road,residential
+55597590,Neath Road,secondary
+60852034,Washington Street,residential
+60852039,Hosea Row,residential
+61351066,Montana Place,residential
+61351069,Greenfield Terrace,residential
+61351070,Tabernacle Street,residential
+61351071,Neath Road,residential
+70948340,Castle Graig Road,residential
+70948356,Britannia Road,residential
+70948358,Bartley Terrace,residential
+96570796,Cwm Level Road,tertiary
+96570803,Ffordd Cwm Tawe,primary
+96570813,Cwm Road,residential
+96570823,New Cut Road,primary
+96570835,New Cut Road,primary
+96570861,Odo Street,residential
+96571214,Morgan Street,residential
+121816395,Glandwr Crescent,residential
+121816398,Shepherds Road,residential
+121816414,Calland Street,residential
+129399739,Siloh Crescent,residential
+133202245,Pont-y-Shoot,residential
+135481706,Neath Road,secondary
+170091747,Cwm Level Road,tertiary
+170091749,Quarry Road,residential
+170091751,Trewyddfa Road,residential
+185079857,Beaufort Road,unclassified
+185171133,Neath Road,secondary
+220167624,Pottery Street,residential
+220167627,Haynes Court,residential
+245796864,Rothwell Road,residential
+296677376,Byng Street,residential
+296677378,Cwm Level Road,tertiary
+296677379,Cwm Level Road,tertiary
+296677380,Cwmlan Terrace,residential
+296677381,Dyrus Road,residential
+296677388,Haford Park,residential
+296677391,Mysydd Road,residential
+296677392,Neath Road,unclassified
+296677393,Salem Road,residential
+296677394,Salem Road,residential
+296677395,Salem Road,residential
+296677397,Shepherds Road,residential
+296677401,Trewyddfa Road,residential
+296677402,Trewyddfa Road,residential
+296677403,Trewyddfa Road,residential
+296677404,Trewyddfa Road,residential
+296677405,Trewyddfa Road,residential
+296677406,Trewyddfa Road,residential
+296677407,Trewyddfa Road,residential
+296677408,Trewyddfa Road,residential
+296677409,Trewyddfa Road,residential
+296677410,Trewyddfa Road,residential
+314564483,Coles Close,residential
+382503055,Cwm Road,residential
+504446766,Morfa Road,tertiary
+504519862,Neath Road,secondary
+510840991,Morfa Road,tertiary
+510840992,New Cut Road,primary
+510840996,New Cut Road,primary
+548868836,Maliphant Street,unclassified
+548868837,Maliphant Street,unclassified
+675383511,Golwg Y Garreg Wen,residential
+740890595,Beaufort Road,unclassified
+745421452,Ffordd Cwm Tawe,primary
+785839418,Llangyfelach Road,secondary
+841049835,New Cut Road,primary
+923197944,Morfa Road,tertiary
+923197945,Morfa Road,tertiary
+923197948,Morfa Road,tertiary
+923197949,Morfa Road,tertiary
+923197950,Morfa Road,tertiary
+923197951,Morfa Road,tertiary
+923197952,Morfa Road,tertiary
+923197953,Morfa Road,tertiary
+923197955,Morfa Road,tertiary
+1009930471,Salem Road,residential
+1087034606,Byng Street,residential
+1087035409,Brunel Way,unclassified
+1087035410,Brunel Way,unclassified
+1365352992,Neath Road,unclassified
+1365352993,Cwm Level Road,tertiary
+1365352995,Neath Road,unclassified
+1433559005,Cwm Level Road,tertiary

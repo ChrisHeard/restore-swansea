@@ -1,0 +1,572 @@
+@id,name,highway
+4586648,Mumbles Road,unclassified
+4639819,Fairwood Road,tertiary
+4639820,Mayals Road,secondary
+10158749,Linden Avenue,residential
+10306081,Newton Road,secondary
+10306099,Newton Road,tertiary
+10306516,Langland Road,secondary
+10306618,Castle Avenue,residential
+10306621,Castle Avenue,residential
+10306651,Castle Road,residential
+10306655,Castle Road,unclassified
+10306662,Castle Square,residential
+10306731,Norton Avenue,residential
+10306732,Llanfair Gardens,residential
+10306744,Hadland Terrace,residential
+10306746,Brooklyn Gardens,residential
+10306764,Glen Road,residential
+10306775,Riversdale Road,residential
+10424879,Higher Lane,tertiary
+10425127,Thistleboon Road,tertiary
+10425286,West Cross Lane,tertiary
+10426284,Southlands Drive,residential
+10426300,Cormorant Way,residential
+10426316,Slade Road,residential
+10426320,Sherringham Drive,residential
+10426322,Newton Road,tertiary
+10426324,Southward Lane,tertiary
+10426689,Manselfield Road,tertiary
+10426695,Murton Lane,tertiary
+10580632,Elmgrove Road,residential
+10580657,Woodland Avenue,residential
+10594731,Mulberry Avenue,tertiary
+10594783,Norton Road,residential
+10596870,West Cross Avenue,residential
+10647280,Clyne Crescent,residential
+10647290,Muirfield Drive,residential
+10647313,Sunningdale Avenue,residential
+10647344,Clyne Close,residential
+10683525,Alderwood Road,residential
+10753214,Highpool Lane,residential
+10753286,Highmead Avenue,residential
+10753365,The Orchard,residential
+10753515,Bramley Drive,residential
+10753987,Curlew Close,residential
+10754011,Wentworth Crescent,residential
+10754466,Mumbles Road,primary
+10754555,Mumbles Road,primary
+10754572,Mumbles Road,primary
+10754769,Llwynderw Drive,residential
+10754869,Heneage Drive,residential
+10754886,Heneage Drive,residential
+10754950,Llwynderw Close,residential
+10804348,Owls Lodge Lane,unclassified
+10804370,Ashburnham Drive,residential
+10804430,Radyr Avenue,residential
+11085908,Mumbles Road,primary
+11085915,Mumbles Road,primary
+11085983,Mumbles Road,primary
+11086192,Mumbles Road,primary
+11354273,Clyne Drive,residential
+11354404,Fernhill Close,residential
+11354440,Fernhill Close,residential
+11354493,Mulgrave Way,residential
+11354519,Sherborne Walk,residential
+11489488,Whitegates,residential
+11489909,Whitegates,residential
+11645875,Westport Avenue,residential
+11645961,Saint Catwg Walk,residential
+11646041,Willowbrook Gardens,residential
+11648862,Caswell Drive,residential
+11648867,Summerland Lane,residential
+11648890,Woollacott Drive,residential
+11685840,Limekiln Road,unclassified
+12096024,Long Shepherds Drive,residential
+12097560,Cypress Avenue,residential
+12099312,Caswell Road,secondary
+12102913,Clyne Common,secondary
+12123086,Lady Housty Avenue,residential
+12123230,Highpool Close,residential
+12123406,Burnham Drive,residential
+12123823,Lambourne Drive,residential
+12124318,Alder Way,residential
+12124726,Olive Road,residential
+12125018,Cedar Crescent,residential
+12125276,Mill Lane,residential
+12272773,Osprey Close,residential
+12313915,Summerland Road,unclassified
+12503719,Heneage Drive,residential
+12824357,Dunns Lane,residential
+12827739,Southward Lane,secondary
+12827766,Caswell Road,secondary
+12827947,Caswell Avenue,residential
+12828512,Picket Mead Road,residential
+12828632,Picket Mead Road,residential
+13438239,Nottage Road,residential
+13438320,Nottage Road,residential
+13438439,Saint Peter's Road,residential
+13438734,Long Shepherds Drive,residential
+13438923,Long Shepherds Drive,residential
+13439579,Overland Road,residential
+13439922,Oakland Road,residential
+13440054,Overland Road,residential
+13440466,Gloucester Place,residential
+13483108,Llanfair Gardens,residential
+13629811,Redwood Road,residential
+13629889,Maytree Avenue,residential
+13629915,Green Bank Road,residential
+13629968,Birchfield Road,residential
+13713150,Roman Bridge Close,residential
+13713230,Roman Court,residential
+13840199,Llys Le Breos,residential
+13847193,Southerndown Avenue,residential
+13847228,Birkdale Close,residential
+14027793,Walters Crescent,residential
+14295058,Mayals Green,unclassified
+14295091,Westward Close,unclassified
+14295186,Whitestone Close,residential
+14295320,Green Close,residential
+14295329,Green Close,residential
+14296864,Grange Road,residential
+14296954,Grange Crescent,residential
+14296983,Brookvale Road,residential
+14297041,Cartersford Place,residential
+14297051,Cartersford Place,residential
+14297179,Sycamore Road,residential
+14297804,Baywood Avenue,residential
+14297828,Heathwood Road,residential
+14298297,Woodville Road,residential
+14298372,King's Road,residential
+14298466,Chapel Street,residential
+14298480,Church Park Lane,unclassified
+14298493,Upper Church Park,residential
+14298548,Overland Road,residential
+14298553,Overland Road,residential
+14298689,Bethany Lane,residential
+14298723,Palmyra Court,residential
+14299298,Overland Close,residential
+14358844,William Street,residential
+14358855,John Street,residential
+14358913,Westbourne Place,residential
+14358948,Church Park,residential
+14359122,Myrtle Terrace,residential
+14359138,Park Avenue,residential
+14359221,Thistleboon Road,unclassified
+14359264,Tichbourne Street,residential
+14359296,Western Close,residential
+14359309,Heatherslade Close,residential
+14359314,Heatherslade Close,residential
+14359380,Beaufort Avenue,residential
+14359419,St. Anne's Close,residential
+14359499,Langland Bay Road,residential
+14359544,Brynfield Road,residential
+14359560,Langland Court Road,residential
+14359575,Whiteshell Drive,residential
+14359631,Mary Twill Lane,residential
+14359726,Langland Bay Road,residential
+14608741,Langland Road,secondary
+14608837,Langland Road,secondary
+14609200,Higher Lane,tertiary
+14609504,Higher Lane,tertiary
+14609703,Overland Court,residential
+14611420,Higher Lane,tertiary
+14612479,Langland Bay Road,residential
+14612492,Langland Bay Road,residential
+14612920,Brynfield Road,residential
+14888931,Mill Gardens,unclassified
+15091174,Green Close,residential
+15091185,St. Andrew's Close,residential
+15091187,St. Andrew's Close,residential
+15092241,Llwynderw Close,residential
+15219201,Ilston Way,residential
+15219230,Lilliput Lane,residential
+15219269,Ambleside Place,residential
+15219272,Sweet Briar Lane,residential
+15219274,Kenilworth Place,residential
+15219301,The Glade,unclassified
+15219316,Long Acre Gardens,unclassified
+15219584,Acacia Road,residential
+15397828,William Street,residential
+15398114,Park Street,residential
+15398710,Thistleboon Road,unclassified
+15401633,Thistleboon Gardens,residential
+15401816,Stanley Street,residential
+15401881,Victoria Avenue,residential
+15402761,Cornwall Place,residential
+15403392,Village Lane,residential
+15403658,Higher Lane,tertiary
+15403819,Cambridge Road,residential
+15403953,Worcester Road,residential
+15403990,Hill Crest,residential
+15404047,Worcester Drive,residential
+15404067,Lambswell Close,residential
+15404084,Brandy Cove Close,residential
+15513221,Cambridge Close,residential
+15513239,Cambridge Close,residential
+15513253,Somerset Road,residential
+15513448,Amberley Drive,residential
+15513469,Wychwood Close,residential
+15513481,Wychwood Close,residential
+15513527,Cambridge Gardens,unclassified
+15513626,Devon Place,residential
+15513668,Promenade Terrace,residential
+15513981,Woodburn Drive,residential
+15516091,Bryn Terrace,residential
+15520934,Somerset Road,residential
+15521255,Wychwood Close,residential
+15522127,Bellevue Road,residential
+15522373,Dolgoy Close,residential
+15522517,Heathwood Road,residential
+15522612,Lilliput Lane,residential
+15522618,The Paddock,residential
+15522647,Huntington Close,residential
+15522742,Gulliver's Close,residential
+15522791,Huntington Close,residential
+15522940,Huntingdon Close,residential
+15804639,Havergal Close,residential
+15804644,Havergal Close,residential
+15804650,Picket Mead Road,residential
+15804667,Eastland Close,residential
+15804672,Larkspur Drive,residential
+15804676,Service Road,residential
+15804681,Bettsland,residential
+15804682,Lilac Close,residential
+15804684,Lilac Close,residential
+15899808,Wollacott Mews,residential
+15899895,Briarwood Gardens,residential
+15900486,Shearwater Close,residential
+15900916,Walnut Close,residential
+15901622,Gonhill,residential
+15902812,Whitestone Close,residential
+16277855,Gonhill,residential
+16277867,Gonhill,residential
+16277887,Bettsland,residential
+16277951,Westland Avenue,residential
+16277979,Eastmoor Park Crescent,residential
+16278031,Hawkstone Close,residential
+16278034,Huntsman's Cove,residential
+16278039,Huntsman's Cove,residential
+16278061,Rushwind Close,residential
+16278067,Rushwind Close,residential
+16278072,Rushwind Mews,residential
+16278082,Fulmar Close,residential
+16278097,Ravens Walk,residential
+16278114,Druslyn Road,residential
+16281939,Silver Close,residential
+16281955,Golden Close,residential
+16281977,Alder Way,residential
+16282081,Lundy Drive,residential
+16288389,Sunnybank Close,residential
+16288547,Cormorant Way,residential
+16288553,Ffordd Draenen Ddu,residential
+16288656,Buttercup Court,residential
+16288687,Heol y Garreg Wen,residential
+16288918,Highmead Close,residential
+16288925,Crestacre Close,residential
+16288934,Moorland Avenue,residential
+16885320,Silver Close,residential
+19259439,Sunnybank Court,residential
+19259449,Sunnybank Court,residential
+19259627,Sunnybank Close,residential
+19530303,Alderwood Road,residential
+19781211,Castle Acre,residential
+19781216,Druids Close,residential
+19781230,Lundy Drive,residential
+19781247,Gower Place,residential
+19781379,Mayals Avenue,residential
+19784977,Clyne Drive,residential
+19973187,Summerland Lane,residential
+19973240,Summerland Lane,residential
+19973280,Summerland Lane,residential
+21312062,Limeslade Drive,residential
+21312259,Sealands Drive,residential
+21312378,Bridle Mews,residential
+21312448,Sealands Drive,residential
+21312470,Sealands Drive,residential
+21320414,Westcliff,residential
+21320424,Westcliff,residential
+21320478,Sarlou Close,residential
+21320519,Westcliff,residential
+21320771,William Gammon Drive,residential
+21320827,William Gammon Drive,residential
+21320954,Old Plunch Lane,unclassified
+21321293,Libby Way,residential
+21321333,Libby Way,residential
+21321363,Three Ships Court,residential
+21321395,Three Ships Court,residential
+21321425,Libby Way,residential
+21321563,Nicholl Court,residential
+21321581,Nicholl Court,residential
+21321621,Nicholl Court,residential
+21321778,Cleveland Avenue,residential
+21322810,Thistleboon Drive,unclassified
+21339452,George Bank,residential
+21339467,Clifton Terrace,residential
+21536386,Summerland Lane,residential
+22663189,Dawlish Close,residential
+22663190,Dawlish Close,residential
+22663193,Castle Street,residential
+22730156,Rotherslade Road,unclassified
+22730163,Langland Villas,residential
+22730166,Castle Crescent,residential
+22730178,Llwyn y Mor,residential
+22730186,Llwyn y Mor,residential
+22732251,Clifflands Close,unclassified
+22874436,Linkside,residential
+22874437,Westwinds,residential
+22874443,Langland Court Road,residential
+22874452,Groves Avenue,residential
+22874454,Lansdown,residential
+22874495,Langland Court Road,residential
+22874521,Brynfield Road,residential
+22874563,Bryncerdin Road,residential
+22874571,Appledore Place,residential
+22874572,Hatherleigh Drive,residential
+22943477,Alma Road,unclassified
+22987205,Plunch Lane,tertiary
+22987276,Westcliff,residential
+22987393,The Grove,residential
+23337467,Newton Road,tertiary
+23337487,Warwick Place,residential
+23339036,Whitestone Lane,unclassified
+23339043,School Lane,unclassified
+23339049,Mixen Close,residential
+23339134,Orchid Court,residential
+23339143,Ffordd Draenen Ddu,residential
+23339172,Challacombe Place,residential
+23339174,Dunster Close,residential
+23351958,Heol y Garreg Wen,residential
+23351965,Oaktree Close,residential
+23351974,Maes yr Eos,residential
+23769794,Mumbles Road,primary
+23769796,Mumbles Road,primary
+24401679,Bryncerdin Road,residential
+24477017,Bethany Lane,residential
+24477024,Palmyra Court,residential
+24580294,Waverley Drive,residential
+24580296,Glenville Road,residential
+24580297,Waverley Drive,residential
+24580298,Waverley Drive,residential
+24580304,Glengower Close,residential
+24580305,Trinity Close,residential
+24580307,Helwick Close,residential
+24580311,Waverley Drive,residential
+24580314,Oystermouth Court,residential
+24580315,Oystermouth Court,residential
+24713312,New Well Lane,tertiary
+24713339,Newton Road,unclassified
+24713355,Newton Villas,residential
+24713358,Brooklyn Terrace,residential
+24824079,Coltshill Drive,residential
+24931711,Briarwood Gardens,residential
+24931718,Millands Close,residential
+24931720,Millands Close,residential
+25049757,The Grove,residential
+25151294,Mumbles Road,secondary
+25525732,Langcliff Park,residential
+25525829,Rosser's Field,residential
+26746741,Wimblewood Close,residential
+26746744,Wimblewood Close,residential
+26746745,Warwick Place,residential
+26771518,Owls Lodge Lane,residential
+26771600,West Cross Lane,tertiary
+26771601,West Cross Lane,tertiary
+26774820,Grange Crescent,residential
+28521394,West Cross Lane,tertiary
+28598971,Clovelly Place,residential
+28599003,West Cross Lane,tertiary
+28628933,Summerland Lane,residential
+28628934,Summerland Lane,residential
+30417443,Newton Road,secondary
+31282308,Chestnut Avenue,tertiary
+32007187,Castle Street,residential
+33815119,Mill Gardens,residential
+33815128,Mill Gardens,residential
+33815131,Mill Gardens,residential
+34306732,Beaufort Close,residential
+34307056,Channel View,residential
+34307344,William Gammon Drive,residential
+39626162,Moorside Road,residential
+40933973,Melcorn Drive,residential
+40933974,Croftfield Crescent,residential
+42401181,Heneage Drive,residential
+43989962,West Cross Lane,tertiary
+43989963,West Cross Lane,tertiary
+43989964,West Cross Lane,tertiary
+43989965,West Cross Avenue,residential
+43989966,Mumbles Road,primary
+43989967,Mulberry Avenue,residential
+43989968,West Cross Lane,residential
+43989969,Moorside Road,residential
+43989970,Fairwood Road,tertiary
+43989971,Mumbles Road,primary
+43989972,Fairwood Road,tertiary
+43989973,Fairwood Road,tertiary
+44035218,Fairwood Road,tertiary
+44139874,Higher Lane,tertiary
+44139875,Higher Lane,tertiary
+44139876,Cambridge Road,residential
+44139877,Worcester Road,residential
+44139878,Langland Road,secondary
+44139879,Queen's Road,residential
+44139881,Mumbles Road,secondary
+44140508,Slade Road,residential
+44140509,Highmead Avenue,residential
+44140510,Highpool Lane,residential
+44140511,Murton Lane,residential
+44140512,Caswell Road,secondary
+44140514,Newton Road,tertiary
+44140515,Langland Road,secondary
+44140516,Higher Lane,tertiary
+44140673,Langland Road,secondary
+50366417,Nottage Mews,residential
+50366418,Nottage Mews,residential
+59148633,Llwynderw Drive,residential
+59148634,Heneage Drive,residential
+78057503,Broadview Close,residential
+78057505,Broadview Close,residential
+89722513,Caswell Road,secondary
+96930356,Mayals Road,secondary
+110256838,Castle View,residential
+110256840,Brynau Drive,residential
+110256855,Westport Avenue,residential
+110256861,Upper Castle View,residential
+110256863,Mayals Road,secondary
+110256867,Castle View,residential
+110256871,Mayals Road,secondary
+110256873,Castle View,residential
+110256875,Castle View,residential
+110256876,Willowbrook Gardens,residential
+110382782,Mixen Close,residential
+110382783,Cormorant Way,residential
+110382785,Shearwater Close,residential
+110382790,Cormorant Way,residential
+110382792,Dunster Close,residential
+110382795,Highmead Avenue,residential
+110532245,Whitegates,residential
+110532254,Mulgrave Way,residential
+110532257,Llwynderw Close,residential
+110532259,Heneage Drive,residential
+110666117,Havergal Close,residential
+110666118,Victoria Court,residential
+110666119,Havergal Close,residential
+110691205,Maes yr Eos,residential
+110691211,Rushwind Close,residential
+110691236,Fulmar Close,residential
+110691239,Highpool Close,residential
+110691241,Orchid Court,residential
+110691249,Osprey Close,residential
+110691255,Rushwind Close,residential
+110691260,Gonhill,residential
+121078969,Hollybush Close,residential
+121078970,Bude Haven Terrace,residential
+121078971,Silverhurst,residential
+121078972,Broadview Lane,residential
+121078973,Hollybush Close,residential
+121078974,Westcliff Mews,residential
+121078975,Dunns Close,residential
+121078976,Berma Close,residential
+121262767,Le-Breos,residential
+133793003,Murton Lane,tertiary
+133794025,Hallbank Terrace,residential
+137491588,Mumbles Road,primary
+137611777,Mayals Road,secondary
+137611781,Mayals Road,secondary
+241715126,Heath Close,residential
+241715127,Heath Close,residential
+242243356,Clifton Terrace,residential
+281584358,Windsor Place,residential
+306492921,Mumbles Road,tertiary
+306492924,Caswell Road,secondary
+314565404,The Acorns,residential
+352393621,Clyne Common,secondary
+374480936,Wychwood Close,residential
+374891035,Caswell Road,secondary
+374891050,Caswell Road,secondary
+375665338,Mumbles Road,tertiary
+375665342,Mumbles Road,tertiary
+456778749,Chestnut Avenue,tertiary
+456778752,Mulberry Avenue,tertiary
+672030947,Longfields,residential
+773840028,Thistleboon Drive,unclassified
+773840030,Mumbles Road,unclassified
+773840031,Mumbles Road,tertiary
+773840038,Langland Bay Road,residential
+773840055,Mumbles Road,primary
+834786573,Mulberry Avenue,tertiary
+834786574,Mulberry Avenue,tertiary
+883720417,Western Lane,unclassified
+885876967,Summerland Lane,residential
+912322786,Allchurch Gardens,residential
+927262471,Mayals Road,secondary
+977981112,Mumbles Road,unclassified
+1069012247,Overland Road,residential
+1077484493,Mumbles Road,secondary
+1080369499,Murton Lane,residential
+1080369501,Langland Road,secondary
+1080768540,Thistleboon Road,tertiary
+1080768563,Plunch Lane,tertiary
+1080768604,Plunch Lane,tertiary
+1080779885,Higher Lane,tertiary
+1080797894,Overland Road,residential
+1080797921,Somerset Road,residential
+1082168935,Mumbles Road,primary
+1082541968,Overland Road,residential
+1082541981,Gloucester Place,residential
+1082542025,Park Street,residential
+1132217682,Mumbles Road,primary
+1132217705,West Cross Avenue,residential
+1133759498,Mumbles Road,primary
+1133892545,West Cross Avenue,residential
+1151532036,Castle Avenue,residential
+1160212007,Overland Road,residential
+1160212019,Western Lane,unclassified
+1164822186,Glen Road,residential
+1164822384,Glen Road,residential
+1164822409,Glen Road,residential
+1164822729,Glen Road,residential
+1164824346,Castle Road,residential
+1164824471,Waverley Drive,residential
+1164825117,Castle Road,unclassified
+1176414399,Higher Lane,tertiary
+1176634221,Rotherslade Road,unclassified
+1178782310,Thistleboon Gardens,residential
+1189375991,Bishops Wood Grove,residential
+1211774620,Thistleboon Drive,unclassified
+1213902914,Clyne Drive,residential
+1213902915,Mayals Avenue,residential
+1236713520,Mumbles Road,primary
+1267384397,Langland Road,secondary
+1267385676,Langland Road,secondary
+1267388230,Langland Road,secondary
+1293457006,Promenade Terrace,residential
+1310803225,Higher Lane,tertiary
+1310803482,Higher Lane,tertiary
+1310898723,Wellfield Place,residential
+1311544746,Newton Road,tertiary
+1311554322,Newton Road,tertiary
+1311772425,Southward Lane,tertiary
+1311772426,Southward Lane,tertiary
+1311772446,Langland Bay Road,residential
+1311772449,St. Anne's Close,residential
+1311772453,Wellfield Place,residential
+1311772454,Wellfield Place,residential
+1312848860,Overland Road,residential
+1312967068,Gloucester Place,residential
+1313348211,Cormorant Way,residential
+1313348324,Rushwind Close,residential
+1314044133,Challacombe Place,residential
+1314044134,Challacombe Place,residential
+1314186691,Slade Gardens,unclassified
+1314186953,Glen Road,residential
+1314186954,Glen Road,residential
+1314187002,Waverley Drive,residential
+1314187003,Waverley Drive,residential
+1314187016,Norton Road,residential
+1314187017,Norton Road,residential
+1314187095,Norton Road,residential
+1314187096,Norton Road,residential
+1414450344,Mumbles Road,secondary
+1414450349,Mumbles Road,secondary
+1414450350,Mumbles Road,secondary
+1417579946,Amy Dillwyn Close,residential
+1420821152,Oaktree Close,residential
+1420821156,Buttercup Court,residential
+1420821157,Buttercup Court,residential
+1420821158,Buttercup Court,residential
+1420821159,Buttercup Court,residential
+1420821161,Buttercup Court,residential
+1420957955,Highpool Lane,residential
+1422492196,Summerland Lane,residential
+1423970684,Limekiln Road,unclassified

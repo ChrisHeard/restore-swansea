@@ -1,0 +1,209 @@
+@id,name,highway
+4686600,Heol Gwyrosydd,tertiary
+4686601,Heol Gwyrosydd,tertiary
+10298184,Ffordd Cynore,secondary
+23612196,Mynydd Newydd Road,tertiary
+23612350,Pontarddulais Road,primary
+24645061,Milford Way,residential
+24645062,Woodford Road,tertiary
+24645063,Woodford Road,tertiary
+24645064,Llangwm,residential
+24645065,Broughton Avenue,tertiary
+24645066,Milford Way,residential
+25537985,Heol Awstin,residential
+25538274,Cadle Mill,unclassified
+26551094,Prescelli Road,residential
+26551096,Roger Street,residential
+26551098,Peris Road,residential
+26551100,Crwys Terrace,residential
+26822121,St Clears Place,residential
+26822122,Heol Cadifor,residential
+26822123,Heol Penar,residential
+26822124,John Penry Crescent,residential
+26822127,Eppynt Road,residential
+26822128,Conway Road,tertiary
+26841782,Penderry Road,residential
+26841783,Clwyd Road,residential
+26841785,Penlan Road,residential
+27012106,Conway Road,residential
+27012113,Conway Road,tertiary
+27012115,Conway Road,tertiary
+27012163,Heol Ddu,tertiary
+27046452,Pen-y-môr Road,residential
+27046453,Eiddwen Road,residential
+27664445,Heol Hermas,residential
+27664448,Talley Road,residential
+27664450,Bettws Road,residential
+33514655,Brenig Road,residential
+41436527,Crwys Terrace,residential
+41436531,Mynydd Newydd Road,tertiary
+41436653,St Clears Place,residential
+41436654,Mynydd Newydd Road,tertiary
+41436656,Milford Way,residential
+41436657,Heol Gwyrosydd,tertiary
+41436658,Heol Gwyrosydd,tertiary
+41436659,Crwys Terrace,residential
+41436660,Pentregethin Road,tertiary
+41436661,Broughton Avenue,tertiary
+41436662,Conway Road,residential
+41436665,Pentregethin Road,tertiary
+41437263,Pentregethin Road,tertiary
+41495391,Pentregethin Road,tertiary
+41881808,Penderry Road,residential
+41882082,Stembridge Avenue,residential
+48976735,Hollett Road,residential
+48976740,Penlan Terrace,residential
+48976742,Parkhill Terrace,residential
+49364105,Beaufort Court,residential
+49364112,Cranfield Court,residential
+49364114,Chantry Court,residential
+49364115,Cranmer Court,residential
+49364116,Richmond Way,residential
+49364118,Maes y Felin,residential
+50249400,Hollett Road,residential
+50249407,Penlan Grove,residential
+50249408,Parkhill Road,residential
+50249412,Heol Frank,residential
+50249417,Llangorse Road,residential
+50249435,Pensalem Road,residential
+50249451,Penmynydd Road,residential
+50249472,Tudno Close,residential
+50249475,Heol Emrys,residential
+50249478,Tudno Place,residential
+50249479,Heol Emrys,residential
+50249481,Heol Emrys,residential
+50249482,Penrhyn Avenue,residential
+50249484,Penrhyn Avenue,residential
+50249485,Penrhyn Avenue,residential
+55597617,Port Talbot Place,residential
+55597618,Glasbrook Place,residential
+60420200,Mynydd Newydd Road,tertiary
+60581031,Heol Frank,residential
+60581253,Morlais Road,residential
+60581298,Cadnant Road,residential
+60581352,Arennig Road,residential
+60581364,Carrog Road,residential
+60581374,Idwal Place,residential
+60849709,Heol Trefor,residential
+61351085,Penplas Road,unclassified
+61351087,Newgale Close,residential
+61351088,Whitland Close,residential
+61351092,Templeton Way,residential
+61351093,Templeton Way,residential
+61351094,Neyland Drive,residential
+61351095,Canaston Court,residential
+61351098,Nolton Court,residential
+61351099,Marloes Court,residential
+61351100,Milford Way,residential
+61351103,Heol Pen-tir-garw,residential
+61351109,Caldey Place,residential
+61351110,Ramsey Place,residential
+61351112,Flatholm Place,residential
+61351113,Bardsey Avenue,residential
+61351114,Grassholm Gardens,residential
+61351116,Nant Cadle,residential
+61351117,Penplas Road,residential
+61351119,Ffynnon Caeconna,residential
+61351120,Cefn-y-maes,residential
+61351121,Pwll-yr-hwyaid,residential
+61351122,Cadle-Dell Place,residential
+61351124,Brookfield Place,residential
+61351125,Cadle Wood Road,residential
+61351126,Cadle Place,residential
+61351128,Greenwood Place,residential
+61351130,Oakford Place,residential
+61351133,Westdale Road,residential
+61351134,Glenside Road,residential
+73008317,Afon-Llan Gardens,residential
+73008318,Afon-Llan Gardens,residential
+73008321,Heol Dynys,residential
+73008333,Caeconna Road,residential
+73008337,Cadle Crescent,residential
+73008339,Cadle Close,residential
+121153701,Weobley Court,residential
+121153702,Lark Place,residential
+121153704,Portmead Place,residential
+121153707,Falcon Place,residential
+121153710,Alderbrook Court,residential
+121153711,Eagles Place,residential
+121153712,Ty'r Maes,residential
+121153713,Mewslade Avenue,residential
+121153715,Portmead Avenue,residential
+121153717,Robin Road,residential
+121153718,Miller's Court,residential
+121153719,Briar's Court,residential
+121153720,Weobley Court,residential
+121153722,Blaen-y-Maes Drive,residential
+121154145,Pittsburgh Court,residential
+121154146,Pittsburgh Court,residential
+121154147,Knelston Place,residential
+121154149,Waldhof Court,residential
+121154150,Pittsburgh Court,residential
+121166125,St. Rhidian Road,residential
+121166127,Cathan Crescent,residential
+121166130,Paviland Place,residential
+121166131,Cathan Crescent,residential
+121166133,Ozanam Court,residential
+121166134,Cathan Crescent,residential
+121166135,St. Rhidian Road,residential
+121166138,Heol Newydd,residential
+121166139,The Crescent,residential
+121166140,Cheriton Crescent,residential
+121166142,Whiteford Road,residential
+121166146,Fermoy Court,residential
+121166147,Cathan Close,residential
+121166156,Fermoy Court,residential
+121166157,Cwm Cadle,residential
+121166161,Ozanam Court,residential
+121166162,Cwm Cadle,residential
+121166166,Paviland Place,residential
+121166167,St. Cenydd Road,residential
+121166171,Heol Gruffydd,residential
+121166181,Ozanam Court,residential
+121166184,Cathan Close,residential
+121818944,Courtlands Way,residential
+125332629,Ffordd-y-Brain,residential
+125332635,Heol Calfin,residential
+129108754,Roger Street,residential
+129215664,Briar's Court,residential
+129215665,Cadle Crescent,residential
+129215666,Cadle Crescent,residential
+129215668,Tudno Place,residential
+129215669,Heol Gwyrosydd,tertiary
+129215670,Heol Gwyrosydd,tertiary
+129215672,Milford Way,residential
+129215673,Mynydd Newydd Road,tertiary
+129215675,Penderry Road,residential
+129215679,Pentregethin Road,tertiary
+129215680,Pentregethin Road,tertiary
+129215682,Ty'r Felin,residential
+129215683,Woodford Road,tertiary
+129215684,Woodford Road,tertiary
+129215685,Woodford Road,tertiary
+129296056,Dove Road,residential
+129296057,Woodview Place,residential
+133204963,Graham Berry Court,residential
+133204969,Graham Berry Court,residential
+133204970,Graham Berry Court,residential
+133205512,Berwyn Place,residential
+133205918,St Lawrence Court,residential
+137611782,Pontarddulais Road,primary
+488531329,Heol Gruffydd,residential
+745248878,Mynydd Newydd Road,tertiary
+782602948,Pentregethin Road,tertiary
+1159203446,Ffordd Cynore,secondary
+1159203448,Pontarddulais Road,primary_link
+1159203449,Pentregethin Road,tertiary
+1189380216,Heol Tegeirian,residential
+1189380217,Heol Tegeirian,residential
+1217911124,Woodford Road,tertiary
+1217911125,Woodford Road,tertiary
+1217911126,Stembridge Avenue,residential
+1217911127,Stembridge Avenue,residential
+1217913983,Ffordd-y-Brain,residential
+1217913984,Ffordd-y-Brain,residential
+1217913985,Ffordd-y-Brain,residential
+1217913986,Ffordd-y-Brain,residential
+1217913987,Ffordd-y-Brain,residential
+1217913988,Ffordd-y-Brain,residential
+1236708656,Heol Gwyrosydd,tertiary

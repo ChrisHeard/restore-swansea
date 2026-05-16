@@ -1,0 +1,579 @@
+{
+  "project": "Swansea qgis2web extracted clean slate",
+  "sourceFile": "qgis2web_swansea.htm",
+  "note": "This manifest was extracted from the uploaded qgis2web HTML. The uploaded file references qgis2web data/*.js files, but does not include those files or the coordinate payloads.",
+  "sourceCRS": "EPSG:4326 / WGS84 GeoJSON coordinates (longitude, latitude), as expected by Leaflet/qgis2web data files.",
+  "displayProjection": "EPSG:3857 / Web Mercator for projected SVG display, fitted to viewport.",
+  "qgis2web": {
+    "library": "Leaflet",
+    "fitBounds": {
+      "southWest": {
+        "lat": 51.515890331854955,
+        "lng": -4.9453587217946975
+      },
+      "northEast": {
+        "lat": 51.98429784793227,
+        "lng": -3.7501765850341595
+      },
+      "qgis2webRaw": [
+        [
+          51.515890331854955,
+          -4.9453587217946975
+        ],
+        [
+          51.98429784793227,
+          -3.7501765850341595
+        ]
+      ]
+    },
+    "minZoom": 1,
+    "maxZoom": 28,
+    "dataScriptCount": 32
+  },
+  "layers": [
+    {
+      "name": "Bishopston",
+      "source": "data/WD25NM_Bishopston_0.js",
+      "dataVar": "json_WD25NM_Bishopston_0",
+      "layerVar": "layer_WD25NM_Bishopston_0",
+      "pane": "pane_WD25NM_Bishopston_0",
+      "zIndex": 400,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Bnymaen",
+      "source": "data/WD25NM_Bnymaen_1.js",
+      "dataVar": "json_WD25NM_Bnymaen_1",
+      "layerVar": "layer_WD25NM_Bnymaen_1",
+      "pane": "pane_WD25NM_Bnymaen_1",
+      "zIndex": 401,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Cockett",
+      "source": "data/WD25NM_Cockett_2.js",
+      "dataVar": "json_WD25NM_Cockett_2",
+      "layerVar": "layer_WD25NM_Cockett_2",
+      "pane": "pane_WD25NM_Cockett_2",
+      "zIndex": 402,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Clydach",
+      "source": "data/WD25NM_Clydach_3.js",
+      "dataVar": "json_WD25NM_Clydach_3",
+      "layerVar": "layer_WD25NM_Clydach_3",
+      "pane": "pane_WD25NM_Clydach_3",
+      "zIndex": 403,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Castle",
+      "source": "data/WD25NM_Castle_4.js",
+      "dataVar": "json_WD25NM_Castle_4",
+      "layerVar": "layer_WD25NM_Castle_4",
+      "pane": "pane_WD25NM_Castle_4",
+      "zIndex": 404,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Cwmbwrla",
+      "source": "data/WD25NM_Cwmbwrla_5.js",
+      "dataVar": "json_WD25NM_Cwmbwrla_5",
+      "layerVar": "layer_WD25NM_Cwmbwrla_5",
+      "pane": "pane_WD25NM_Cwmbwrla_5",
+      "zIndex": 405,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Dunvant and Killay",
+      "source": "data/WD25NM_DunvantandKillay_6.js",
+      "dataVar": "json_WD25NM_DunvantandKillay_6",
+      "layerVar": "layer_WD25NM_DunvantandKillay_6",
+      "pane": "pane_WD25NM_DunvantandKillay_6",
+      "zIndex": 406,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Fairwood",
+      "source": "data/WD25NM_Fairwood_7.js",
+      "dataVar": "json_WD25NM_Fairwood_7",
+      "layerVar": "layer_WD25NM_Fairwood_7",
+      "pane": "pane_WD25NM_Fairwood_7",
+      "zIndex": 407,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Gorseinon and Penyrheol",
+      "source": "data/WD25NM_GorseinonandPenyrheol_8.js",
+      "dataVar": "json_WD25NM_GorseinonandPenyrheol_8",
+      "layerVar": "layer_WD25NM_GorseinonandPenyrheol_8",
+      "pane": "pane_WD25NM_GorseinonandPenyrheol_8",
+      "zIndex": 408,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Gower",
+      "source": "data/WD25NM_Gower_9.js",
+      "dataVar": "json_WD25NM_Gower_9",
+      "layerVar": "layer_WD25NM_Gower_9",
+      "pane": "pane_WD25NM_Gower_9",
+      "zIndex": 409,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Gowerton",
+      "source": "data/WD25NM_Gowerton_10.js",
+      "dataVar": "json_WD25NM_Gowerton_10",
+      "layerVar": "layer_WD25NM_Gowerton_10",
+      "pane": "pane_WD25NM_Gowerton_10",
+      "zIndex": 410,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "L and ore",
+      "source": "data/WD25NM_Landore_11.js",
+      "dataVar": "json_WD25NM_Landore_11",
+      "layerVar": "layer_WD25NM_Landore_11",
+      "pane": "pane_WD25NM_Landore_11",
+      "zIndex": 411,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Llangyfelach",
+      "source": "data/WD25NM_Llangyfelach_12.js",
+      "dataVar": "json_WD25NM_Llangyfelach_12",
+      "layerVar": "layer_WD25NM_Llangyfelach_12",
+      "pane": "pane_WD25NM_Llangyfelach_12",
+      "zIndex": 412,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Llansamlet",
+      "source": "data/WD25NM_Llansamlet_13.js",
+      "dataVar": "json_WD25NM_Llansamlet_13",
+      "layerVar": "layer_WD25NM_Llansamlet_13",
+      "pane": "pane_WD25NM_Llansamlet_13",
+      "zIndex": 413,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Llwchwr",
+      "source": "data/WD25NM_Llwchwr_14.js",
+      "dataVar": "json_WD25NM_Llwchwr_14",
+      "layerVar": "layer_WD25NM_Llwchwr_14",
+      "pane": "pane_WD25NM_Llwchwr_14",
+      "zIndex": 414,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Mayals",
+      "source": "data/WD25NM_Mayals_15.js",
+      "dataVar": "json_WD25NM_Mayals_15",
+      "layerVar": "layer_WD25NM_Mayals_15",
+      "pane": "pane_WD25NM_Mayals_15",
+      "zIndex": 415,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Morriston",
+      "source": "data/WD25NM_Morriston_16.js",
+      "dataVar": "json_WD25NM_Morriston_16",
+      "layerVar": "layer_WD25NM_Morriston_16",
+      "pane": "pane_WD25NM_Morriston_16",
+      "zIndex": 416,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Mumbles",
+      "source": "data/WD25NM_Mumbles_17.js",
+      "dataVar": "json_WD25NM_Mumbles_17",
+      "layerVar": "layer_WD25NM_Mumbles_17",
+      "pane": "pane_WD25NM_Mumbles_17",
+      "zIndex": 417,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Mynyddbach",
+      "source": "data/WD25NM_Mynyddbach_18.js",
+      "dataVar": "json_WD25NM_Mynyddbach_18",
+      "layerVar": "layer_WD25NM_Mynyddbach_18",
+      "pane": "pane_WD25NM_Mynyddbach_18",
+      "zIndex": 418,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Penclawdd",
+      "source": "data/WD25NM_Penclawdd_19.js",
+      "dataVar": "json_WD25NM_Penclawdd_19",
+      "layerVar": "layer_WD25NM_Penclawdd_19",
+      "pane": "pane_WD25NM_Penclawdd_19",
+      "zIndex": 419,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Penderry",
+      "source": "data/WD25NM_Penderry_20.js",
+      "dataVar": "json_WD25NM_Penderry_20",
+      "layerVar": "layer_WD25NM_Penderry_20",
+      "pane": "pane_WD25NM_Penderry_20",
+      "zIndex": 420,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Penllergaer",
+      "source": "data/WD25NM_Penllergaer_21.js",
+      "dataVar": "json_WD25NM_Penllergaer_21",
+      "layerVar": "layer_WD25NM_Penllergaer_21",
+      "pane": "pane_WD25NM_Penllergaer_21",
+      "zIndex": 421,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Pennard",
+      "source": "data/WD25NM_Pennard_22.js",
+      "dataVar": "json_WD25NM_Pennard_22",
+      "layerVar": "layer_WD25NM_Pennard_22",
+      "pane": "pane_WD25NM_Pennard_22",
+      "zIndex": 422,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Pontarddulais",
+      "source": "data/WD25NM_Pontarddulais_23.js",
+      "dataVar": "json_WD25NM_Pontarddulais_23",
+      "layerVar": "layer_WD25NM_Pontarddulais_23",
+      "pane": "pane_WD25NM_Pontarddulais_23",
+      "zIndex": 423,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Pontlliw and Tircoed",
+      "source": "data/WD25NM_PontlliwandTircoed_24.js",
+      "dataVar": "json_WD25NM_PontlliwandTircoed_24",
+      "layerVar": "layer_WD25NM_PontlliwandTircoed_24",
+      "pane": "pane_WD25NM_PontlliwandTircoed_24",
+      "zIndex": 424,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Sketty",
+      "source": "data/WD25NM_Sketty_25.js",
+      "dataVar": "json_WD25NM_Sketty_25",
+      "layerVar": "layer_WD25NM_Sketty_25",
+      "pane": "pane_WD25NM_Sketty_25",
+      "zIndex": 425,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "St Thomas",
+      "source": "data/WD25NM_StThomas_26.js",
+      "dataVar": "json_WD25NM_StThomas_26",
+      "layerVar": "layer_WD25NM_StThomas_26",
+      "pane": "pane_WD25NM_StThomas_26",
+      "zIndex": 426,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Townhill",
+      "source": "data/WD25NM_Townhill_27.js",
+      "dataVar": "json_WD25NM_Townhill_27",
+      "layerVar": "layer_WD25NM_Townhill_27",
+      "pane": "pane_WD25NM_Townhill_27",
+      "zIndex": 427,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Upl and s",
+      "source": "data/WD25NM_Uplands_28.js",
+      "dataVar": "json_WD25NM_Uplands_28",
+      "layerVar": "layer_WD25NM_Uplands_28",
+      "pane": "pane_WD25NM_Uplands_28",
+      "zIndex": 428,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Waterfront",
+      "source": "data/WD25NM_Waterfront_29.js",
+      "dataVar": "json_WD25NM_Waterfront_29",
+      "layerVar": "layer_WD25NM_Waterfront_29",
+      "pane": "pane_WD25NM_Waterfront_29",
+      "zIndex": 429,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "Waunarlwydd",
+      "source": "data/WD25NM_Waunarlwydd_30.js",
+      "dataVar": "json_WD25NM_Waunarlwydd_30",
+      "layerVar": "layer_WD25NM_Waunarlwydd_30",
+      "pane": "pane_WD25NM_Waunarlwydd_30",
+      "zIndex": 430,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(5,27,58,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    },
+    {
+      "name": "West Cross",
+      "source": "data/WD25NM_WestCross_31.js",
+      "dataVar": "json_WD25NM_WestCross_31",
+      "layerVar": "layer_WD25NM_WestCross_31",
+      "pane": "pane_WD25NM_WestCross_31",
+      "zIndex": 431,
+      "style": {
+        "stroke": "rgba(5,27,58,1.0)",
+        "strokeWidth": 1,
+        "strokeOpacity": 1,
+        "fill": "rgba(250,215,56,1.0)",
+        "fillOpacity": 1,
+        "dashArray": "",
+        "interactive": true
+      }
+    }
+  ]
+}

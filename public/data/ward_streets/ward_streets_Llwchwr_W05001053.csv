@@ -1,0 +1,273 @@
+@id,name,highway
+5528272,Culfor Road,tertiary
+23925357,Corporation Road,primary
+24058372,Glebe Road,secondary
+24058373,Victoria Road,secondary
+25384017,Swansea Road,secondary
+26551232,Waun Road,unclassified
+26583563,Phoenix Way,unclassified
+27326834,Hospital Road,tertiary
+27326835,Hospital Road,tertiary
+27562029,Castle Street,primary
+27616478,Pontarddulais Road,primary
+27625478,Glanymor Park Drive,residential
+27625479,Glanymor Park Drive,residential
+27625480,Taliesin Place,residential
+27639985,Hospital Road,tertiary
+27740762,Ferry Road,residential
+27885723,Swansea Road,secondary
+27885884,Swansea Road,secondary
+29293672,Borough Road,residential
+29583861,Station Road,residential
+29583882,Station Road,residential
+29586475,Bwrw Road,residential
+29586496,Culfor Road,tertiary
+31553549,Bryn Road,residential
+32446355,Myrtle Road,residential
+32446357,Oak Street,residential
+32446358,St. Paul's Terrace,residential
+32446360,Garden Crescent,residential
+32446361,Bryngwyn Avenue,residential
+32464871,Loughor Road,secondary
+33435733,Maesyrhaf Place,residential
+33435736,Pengry Road,unclassified
+34261696,Libanus Road,residential
+34262109,Waun Road,residential
+34598870,Heol Pentre Bach,residential
+35069233,Cameron Place,residential
+35069242,Penrhos,residential
+35069248,Danybryn Road,residential
+35069249,The Close,residential
+35069251,Belgrave Road,residential
+35069253,Belgrave Close,residential
+35069254,Heathfield,residential
+35069255,Charles Court,residential
+35069256,Charles Court,residential
+35069261,Dyffryn Road,residential
+35069262,Pant Glas,residential
+35069264,Pant Glas,residential
+35069265,Pantycelyn,residential
+35393278,Glanrhyd Terrace,residential
+35393282,Maes Maddock,residential
+35393283,Maes Maddock,residential
+35393286,Queen's Avenue,residential
+35393287,Rhydypolon,residential
+35393288,Rhydypolon,residential
+35393289,Maes yr Efail,residential
+35393290,Maes yr Efail,residential
+35393294,Maes y Coed,residential
+35393295,Maes y Coed,residential
+35393296,Lôn Brydwen,residential
+35393297,Plâs Croeso,residential
+35393298,Plâs Croeso,residential
+35393301,Llwynderw,residential
+35393302,Llwynderw,residential
+35393303,Marlborough Road,residential
+35393304,Marlborough Road,residential
+35393305,Sandringham Close,residential
+35393306,Sandringham Close,residential
+35393307,Glyn Rhosyn,residential
+35393308,Ystrad Einon,residential
+35393309,Ystrad Einon,residential
+35393310,Maes Glas,residential
+35393311,Glyn Rhosyn,unclassified
+35393312,Highfield,residential
+35393313,Heol Brynglas,residential
+35393314,Heol Brynglas,residential
+35393315,Llys y Brenin,residential
+35393316,Llys y Brenin,residential
+35393317,Crud yr Awel,residential
+35393318,Maes Dafydd,residential
+35393320,Ffordd Cae Duke,residential
+35393321,Ffordd Cae Duke,residential
+35393322,Harding Close,residential
+35393323,Ffordd Kilby,residential
+35393324,William Dennis Avenue,residential
+35393325,Harding Close,residential
+35393326,William Dennis Avenue,residential
+35393327,Ffordd Kilby,residential
+35393329,Versil Terrace,residential
+35393330,Greenfield Place,residential
+35393331,Heol Cae Globe,residential
+35393332,Heol Cae Globe,residential
+35393333,Waun Close,residential
+35428943,Glyn Rhosyn,residential
+35428944,Maes Glas,residential
+35428946,Foxgrove,residential
+36098971,Ffordd Bryngwyn,residential
+36098972,Ffordd Bryngwyn,residential
+36098973,Clos y Maerdy,residential
+36098975,Clos Melin Mynach,residential
+36098976,Clos Melin Mynach,residential
+36098977,Clos Llan-Dy-Fan,residential
+36098978,Clos Llan-Dy-Fan,residential
+36098979,Clos Bryngwyn,residential
+36098980,Clos Bryngwyn,residential
+36098981,Clos Bryngwyn,residential
+36098982,Clos Bryngwyn,residential
+36098983,Garngoch Terrace,residential
+36098984,Ffordd Talfan,residential
+36098985,Ffordd Talfan,residential
+36098986,Llys Aneirin,residential
+36098987,Llys Aneirin,residential
+36098990,Thompson Court,residential
+36821994,Penuel Close,residential
+36821995,Penuel Close,residential
+36821996,Glebe Road,secondary
+37073984,Alexandra Road,primary
+37073986,Borough Road,primary
+37073987,Whitley Road,residential
+37073988,Woodlands Road,residential
+37073989,Heol Maes-y-Bryn,residential
+37073990,North Road,residential
+37073991,Penlan Road,residential
+37073992,Richmond Park,residential
+37073993,Richmond Road,residential
+37073994,Richmond Park,residential
+37073996,Heol Cae Tynewydd,residential
+37074000,Soar Close,residential
+37074002,Soar Close,residential
+37074003,Oakleigh Road,residential
+37074006,Maytree Close,residential
+37074009,Brynllwchwr Road,residential
+37074011,Heol Maes-y-Cerrig,residential
+37074014,Beili Glas,residential
+37074015,Beili Glas,residential
+37074022,St. David's Close,residential
+37074024,Heol Pen-y-Beili,residential
+41241557,Westland Close,residential
+41241559,Westland Close,residential
+41241561,Westland Close,residential
+41241563,Rectory Close,residential
+41241564,Rectory Close,residential
+41241568,Heol Cae Copyn,residential
+41241570,Heol Pen-y-Scallen,residential
+41241572,Heol Pen-y-Scallen,residential
+41241574,St. David's Close,residential
+41241577,Westland Close,residential
+41241579,Banfield Terrace,residential
+41241580,Brynymor Road,residential
+41241584,Glanymor Road,residential
+41241587,Glanymor Lane,residential
+41241589,Heol Cae Copyn,residential
+41247316,Gwynfe Road,unclassified
+41247367,Bwlch Road,unclassified
+41247743,Corporation Road,primary
+41247745,Corporation Road,primary
+41467051,Pontarddulais Road,primary
+41494185,West Street,secondary
+41830175,Bryn Rhosog,residential
+41830176,Glebe Road,secondary
+41830178,Culfor Road,tertiary
+42401126,Landor Drive,residential
+42401127,Landor Drive,residential
+42401129,Landor Drive,residential
+42401130,Landor Drive,residential
+42401132,Castle Grove,residential
+42401133,Landor Drive,residential
+42401134,Landor Drive,residential
+42401135,Landor Drive,residential
+42401136,Cae Castell,residential
+42401137,Cae Castell,residential
+42401138,Cae Castell,residential
+42401139,Cae Castell,residential
+42401140,Cae Castell,residential
+42401141,Leucarum Court,residential
+42401142,Leucarum Court,residential
+42401143,Cae Castell,residential
+42401145,Cae Castell,residential
+42401146,Heol y Llan,residential
+42401148,Heol y Llan,residential
+42401149,Heol y Llan,residential
+42401150,Clôs Rhandir,residential
+42401152,Clôs Rhandir,residential
+42401156,Tŷ Myrtwydd,residential
+42401158,Tŷ Myrtwydd,residential
+42401160,Heol Ffynnon,residential
+42401161,Llys Coed,residential
+42401162,Bryn Vernel,residential
+42403500,Llys Coed,residential
+42403503,Landor Drive,residential
+42403506,Clare Court,residential
+42403516,Bwrw Road,residential
+42403517,Castle Court,residential
+42403518,Ferndale Drive,residential
+42798145,Gwydr Place,unclassified
+42798147,Dock Street,residential
+42798148,Station Road,unclassified
+42798149,Landor Drive,primary
+42798152,Glebe Road,primary
+42798153,The Croft,residential
+42798154,The Croft,residential
+42798158,Taliesin Place,residential
+42798159,Taliesin Place,residential
+42798161,Vaughan Place,residential
+42798163,Vaughan Place,residential
+42798165,Clare Court,residential
+42798166,Pen-y-Cae Lane,residential
+42798167,Glanymor Park Drive,residential
+42798168,Glanymor Park Drive,residential
+43156168,Park View,residential
+48499797,Victoria Road,secondary
+48499798,Victoria Road,secondary
+51193718,Carmarthen Road,secondary
+51193719,Carmarthen Road,secondary
+75722087,Loughor Road,secondary
+97051117,Hospital Road,tertiary
+97051127,Hospital Road,tertiary
+115830881,Loughor Road,secondary
+117334009,Heol y Wern,residential
+117334012,Penmynydd,residential
+119558332,Castle Street,primary
+119558335,Castle Street,primary
+133679313,Stafford Common,unclassified
+139240133,Pontarddulais Road,primary
+164853881,Culfor Road,tertiary
+164854195,Cae Castell,residential
+182222546,Culfor Road,tertiary
+241594552,Moorland Green,residential
+306980460,Waun Road,unclassified
+314545841,Maes de Breos,residential
+314547267,Beauchamp Walk,residential
+411024536,Swansea Road,secondary
+411024537,Swansea Road,secondary
+444450164,Valley View,residential
+444450165,Horizon Way,residential
+509844701,Valley View,residential
+509844702,Hillcrest,residential
+513705576,Penrhos,residential
+513705577,Penmynydd,residential
+513705579,Pantycelyn,residential
+513705580,Belgrave Close,residential
+678514433,Victoria Road,secondary
+678514434,Victoria Road,secondary
+686280064,Gwynfe Road,unclassified
+686280066,Castle Street,primary
+822483598,Beauchamp Walk,residential
+822483599,Beauchamp Walk,residential
+963199076,Dock Street,residential
+963410033,Ffordd Moriah,residential
+963410977,Golwg Y Foryd,residential
+963410978,Golwg Y Foryd,residential
+963410979,Ffordd Moriah,residential
+963411072,Golwg Y Foryd,residential
+1036510204,Landor Drive,residential
+1036510205,Taliesin Place,residential
+1036510216,Rhodfa‘r Bedw,construction
+1215063037,Garden Crescent,residential
+1219299112,Swansea Road,secondary
+1253252072,Victoria Road,secondary
+1253252073,Victoria Road,secondary
+1299501674,Castle Grove,residential
+1343893848,Victoria Road,secondary
+1343893849,Victoria Road,secondary
+1408157156,Swansea Road,secondary
+1408157161,Swansea Road,secondary
+1408157162,Swansea Road,secondary
+1422502655,Waun Road,unclassified
+1422502656,Waun Road,unclassified
+1489447250,Hospital Road,tertiary
+1489447252,Hospital Road,tertiary
+1489447253,Hospital Road,tertiary
+1489447254,Hospital Road,tertiary
+1489447255,Hospital Road,tertiary

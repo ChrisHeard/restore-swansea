@@ -1,0 +1,185 @@
+@id,name,highway
+10267096,Quarr Road,tertiary
+21130691,Quarr Drive,tertiary
+21137912,Sybil Street,residential
+21137913,Heol-y-nant,residential
+21137914,Twyn-y-bedw,residential
+21137916,Factory Road,residential
+22674878,Clydach Road,secondary
+22776218,Ynys-Penllwch Road,secondary
+23036336,Birchgrove Road,secondary
+23388846,Lone Road,tertiary
+23641981,Western Road,residential
+23641982,Ramsden Road,residential
+23641988,Hebron Road,secondary
+23641989,Hebron Road,secondary
+23641991,Ynys-Penllwch Road,secondary
+23641995,Hebron Road,secondary
+23865911,Ffordd Cwm Tawe,primary
+23887431,Waverley Street,residential
+23887436,Clos Y Coedwr,residential
+23887439,Hebron Close,residential
+23887447,High Street,secondary
+23887448,High Street,secondary
+23887463,Clydach Road,tertiary
+23887464,Lone Road,tertiary
+23887466,Aberclydach Place,residential
+23887467,Forge Fach,unclassified
+23887498,Martin Street,residential
+23887505,Bethania Road,residential
+23887508,Players Avenue,residential
+23887530,Woodside Crescent,residential
+23887543,Players Avenue,residential
+23887552,Ger y Coed,residential
+23887554,Danygraig,residential
+23887556,Heol Graig Felen,residential
+23887560,Heol Graig Felen,residential
+23887567,Heol Graig Felen,residential
+23887570,Heol Graig Felen,residential
+23887572,Heol Valentine,residential
+23887574,Players Avenue,residential
+23887578,Tyle Teg,residential
+23887592,Tyle Teg,residential
+23887594,Tyle Teg,residential
+23887601,Hillrise Park,residential
+23887602,Hillrise Park,residential
+23887604,Ffynnon Wen,residential
+24423780,Tyle Teg,residential
+24423782,Tyle Teg,residential
+24423800,Heol Graig Felen,residential
+24423822,Heol Y Graig,residential
+24423832,Heol Y Cae,residential
+24539986,Ynys-y-Mond Road,tertiary
+42872466,Birchgrove Road,secondary
+42872467,Birchgrove Road,secondary
+42872468,Ynys-Penllwch Road,secondary
+42872469,Ynys-Penllwch Road,secondary
+42872470,Ffordd Cwm Tawe,primary
+42872473,Birchgrove Road,secondary
+42872475,Ffordd Cwm Tawe,primary
+59652357,Pontardawe Road,secondary
+60187251,Capel Road,tertiary
+60861054,Carlton Road,residential
+60861055,Kelvin Road,residential
+60861058,Park Road,residential
+60861059,Tanycoed Road,residential
+60861128,Carlton Road,residential
+60861131,Tanycoed Road,residential
+60861132,Carlton Road,residential
+60861133,Penydre Road,residential
+60861134,Lone Road,tertiary
+60861139,Tanyrallt,residential
+65331894,Pontardawe Road,secondary
+65331895,Pontardawe Road,secondary
+65331896,Pontardawe Road,secondary
+70509121,Faraday Road,residential
+70509136,Lone Road,tertiary
+70509138,Grove Road,residential
+70509142,Grove Road,residential
+70509152,Tanycoed Road,residential
+70509153,Kelvin Road,residential
+70509165,Heol-y-fagwr,residential
+70509168,Newton Road,residential
+70509170,Gellionnen Road,residential
+70509181,Brynamlwg,residential
+70509874,Players Avenue,residential
+87834843,Short Street,residential
+87834846,Beryl Road,residential
+87834848,Saint John's Road,residential
+87834849,Langer Way,residential
+87834854,Bryn Hawddgar,residential
+87834855,Vera Road,residential
+87834865,View Road,residential
+87834867,Dyson Close,residential
+87834870,Edison Crescent,residential
+87834874,Lon Eithrim,residential
+87834875,Clos Ceri,residential
+87834877,Ffordd Abiah,residential
+87834879,Bryn Tirion,residential
+87834883,Dyson Close,residential
+87834885,Tan-y-lon,residential
+87834887,Hafan Glyd,residential
+87834890,Bryn Tirion,residential
+87834891,Gellionen Road,residential
+87834894,Dyson Close,residential
+87834895,Minyrafon Road,residential
+87834896,Brunner Drive,residential
+87834897,Tygwyn Road,residential
+87834898,Ramsey Road,residential
+87834899,Pen-y-wern Road,residential
+87834901,Waungron Road,residential
+87834902,Enid Road,residential
+87834903,Edison Crescent,residential
+87834904,Bryn Hawddgar,residential
+87834905,Bryn Road,residential
+87834906,Down Street,residential
+87834907,Llwynon,residential
+87834908,Clos Tygwyn,residential
+87834909,Heol Eithrim,residential
+87834911,Gellionnen Close,residential
+88597411,Graig Road,residential
+88597424,Twyn-y-bedw,residential
+88597431,Graig Road,residential
+88597434,Graig-y-dderi,residential
+88597436,Golwg-y-lon,residential
+88597440,Llys-y-Nant,residential
+88597452,Gwalia Court,residential
+88597454,Graigola Road,residential
+88597456,Down Street,residential
+88597457,Bridge Street,residential
+89178501,Heol-y-Llwynan,residential
+89178503,Oakwood Rise,residential
+89178505,Oakwood Close,residential
+89178507,Park Road,residential
+89178508,Kingrosia Park,residential
+89178509,Kingrosia Park,residential
+89178511,Llys Coed Derw,residential
+89178513,Kingrosia Park,residential
+89178514,Kingrosia Park,residential
+89178515,Kingrosia Park,residential
+89178517,Graig y Pal,residential
+89178519,Pearl Street,residential
+89178520,Heol-y-Ffin,residential
+89178522,Oakwood Drive,residential
+89178525,Waverly Park,residential
+89178526,Kingrosia Park,residential
+89178527,Oakwood Close,residential
+89178528,The Birches,residential
+89178529,Oakwood Rise,residential
+89178531,Kingrosia Park,residential
+89178532,Llys Gwilym,residential
+89178535,Waverly Park,residential
+89178540,Woodlands Avenue,residential
+89178545,Kingrosia Park,residential
+89178546,Kingrosia Park,residential
+89178547,Kingrosia Park,residential
+89178549,Kingrosia Park,residential
+89178550,Kingrosia Park,residential
+89178551,The Birches,residential
+96327630,Gellionen Road,unclassified
+96570794,Brynteg,residential
+96570827,Heol Dywyll,unclassified
+96570882,Brynteg,residential
+165777638,Woodlands Avenue,residential
+229074657,Pont y Lon,tertiary
+240266178,Glais Road,residential
+240266182,Graig-y-dderi,residential
+240266183,Glais Road,tertiary
+240266185,Glais Road,tertiary
+241496946,Waverly Close,residential
+308891943,Ynys-Penllwch Road,secondary
+308891944,Gellionen Road,unclassified
+308891945,Ffordd Cwm Tawe,primary
+308891946,Ynys-Penllwch Road,secondary
+314565633,Yew Tree Gardens,residential
+735408066,Clos Salem,residential
+823701604,Clos Coffa,residential
+852351473,Gellionnen Road,residential
+923739395,Yew Tree Gardens,residential
+1086525478,Western Road,unclassified
+1087019977,Lone Road,tertiary
+1087020056,Vardre Road,tertiary
+1106304488,The Lone,unclassified
+1223805998,Glais Road,tertiary
+1223805999,Glais Road,tertiary
+1253954714,Ynys-y-Mond Road,tertiary

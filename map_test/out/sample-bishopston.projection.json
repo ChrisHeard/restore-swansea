@@ -1,0 +1,19 @@
+{
+  "sourceCRS": "EPSG:4326 / WGS84 GeoJSON coordinates (longitude, latitude), as expected by Leaflet/qgis2web data files.",
+  "displayProjection": "EPSG:3857 / Web Mercator fitted to SVG viewport",
+  "width": 1200,
+  "height": 900,
+  "padding": 24,
+  "projectedBounds": {
+    "minX": -452877.317921925,
+    "minY": -6727393.623195597,
+    "maxX": -448061.2154273014,
+    "maxY": -6721573.49152691
+  },
+  "transform": {
+    "scale": 0.14638844076052107,
+    "offsetX": 66543.49355903198,
+    "offsetY": 984836.6628818759
+  },
+  "featureCount": 1
+}

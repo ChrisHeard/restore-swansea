@@ -1,0 +1,201 @@
+@id,name,highway
+4542898,Mill Street,secondary
+5354262,Cefn Stylle Road,unclassified
+5530781,Talbot Street,residential
+5559105,Sterry Road,secondary
+5608516,Park Road,residential
+5608517,Mount Pleasant,residential
+5608519,Mount Street,tertiary
+5608520,Mansel Street,tertiary
+5608521,Gurnos Road,residential
+8548309,Hill Street,residential
+20139151,Cae Mansel Road,unclassified
+23812342,Mount Street,tertiary
+25703159,Mill Street,secondary
+25703163,Victoria Road,secondary
+26584496,Talbot Street,residential
+26584605,Penclawdd Road,secondary
+27326716,Pont y Cob Road,tertiary
+33425802,Sterry Road,tertiary
+34411251,Woodlands,residential
+34411252,Woodlands,residential
+34411256,Station Road,residential
+34411261,Ffordd Beck,residential
+35393340,Porth y Waun,residential
+35393343,Porth y Waun,residential
+35393344,Porth y Waun,residential
+35393347,Clos Marina,residential
+35393348,Clos Marina,residential
+35393349,Cefn Stylle Road,unclassified
+36100305,Garrod Avenue,secondary
+36100306,Cecil Road,secondary
+41463543,Sterry Road,secondary
+41463562,Mount Pleasant,residential
+41463563,Cecil Road,secondary
+41463567,Cecil Road,secondary
+41463569,Mansel Street,tertiary
+41467098,Mount Street,tertiary
+44887691,Mansel Court,residential
+44887693,Talbot Green,residential
+44887694,George Manning Way,residential
+44887697,Pen-y-Dre,residential
+44887702,Heol y Gog,residential
+44887706,Bryn Eithin,residential
+44887707,Cae Grawn,residential
+44894102,Cecil Road,secondary
+44894103,Talbot Green,residential
+44894104,Cecil Road,secondary
+44895507,Church Street,residential
+44908896,Parkwood,residential
+45324436,Clos Tygwyn,residential
+45324438,Clos Tygwyn,residential
+45324439,Clos Tygwyn,residential
+45324441,Clos Tygwyn,residential
+45324442,Clos Tygwyn,residential
+45324443,Clôs Trafle,residential
+45324444,Lliw Valley Close,residential
+45324446,Lliw Valley Close,residential
+45324449,Elba Street,residential
+45324451,Elba Street,residential
+45324454,Clos Gwernen,residential
+45324455,Clos Gwernen,residential
+45324457,Nevills Close,residential
+45324460,Clôs Trafle,residential
+45324462,Fairwood Terrace,residential
+45324464,Alder Way,residential
+45324466,Alder Way,residential
+45324468,Clos Afon Llan,residential
+45330626,Clôs Helyg,residential
+45330692,Roper Wright Close,residential
+45767319,Clôs Leighton Davies,residential
+45767320,Clôs Leighton Davies,residential
+45767321,Llys Elba,residential
+45767322,Llys Elba,residential
+45767327,Clos Healy,residential
+45767328,Clos Healy,residential
+45767330,Ffordd Butler,residential
+45767332,Ffordd Butler,residential
+45767333,Clôs Leighton Davies,residential
+45767334,Ffordd y Gamlas,residential
+45767335,Ffordd y Gamlas,residential
+45767336,Ffordd y Gamlas,residential
+45767337,Ffordd y Gamlas,residential
+45767338,Clos Healy,residential
+45767339,Llys Baldwin,residential
+45767340,Llys Baldwin,residential
+45767344,Llys Baldwin,residential
+45767345,Ffordd y Gamlas,residential
+45767346,Ffordd y Gamlas,residential
+45767349,Llys Baldwin,residential
+45767350,Llys Baldwin,residential
+45767351,Llys Baldwin,residential
+45767353,Clôs Helyg,residential
+45767412,Clos Bevan,residential
+45767413,Clwyd Wen,residential
+45767414,Clos y Gweydd,residential
+45767415,Clos y Gweydd,residential
+45767416,Maes-y-Deri,residential
+45767417,Ffordd Alltwen,residential
+45767419,Clos Cae Dafydd,residential
+45767420,Clos Cae Dafydd,residential
+45767421,Clos Bevan,residential
+45767422,Clos Bevan,residential
+45767423,Ffordd Alltwen,residential
+45767424,Ffordd Alltwen,residential
+46335241,Glanmorfa,residential
+46335242,Ffos Felen,residential
+46335243,Ffos Felen,residential
+46335246,Dan yr Allt,residential
+46335247,Dan yr Allt,residential
+46335248,The Mount,residential
+46335249,The Mount,residential
+46335250,Springfield Close,residential
+46335251,Uplands,residential
+46335252,Roper Wright Close,residential
+46335253,Shaw Street,residential
+46335254,William Bowen Close,residential
+46335255,Clos Morgan Owen,residential
+46335257,Uplands,residential
+46335258,Uplands,residential
+48133023,Oakwood Drive,residential
+48133024,Oakwood Drive,residential
+48133026,Gower Rise,residential
+48133027,Oakwood Drive,residential
+48133029,Cedar Close,residential
+48133030,Cedar Close,residential
+48133031,Bishwell Road,residential
+48133032,Bishwell Road,residential
+48133033,Llys y Farchnad,residential
+48133034,Tir y Farchnad,residential
+48133036,Clos y Porthmon,residential
+48133037,Clos Tregwyr,residential
+48133038,Heol y Gwartheg,residential
+48133039,Heol y Gwartheg,residential
+48133040,Yr Hen Gorlan,residential
+48133041,Llys y Farchnad,residential
+48133042,Church Street,residential
+48348882,Gower Rise,residential
+48348883,Gower Rise,residential
+48348884,Gower Rise,residential
+48348885,Gower Rise,residential
+48348886,Woodview,residential
+48348887,Brookside,residential
+48348888,Springbourne Close,residential
+48348889,Willowbank,residential
+48348891,Ravensfield,residential
+48348892,Cedar Close,residential
+48348893,Cedar Close,residential
+48348894,Tir y Farchnad,residential
+48348895,Tir y Farchnad,residential
+48352343,Baytree Court,residential
+48427744,Woodlands,residential
+48427745,Woodlands,residential
+48427750,Bryn Close,residential
+48427751,Bryn Close,residential
+48427755,Brookside,residential
+48427756,Woodview,residential
+48427757,Gorwydd Road,secondary
+48427758,Willowbank,residential
+48427759,Ravensfield,residential
+48427760,Springbourne Close,residential
+48427764,Oakwood Drive,residential
+48427765,Oakwood Drive,residential
+48427766,Oakwood Drive,residential
+48427767,Woodlands,residential
+48499797,Victoria Road,secondary
+120403567,Penclawdd Road,secondary
+121661103,Ty Gwyn,residential
+133678105,Llwynmawr Lane,residential
+133678107,Lôn y Cob,residential
+133794694,Gowerton Road,unclassified
+133794695,Cae Mansel Lane,unclassified
+156498527,Woodlands,residential
+159215089,Mill Street,secondary
+159215106,Victoria Road,secondary
+162480878,Brynymor Road,tertiary
+162480893,Brynymor Road,tertiary
+162618988,Clos Morgan Owen,residential
+162618989,Brynymor Road,tertiary
+165830321,Penclawdd Road,secondary
+165830328,Gorwydd Road,secondary
+165830335,Gorwydd Road,secondary
+186645110,Mill Street,secondary
+186645115,Gorwydd Road,secondary
+186645120,Gorwydd Road,secondary
+302353181,Clyne Cycle Path,unclassified
+302353182,Oakwood Drive,residential
+306980458,Cefn Stylle Road,unclassified
+306980459,Cefn Stylle Road,unclassified
+382283303,Penclawdd Road,secondary
+382289989,Pont y Cob Road,tertiary
+410929572,Gorwydd Road,secondary
+410929573,Bishwell Road,residential
+639064268,Brynymor Road,tertiary
+719265202,Penclawdd Road,secondary
+719265203,Penclawdd Road,secondary
+759894023,Mill Street,secondary
+759894024,Penclawdd Road,secondary
+946563540,Maes-y-Deri,residential
+946563541,Maes-y-Deri,residential
+1063627133,George Manning Way,residential
+1246260177,Cecil Road,secondary

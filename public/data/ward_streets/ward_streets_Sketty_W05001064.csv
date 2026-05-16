@@ -1,0 +1,450 @@
+@id,name,highway
+4478687,Gower Road,primary
+4481900,Parkway,tertiary
+4481902,Sketty Park Road,primary
+4481903,Sketty Lane,primary
+4486524,Heather Crescent,residential
+4515841,Sketty Park Road,tertiary
+4520751,Laurel Place,residential
+4520756,Derwen Fawr Road,secondary
+4520757,Dillwyn Road,primary
+4520762,De La Beche Road,tertiary
+4520763,Briar Dene,residential
+4543272,Vivian Road,primary
+4550179,Rhyd Y Defaid Drive,residential
+4550194,Sycamore Close,residential
+4550195,Hendrefoilan Drive,residential
+4554180,New Mill Road,residential
+4554182,Jasmine Close,residential
+4555306,Laburnham Place,residential
+4555307,Baytree Avenue,residential
+4571205,Saunders Way,residential
+4602961,Devon View,residential
+4602962,Devon View,residential
+4686515,Carnglas Road,residential
+4686516,Tycoch Road,tertiary
+4686563,Llwynmawr Road,tertiary
+4686564,LLwyn Mawr Close,residential
+4686565,Waunarlwydd Road,residential
+9473485,Townhill Road,tertiary
+10259843,Pastoral Way,residential
+10259848,Rural Way,residential
+10259868,Rosemary Close,residential
+10259913,Blackthorn Place,residential
+10275950,Ynys Newydd Road,residential
+10275951,Ynys Newydd Road,residential
+10297764,Eversley Road,residential
+10297765,Frogmore Avenue,residential
+10297766,Coed Saeson Crescent,residential
+10297768,Hazelmere Road,residential
+10297769,Grosvenor Road,residential
+10297770,Sketty Avenue,residential
+10594882,Rowan Avenue,residential
+10683955,Brynmill Lane,tertiary
+10805330,Langland Terrace,residential
+11679247,Beechwood Road,residential
+12096028,Clyne Valley Lane,unclassified
+13712614,Gwerneinon Road,residential
+13712628,High View Gardens,residential
+13712663,Gwerneinon Road,residential
+13712691,Royal Oak Road,residential
+13712868,Warwick Road,residential
+14294903,Ashleigh Road,residential
+14294958,Ashleigh Close,residential
+14360987,Sketty Lane,primary
+14361082,Mumbles Road,primary_link
+14887952,Cwm Farm Lane,unclassified
+14887966,Bryn Newydd Gardens,residential
+14888137,The Bryn,residential
+14888181,Rhyd yr Helyg,residential
+14888217,Golwg Hafren,residential
+14888229,Coed Celyn Road,residential
+14888250,The Ridge,residential
+14888270,The Ridge,residential
+14888284,King George Court,residential
+14888323,Ridge Acre,residential
+14888357,Meadow Rise,residential
+14888537,Ashleigh Road,residential
+14888620,Glynderwen Crescent,residential
+14888636,Emmanuel Gardens,residential
+14888662,Glynderwen Close,residential
+14888693,Glynderwen Close,residential
+14888870,Cherry Grove,residential
+15091114,Saunders Way,residential
+15091131,Valley View,residential
+15091162,Hendy Close,residential
+15523345,Derwen Fawr Road,residential
+17365486,Masefield Way,residential
+17365515,Masefield Way,residential
+17365773,Parklands View,residential
+17365908,Gabalfa Road,residential
+17366015,The Link,residential
+22689749,Channel View,residential
+22689750,Sketty Park Close,residential
+22689751,Llewelyn Street,residential
+22689752,Lewis Street,residential
+22689753,Park View Terrace,residential
+22731867,Beaconsfield Way,residential
+22731868,Beaconsfield Court,residential
+22731869,Mandinam Park,residential
+22731870,Beaconsfield Way,residential
+22731871,Glan yr Afon Road,residential
+22731873,Admirals Walk,residential
+22731876,Cory Street,residential
+22905793,Tavistock Road,residential
+22905826,Queens Road,residential
+22905857,Roger Beck Way,residential
+22905863,Clarendon Road,residential
+22905865,Kingston Road,residential
+22907024,The Causeway,residential
+22943517,Roger Beck Way,residential
+22943518,Roger Beck Way,residential
+22943519,Roger Beck Way,residential
+22943523,Gainsborough Close,residential
+22945302,Roger Beck Way,residential
+22945334,Carnglas Road,tertiary
+22945377,Penyrheol Drive,tertiary
+22963191,Rhyd Y Defaid Drive,residential
+23011281,Hendrefoilan Avenue,residential
+23016256,Beech Tree Lane,unclassified
+23016258,Brangwyn Court,residential
+23036170,Oak Ridge,residential
+23044758,Dunraven Road,residential
+23044759,Carnglas Avenue,residential
+23481367,Clos Glan yr Afon,residential
+23481376,Westbourne Grove,residential
+23481379,Westbourne Road,residential
+23481391,Prospect Place,residential
+23481392,Westbourne Grove,residential
+23481393,Eastbourne Grove,residential
+23481394,Kimberley Road,residential
+23481401,Cae Banc,residential
+23481404,Bryngoleu Terrace,unclassified
+23481414,Kimberley Close,residential
+23695340,Lôn Cadog,residential
+23769794,Mumbles Road,primary
+23769814,Derwen Fawr Road,secondary
+23769815,Derwen Fawr Road,secondary
+23799070,The Park,residential
+23799071,Hendrefoilan Close,residential
+23799072,Hendrefoilan Close,residential
+23799073,Dysgwylfa,residential
+23888378,Hendrefoilan Road,residential
+23888387,Huntingdon Way,residential
+23888389,Ffordd Aneurin Bevan,residential
+24009496,Whitethorne Place,residential
+24009497,Furzeland Drive,residential
+24009498,Maes y Gollen,residential
+24540749,Cae-Bryn Avenue,residential
+24540750,Glan yr Afon Gardens,residential
+24540751,Glan yr Afon Gardens,residential
+24540767,Lon Olchfa,residential
+24540768,Gwent Grove,residential
+24540874,Coedfan,residential
+24540875,The Spinney,residential
+24541329,Hendremawr Close,residential
+24583568,Aneurin Close,residential
+24583569,Aneurin Close,residential
+24583570,Coedfan,residential
+24583571,Mayflower Close,residential
+24698169,The Lodge Close,residential
+25384874,Penyrheol Close,residential
+25384875,Ocean View Close,residential
+25384941,Cedric Close,residential
+25384942,Byng Morris Close,residential
+25385244,Hartfield Close,residential
+25385245,Glenfield Close,residential
+25385246,The Beeches Close,residential
+25564503,Bishop's Grove,residential
+25564522,Coed Mor,residential
+25564529,Dulais Grove,residential
+25564542,Millfield Close,residential
+25789836,Raleigh Close,residential
+25789837,Benbow Close,residential
+25789838,Dana Drive,residential
+25789839,Cunningham Close,residential
+25936845,Hollybush Drive,residential
+26528698,Coed Mor,residential
+26551008,Harlech Close,residential
+26562745,Glyn Crescent,residential
+26822849,St. Donat's Avenue,residential
+27947375,Sylvan Way,residential
+27947377,Raglan Road,residential
+27947412,Llwynmawr Road,unclassified
+28047983,Bayswater Road,residential
+28047984,Lon Mefus,residential
+28047985,Pastoral Way,residential
+28198613,Lon Mafon,residential
+28198614,Lon Bedwen,residential
+28198615,Lon Masarn,residential
+28198617,Brynmead Close,residential
+28198619,Brynmead Close,residential
+28198623,Lon Iorwg,residential
+28198624,Lon Draenen,residential
+28198625,Rosemary Close,residential
+28198626,Huntingdon Way,residential
+28437772,Hollybush Drive,residential
+28619463,Poplar Close,residential
+28619788,Juniper Close,residential
+28619790,Juniper Close,residential
+28619791,Llwynmawr Lane,residential
+28760861,Hendre Owain,residential
+28760867,Pant-yr-Odyn,residential
+28760875,Bryn Derwen,residential
+28760882,Cefn Helyg,residential
+28760897,Cefn Glas,residential
+28760898,Cefn Glas,residential
+28760961,Coniston Walk,residential
+28760965,Harlech Crescent,tertiary
+28760978,Llwynmawr Road,tertiary
+28760981,Llwynmawr Road,tertiary
+28760995,Brynmead Close,unclassified
+28761146,Llwyn Arosfa,residential
+28761220,Bryn Derwen,residential
+28761225,Pant-yr-Odyn,residential
+28761284,Heol Ysgawen,residential
+28761343,Lon Derw,residential
+28871872,Llwynmawr Road,unclassified
+28871873,Waunarlwydd Road,unclassified
+30416781,Mumbles Road,primary
+30416941,Sketty Lane,primary
+30417141,Mumbles Road,primary
+30417388,Mumbles Road,primary
+30417780,Sketty Lane,primary
+30417784,Sketty Lane,primary
+30667315,Rustic Close,residential
+30667316,Kendle Drive,residential
+30667317,Kendle Drive,residential
+30667729,Hendrefolian Court,residential
+30846851,Tycoch Road,tertiary
+30951992,Heol Ysgawen,residential
+30951995,Heol Ysgawen,residential
+30952005,Llwyn Rhedyn,residential
+30952120,Llwynmawr Road,tertiary
+31785579,Gower Road,primary
+32300247,Waunarlwydd Road,residential
+32469123,Millfield Close,residential
+36331742,Dysgwylfa,residential
+36331743,Pineacre Close,residential
+36331744,Pineacre Close,residential
+36331745,Dysgwylfa,residential
+36331746,Greenwood Close,residential
+36331747,Greenwood Close,residential
+36331748,Greenwood Close,residential
+36331750,Pine Tree Court,residential
+36331751,Pine Tree Court,residential
+36331759,Pantgwyn,residential
+36331761,Pantgwyn,residential
+36933602,Parc y Felin,residential
+36933603,Parc y Felin,residential
+36933604,Sketty Park Drive,tertiary
+37408225,Sketty Lane,primary
+37408226,Gower Road,primary
+37408227,Sketty Lane,primary
+39207821,Mumbles Road,primary
+39215249,Pant-yr-Odyn,residential
+39244311,Mumbles Road,primary
+39244314,Mumbles Road,primary
+39244315,Mumbles Road,primary
+39274666,Lôn Cae Banc,residential
+40610882,Averil Vivian Grove,residential
+41432517,Mumbles Road,primary
+41883007,Vivian Road,primary
+41883008,Gower Road,primary
+43905363,Derwen Fawr Road,secondary
+43905364,Rhyd Y Defaid Drive,residential
+43905365,Channel View,residential
+43905367,Sketty Park Drive,tertiary
+43989974,Sketty Lane,primary
+44147797,Glan yr Afon Road,residential
+44147798,Harlech Crescent,tertiary
+44147799,Hendrefoilan Road,residential
+44147800,Pastoral Way,residential
+44147801,Llwynmawr Road,tertiary
+44147806,Gower Road,primary
+44147807,Gower Road,primary
+44147810,Huntingdon Way,residential
+44147811,Lon Masarn,residential
+44147815,Llwynmawr Road,tertiary
+59148636,Gwerneinon Road,residential
+59148637,Derwen Fawr Road,secondary
+59148638,Rhyd Y Defaid Drive,residential
+59148640,Aneurin Way,residential
+59148642,Mumbles Road,primary
+59148644,Derwen Fawr Road,secondary
+59148646,Gwerneinon Road,residential
+86502494,Y Deri,residential
+96897356,Cockett Road,primary
+96897361,Broadway,tertiary
+96897371,Llythrid Avenue,residential
+96897376,Parc Wern Road,residential
+112075997,Oak Tree Avenue,residential
+112075998,Birch Tree Close,residential
+112076000,Oak Tree Avenue,residential
+121411229,Tavistock Close,residential
+121535306,Broadway Court,residential
+121661514,Olchfa Close,residential
+121661516,Olchfa Close,residential
+121661518,Hanover Court,residential
+122539917,Byng Morris Close,residential
+122655962,Derwen Fawr Road,secondary
+123082547,Gower Road,primary
+123082551,Mayflower Close,residential
+123082582,Gower Road,primary
+123433441,Gower Road,primary
+123433442,Gower Road,primary
+123518665,Llwynmawr Lane,residential
+123518666,Llwynmawr Road,tertiary
+123570686,Brynmill Lane,tertiary
+123570687,Brynmill Lane,tertiary
+123570688,Brynmill Lane,tertiary
+123570691,Mumbles Road,primary
+123699310,Cockett Road,primary
+130146087,Mandinam Park,residential
+136229570,Sketty Park Road,primary
+136229571,Sketty Park Road,primary
+136229641,Dillwyn Road,primary
+136229642,Dillwyn Road,primary
+136229740,Gower Road,primary
+137611768,Derwen Fawr Road,secondary
+160119663,Y Deri,residential
+201105322,Dillwyn Road,primary
+201105323,Dillwyn Road,primary
+201105324,Eversley Road,residential
+201105325,Eversley Road,residential
+201105326,Vivian Road,primary
+201105327,Vivian Road,primary
+216537136,Clyne Court,residential
+225472828,Birch Tree Close,residential
+245506151,Mumbles Road,primary
+314564356,Clyne Valley Lane,living_street
+363743698,Sketty Park Road,primary
+393272815,Coedfan,residential
+393280364,Glynderwen Close,residential
+447978411,Ocean View Close,residential
+447978412,Royal Oak Road,residential
+449697912,Gwerneinon Road,residential
+449697913,High View Gardens,residential
+463440812,Mumbles Road,primary
+503336490,Howells' Reach,residential
+679020121,Bryn Derwen,residential
+679020122,Bryn Derwen,residential
+679020123,Bryn Derwen,residential
+724404439,Pant-yr-Odyn,residential
+724406308,Pant-yr-Odyn,residential
+724463676,Bay View Court,residential
+724464099,Awel Y Mor,residential
+724464100,Awel Y Mor,residential
+731903130,Bryn Derwen,unclassified
+731903131,Bryn Derwen,unclassified
+731906837,Bay View Court,residential
+732437959,Bryn Derwyen,unclassified
+732437961,Cefn Helyg,unclassified
+732437962,Bryn Derwen,residential
+733654971,Hendre Owain,residential
+737378771,The Quad,pedestrian
+835458074,Sketty Park Road,primary
+835458078,Gower Road,primary
+835458085,De La Beche Road,tertiary
+835458086,De La Beche Road,tertiary
+835458087,Gower Road,primary
+835458088,Gower Road,primary
+835458089,Gower Road,primary
+835458090,Gower Road,primary
+835458091,Gower Road,primary
+835871356,Sketty Lane,primary
+835871359,Sketty Park Road,tertiary
+835871360,Sketty Park Road,tertiary
+835871361,Sketty Park Drive,tertiary
+835871362,Sketty Park Road,primary
+835871365,Sketty Lane,primary
+835871366,Sketty Lane,primary
+835871367,Derwen Fawr Road,secondary
+835871372,Derwen Fawr Road,secondary
+835871373,Derwen Fawr Road,secondary
+835871374,Rhyd Y Defaid Drive,residential
+835871375,Rhyd Y Defaid Drive,residential
+836332232,Sketty Lane,primary
+836332233,Sketty Lane,primary
+836332234,Sketty Lane,primary
+836332235,Sketty Lane,primary
+836897979,Sketty Park Drive,tertiary
+836897980,Sketty Park Drive,tertiary
+837106283,Maes Y Gruffydd Road,residential
+837372098,Poplar Close,unclassified
+837373478,Poplar Close,unclassified
+839595730,Sketty Lane,primary
+839599265,Mumbles Road,primary_link
+839599266,Mumbles Road,primary
+839599267,Mumbles Road,primary
+839599270,Mumbles Road,primary
+839599271,Mumbles Road,primary
+839599272,Sketty Lane,primary
+839599274,Sketty Lane,primary
+839614189,Saunders Way,residential
+839614190,Saunders Way,residential
+839614191,Ynys Newydd Road,residential
+839614210,Derwen Fawr Road,secondary
+839614211,Derwen Fawr Road,secondary
+839623116,Heather Crescent,residential
+839623117,Parkway,tertiary
+839623120,Aneurin Way,residential
+842345992,Huntingdon Way,unclassified
+843913849,Awel Y Mor,residential
+871842219,Parkway,tertiary
+880643988,Hollybush Drive,unclassified
+884826547,Gower Road,primary
+920069611,Gower Road,primary
+920069613,Glan yr Afon Gardens,residential
+920069614,Glan yr Afon Gardens,residential
+920216668,Gower Road,primary
+920216669,Jasmine Close,residential
+920233630,Hendrefoilan Drive,residential
+946858461,Howells' Reach,residential
+964899710,Penyrheol Close,residential
+1047710927,Derwen Fawr Road,secondary
+1047710928,Mumbles Road,primary
+1047710929,Mumbles Road,primary
+1047710938,Cwm Farm Lane,unclassified
+1050520413,Golwg Hafren,residential
+1080369500,Sketty Lane,primary
+1080957010,Derwen Fawr Road,secondary
+1090377066,Tycoch Road,tertiary
+1132217677,Mumbles Road,primary
+1132217681,Mumbles Road,primary
+1133759229,Mumbles Road,primary
+1133760573,Mumbles Road,primary
+1189369873,Awel Y Mor,residential
+1189369874,Awel Y Mor,residential
+1218905647,Mumbles Road,primary
+1230102672,Furzeland Drive,residential
+1230102673,Furzeland Drive,residential
+1230102687,Whitethorne Place,residential
+1232671240,Sketty Park Drive,tertiary
+1236712271,Tycoch Road,tertiary
+1236712272,Tycoch Road,tertiary
+1236712273,Tycoch Road,tertiary
+1236712274,Tycoch Road,tertiary
+1236712275,Tycoch Road,tertiary
+1236712276,Tycoch Road,tertiary
+1236712277,Tycoch Road,tertiary
+1236712278,Tycoch Road,tertiary
+1236712279,Tycoch Road,tertiary
+1236712280,Llwyn Mawr Close,residential
+1236712281,Llwyn Mawr Close,residential
+1236712282,Llwyn Mawr Close,residential
+1249253711,Languages Corridor,corridor
+1249255847,Lower Science Corridor,corridor
+1249255848,Lower DT Corridor,corridor
+1249257696,English Corridor,corridor
+1252290174,Mumbles Road,primary
+1252290175,Sketty Lane,primary
+1252290176,Mumbles Road,primary
+1253252077,Cockett Road,primary
+1253255775,Townhill Road,tertiary
+1253255777,Vivian Road,primary_link
+1253261882,Gower Road,primary
+1281216086,The Bryn,residential
+1409615404,Coed Celyn Road,residential
+1459628112,Sketty Avenue,residential
+1492739580,Sylvan Way,residential

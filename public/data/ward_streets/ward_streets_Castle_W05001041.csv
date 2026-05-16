@@ -1,0 +1,506 @@
+@id,name,highway
+4541816,Oystermouth Road,primary
+4570971,Beach Street,unclassified
+4597296,Carmarthen Road,primary
+4597297,Carmarthen Road,primary
+5364660,Dyfatty Street,primary
+5666761,Guildhall Road South,secondary
+5666762,Saint Helen's Road,secondary
+5666763,Saint Helen's Road,residential
+5666764,Bond Street,residential
+5666767,The Kingsway,tertiary
+5712257,New Cut Road,primary
+5712262,Llangyfelach Street,secondary
+5712399,Phillip's Parade,pedestrian
+7817453,Parc Tawe Link Road,tertiary
+9473193,West Way,tertiary
+9473194,Wellington Street,unclassified
+9527811,Upper High Street,secondary
+9527812,College Street,secondary
+10245076,Prince Of Wales Road,residential
+10245148,John Street,unclassified
+10260148,Christina Street,secondary
+10298186,Gors Avenue,tertiary
+10305104,Bridge Street,secondary
+10305508,Pentre Mawr Road,tertiary
+10305517,Ysgubor Fach Street,tertiary
+11088126,Castle Bailey Street,pedestrian
+11088163,Castle Street,secondary
+11089071,The Strand,tertiary
+11089503,Glamorgan Street,residential
+11260545,Quay Parade,primary
+11356355,Quay Parade,primary
+11359644,New Cut Road,primary
+11359735,New Cut Road,primary
+12504235,Guildhall Road South,secondary
+12504949,Catherine Street,residential
+12628117,Albert Row,unclassified
+12628853,Albert Row,unclassified
+12628973,Albert Row,unclassified
+12629153,Albert Row,unclassified
+12630171,Argyle Street,residential
+13304339,Nicholl Street,residential
+13443699,Oxford Street,unclassified
+13443908,Beach Street,residential
+13449572,The Kingsway,tertiary
+13451018,Mansel Street,primary
+13632858,Western Street,residential
+13632910,Little Gam Street,residential
+13634861,Victoria Avenue,residential
+13635017,Vincent Street,residential
+13635162,Burrows Road,pedestrian
+13635176,Burrows Road,residential
+13635178,Rodney Street,residential
+13635180,Richardson Road,residential
+13758847,Argyle Street,residential
+13763475,Caer Street,tertiary
+13763689,Princess Way,tertiary
+13768368,Argyle Street,residential
+13768372,Argyle Street,unclassified
+13851048,Dunvant Place,unclassified
+13901102,Vincent Street,pedestrian
+13901133,Rodney Street,pedestrian
+14359993,Duke Street,residential
+14359996,Russell Street,residential
+14360058,Henrietta Street,residential
+14360093,George Street,residential
+14360316,Pleasant Street,residential
+14360505,Wyndham Street,residential
+15219108,Spring Terrace,residential
+15219111,Gethin Street,unclassified
+15219120,Madoc Street,residential
+15238951,Bryn-y-mor Road,tertiary
+15243755,Fleet Street,residential
+15243758,Fleet Street,pedestrian
+15243952,Oxford Street,residential
+15243960,Richardson Street,residential
+15243982,Richardson Street,residential
+15243989,Richardson Street,residential
+15589505,Richardson Road,residential
+15805376,Kings Lane,pedestrian
+15805389,Temple Street,pedestrian
+15805405,Whitewalls,pedestrian
+15806977,Singleton Street,tertiary
+15807214,Craddock Street,residential
+15807223,Plymouth Street,unclassified
+15807226,Upper Union Street,pedestrian
+15807231,Nelson Street,unclassified
+17238182,The Strand,tertiary
+17238246,The Strand,tertiary
+17353723,Portland Street,pedestrian
+17353784,Park Street,unclassified
+17353804,Portland Street,unclassified
+17364035,Bellevue Way,secondary
+17364094,Bellevue Way,secondary
+19532368,Clarence Terrace,residential
+19588990,Oxford Street,residential
+19869689,Paxton Street,residential
+19869695,Recorder Street,residential
+19869702,Bathurst Street,residential
+21553911,Orchard Street,tertiary
+21553987,Bridge Street,primary
+21554037,Upper High Street,secondary
+21554059,High Street,secondary
+22650788,Calvert Terrace,residential
+22650815,Oaklands Terrace,residential
+22650820,Carlton Terrace,residential
+22652380,Penmaen Terrace,residential
+22652390,Rosehill Terrace,residential
+22652394,Montpelier Terrace,residential
+22677529,Pell Street,residential
+22677530,Horton Street,residential
+22733437,Quay Parade,primary
+22751907,Furze Bank,residential
+22751911,Craddock Street,residential
+22751913,Willows Place,residential
+22751937,Verandah Street,pedestrian
+22751938,Verandah Street,residential
+22751944,Page Street,pedestrian
+22751945,Page Street,residential
+22752261,Brunswick Street,tertiary
+22752300,Christina Street,secondary
+22772326,Beach Street,residential
+22772327,Beach Street,residential
+22775563,Fleet Street,residential
+22775566,Fleet Street,residential
+22775567,Rodney Street,residential
+22821920,Mansel Street,primary
+22883401,Norfolk Street,residential
+22883463,Stanley Place,residential
+22883470,Stanley Terrace,residential
+22885392,Stanley Place,residential
+22885401,Rhondda Street,residential
+22885405,Cromwell Street,residential
+22885426,Harcourt Street,residential
+22885440,Primrose Street,residential
+22963000,Constitution Hill,residential
+22964000,Hewson Street,residential
+22974101,William Street,residential
+22974103,William Court,residential
+22974105,William Court,residential
+22974106,Clarence Street,residential
+22974116,William Street,pedestrian
+22974118,William Street,residential
+23035872,De La Beche Street,primary
+23035876,Grove Place,primary
+23036223,Ebenezer Street,unclassified
+23044797,Ivey Place,unclassified
+23107884,Vaughan Thomas Lane,residential
+23107918,Primrose Hill,residential
+23108019,Clifton Hill,residential
+23108022,North Hill Road,residential
+23108034,Croft Street,residential
+23108036,Croft Street,residential
+23108038,Croft Street,residential
+23108041,Croft Street,residential
+23108056,Thomas Row,residential
+23108087,Graig Street,residential
+23116925,Bridge Street,primary
+23116953,New Orchard Street,primary
+23116973,Dyfatty Street,primary
+23152232,Upper Strand,residential
+23152234,Cwm Road,residential
+23160026,The Strand,tertiary
+23160088,Little Wind Street,unclassified
+23160094,Salubrious Passage,pedestrian
+23160111,Saint Mary Street,pedestrian
+23162065,Oxford Street,pedestrian
+23162070,Wind Street,pedestrian
+23162135,Tontine Street,unclassified
+23162153,Jockey Street,unclassified
+23170098,Bridge Street,secondary
+23170099,Bridge Street,secondary
+23170100,Bridge Street,secondary
+23172897,Mount Pleasant,tertiary
+23172901,Terrace Road,tertiary
+23180835,Swan Street,residential
+23180847,Greenhill Street,unclassified
+23180848,Chapel Street,residential
+23243128,Clifton Row,residential
+23243163,Graig Terrace,residential
+23263465,New Street,residential
+23263493,Jones Terrace,unclassified
+23263502,New Street,unclassified
+23353646,Brynsyfi Terrace,residential
+23353674,Evans Terrace,residential
+23353681,Short Street,residential
+23353684,Pleasant View Terrace,residential
+23353710,Wordsworth Street,residential
+23353736,Watkin Street,residential
+23353741,Milton Terrace,residential
+23353745,Milton Terrace,residential
+23353767,Portia Terrace,residential
+23353881,Hill Street,residential
+23353891,Bryn y Don Road,residential
+23353956,Short Street,residential
+23354038,Jones Terrace,residential
+23354063,Graig Street,residential
+23369431,Quarry Street,residential
+23369532,Fullers Row,residential
+23369549,Seaview Terrace,residential
+23554170,Dillwyn Street,tertiary
+23581195,Brynsyfi Terrace,residential
+23581915,Firm Street,residential
+23581916,Winston Street,residential
+23581920,Campbell Street,residential
+23581924,Berwick Terrace,residential
+23581948,Baptist Well Place,residential
+23582172,Wilks Row,unclassified
+23582189,Seaview Terrace,residential
+23582192,Seaview Terrace,residential
+23583312,Picton Terrace,residential
+23612737,Llangyfelach Road,secondary
+23613197,Dillwyn Street,tertiary
+23613202,Dillwyn Street,tertiary
+23613259,Victoria Road,primary
+23801134,Nicander Place,residential
+23801207,Harries Street,unclassified
+23943450,Long Ridge,residential
+23943652,Townhill Road,tertiary
+23943769,Waun Wen Road,residential
+23949805,The Strand,unclassified
+23965667,Baptist Well Street,residential
+23965684,Hall Street,residential
+23965686,Baptist Well Place,residential
+23965732,Symmons Street,residential
+23965734,Wheatfield Terrace,residential
+23965739,Skinner Street,residential
+23965741,Colbourne Terrace,residential
+23965757,Peter Street,residential
+23965794,Baptist Well Place,residential
+23965795,Baptist Well Place,residential
+23965796,Baptist Well Place,residential
+23965956,Rockland Terrace,residential
+24044912,Convent Street,residential
+24044913,Brynmelyn Street,unclassified
+24044932,Park Terrace,residential
+24044936,Convent Street,unclassified
+24044938,Convent Street,residential
+24401700,Little Wind Street,unclassified
+24628559,Caepistyll Street,residential
+24628560,Lion Street,residential
+26432734,Dillwyn Street,tertiary
+26433267,Oystermouth Road,primary
+26433273,Oystermouth Road,primary
+26433274,Princess Way,tertiary
+26624924,Union Street,pedestrian
+26624955,Alexandra Road,tertiary
+26625171,Wellington Street,unclassified
+26745699,West Way,tertiary
+27090868,Peter Terrace,residential
+27332971,Prince Of Wales Road,residential
+27596857,Waun Wen Terrace,residential
+27596887,Marsden Street,residential
+27596889,Marsden Street,residential
+27596893,Joseph Davies' Close,residential
+27597519,Gordon Thomas Close,residential
+28382536,Page Street,residential
+30091060,Welcome Lane,tertiary
+30130942,College Street,secondary
+30486595,Guildhall Road South,secondary
+30915588,The Strand,unclassified
+31716720,Castle Street,secondary
+31744258,Shoppers Walk Arcade,pedestrian
+37090837,New Cut Road,primary
+41432519,Argyle Street,residential
+41432520,Oystermouth Road,primary
+41432522,High Street,secondary
+41464786,Carmarthen Road,primary
+41886247,Oystermouth Road,primary
+41886386,Mumbles Road,primary
+41886387,Guildhall Road South,secondary
+44139261,Mumbles Road,primary
+44167790,New Cut Road,primary
+44167792,Quay Parade,primary
+44168233,The Strand,tertiary
+44289591,North Hill Road,residential
+44289592,Portia Terrace,residential
+44289593,North Hill Road,residential
+44362722,The Strand,tertiary
+45063645,New Cut Road,primary
+47267161,Furnace Way,residential
+49876841,Ysgubor Fach Street,tertiary
+49876842,Ysgubor Fach Street,tertiary
+50900882,Dillwyn Street,tertiary
+52856170,West Way,tertiary
+52856856,Oystermouth Road,primary
+54034459,Upper High Street,secondary
+54034460,Dyfatty Street,primary
+55880431,Cilfrow Court,residential
+55880433,Allaway Court,residential
+55880434,Mainwaring Terrace,residential
+55880436,Mainwaring Terrace,residential
+55880443,Gordon Thomas Close,residential
+55880445,Cwmfelin Way,residential
+55880447,Lydbrook Court,residential
+55880448,Millwood Court,residential
+71764022,Princess Way,tertiary
+71764023,York Street,unclassified
+71764024,Princess Way,tertiary
+71765628,Oxford Street,pedestrian
+88543289,St Mary's Square,pedestrian
+88543303,Nelson Street,pedestrian
+88757405,Alexandra Road,primary
+88757409,Oystermouth Road,primary
+88759903,Princess Way,tertiary
+96570788,Nicander Parade,residential
+96570813,Cwm Road,residential
+96570823,New Cut Road,primary
+96570835,New Cut Road,primary
+96570843,Cwm Road,residential
+96571217,Cwm Road,residential
+99025088,Pont-y-Glasdwr,residential
+99025100,Pont-y-Glasdwr,residential
+101453737,Glamorgan Street,residential
+101453747,Glamorgan Street,residential
+101453751,Oystermouth Road,primary
+119617011,Heathfield,residential
+120824314,Harrington Place,unclassified
+120824318,Harrington Street,residential
+120824323,Harrington Street,residential
+120824326,Harrington Place,residential
+120824329,Harrington Place,residential
+120824332,Griffith John Street,unclassified
+121799531,Matthew Street,residential
+121802803,The Court Yard,residential
+121802804,Graig Place,residential
+121802805,Brynsifi Way,residential
+123699313,Fleet Street,residential
+123699324,Pen Y Graig Road,tertiary
+123699325,Phillip's Parade,residential
+123699327,Saint Helen's Road,secondary
+123699329,Saint Helen's Road,secondary
+123699330,Saint Helen's Road,residential
+123699341,Terrace Road,residential
+123699344,Walter Road,primary
+123723621,Nicander Parade,residential
+123845519,Baptist Well Place,unclassified
+123882121,Townhill Road,tertiary
+123934088,New Cut Road,primary
+123934090,Parc Tawe Link Road,tertiary
+123937320,Townhill Road,tertiary
+124183466,New Cut Road,primary
+126066860,Millwood Court,residential
+126066861,Cilfrow Court,residential
+129747976,Mariner Street,unclassified
+129749141,High Street,secondary
+129779314,Parc Tawe Link Road,tertiary
+129779557,Carmarthen Road,primary
+129779559,Carmarthen Road,primary_link
+131620263,Furnace Way,residential
+131620264,Lime Court,residential
+131620268,Mainwaring Terrace,residential
+131823444,Dillwyn Street,tertiary
+131823446,Graig Street,residential
+131823447,Mansel Street,primary
+131823453,Union Street,pedestrian
+132577517,New Cut Road,primary
+132655483,Carmarthen Road,primary
+132682975,Upper High Street,secondary
+132683878,Bridge Street,primary
+132683879,Llangyfelach Street,secondary
+133210304,Madoc Place,unclassified
+137491583,College Street,secondary
+137491589,Oystermouth Road,primary
+137491592,Singleton Street,unclassified
+137611785,Victoria Road,primary
+139240813,New Orchard Street,primary
+139240814,Dyfatty Street,primary
+139240878,New Cut Road,primary
+153412548,The Kingsway,secondary
+156510825,New Orchard Street,primary
+157759873,West Way,tertiary
+157854144,Upper High Street,secondary
+158732023,Craddock Street,residential
+158732028,Glamorgan Street,residential
+158732035,Mount Pleasant,tertiary
+162799385,Mansel Street,primary
+165842350,Quay Parade,primary
+165842351,Quay Parade,primary
+213217841,Saint Helen's Road,residential
+340367123,Long Ridge,residential
+354418505,Carmarthen Road,primary
+382503054,Prince Of Wales Road,residential
+382503055,Cwm Road,residential
+382503056,Cwm Road,residential
+382503058,Cwm Road,residential
+408547331,West Way,tertiary
+510774385,Little Wind Street,unclassified
+510821502,Salubrious Passage,pedestrian
+510840992,New Cut Road,primary
+511135765,Picton Arcade,pedestrian
+511135766,Picton Arcade,pedestrian
+511135772,Shoppers Walk Arcade,pedestrian
+511135773,Shoppers Walk Arcade,pedestrian
+616643916,Swansea Sainsbury,bus_stop
+678494014,Westway,tertiary
+723613339,West Way,tertiary
+737655474,West Way,tertiary
+737655482,Guildhall Road South,secondary
+737655483,Guildhall Road South,secondary
+737655484,Guildhall Road South,secondary
+737655485,Mumbles Road,primary
+737655497,Wellington Street,unclassified
+737655498,West Way,tertiary
+740982175,The Kingsway,secondary
+740982178,Saint Helen's Road,secondary
+740982179,Saint Helen's Road,secondary
+740982184,Oxford Street,unclassified
+741043738,High Street,secondary
+745358395,Oystermouth Road,primary
+745358396,Glamorgan Street,residential
+745534428,Oystermouth Road,primary
+745534429,Oystermouth Road,primary
+745534430,Oystermouth Road,primary
+745534450,Princess Way,tertiary
+745534451,Princess Way,primary_link
+745534452,Princess Way,tertiary
+745534453,Victoria Road,primary
+747347361,Oxford Street,unclassified
+758923583,Picton Arcade,pedestrian
+763214161,Princess Way,tertiary
+763214164,Princess Way,tertiary
+785839418,Llangyfelach Road,secondary
+831851222,Christina Street,secondary
+831851224,Alexandra Road,primary
+835377825,Mansel Street,primary
+835377826,Mansel Street,primary
+835377827,Mansel Street,primary
+835448814,Princess Way,pedestrian
+837587665,The Kingsway,tertiary
+837587666,The Kingsway,secondary
+837587667,The Kingsway,tertiary
+837587668,The Kingsway,secondary
+837587669,Castle Street,secondary
+837596437,Quay Parade,primary
+837596438,Quay Parade,primary
+837596440,Quay Parade,primary
+837596445,New Cut Road,primary
+837596446,New Cut Road,primary
+837596447,Quay Parade,primary
+837596448,New Cut Road,primary
+837617204,Quay Parade,primary
+837617208,Victoria Road,primary
+837617210,Quay Parade,primary
+842131929,Orchard Street,tertiary
+842131933,Orchard Street,tertiary
+842131940,The Kingsway,secondary
+884200447,Park Street,pedestrian
+889996862,The Kingsway,secondary
+923197953,Morfa Road,tertiary
+936407778,Alexandra Road,tertiary
+936407779,Alexandra Road,primary
+936407783,Alexandra Road,tertiary
+936407784,Alexandra Road,primary
+936407785,Orchard Street,tertiary
+936407786,Alexandra Road,primary
+936407787,New Orchard Street,primary
+936407788,Alexandra Road,tertiary
+936407793,Alexandra Road,primary
+936407794,Clifton Hill,residential
+936407797,Grove Place,secondary
+936407798,Bellevue Way,secondary
+936407800,The Kingsway,tertiary
+936407801,The Kingsway,tertiary
+936407802,The Kingsway,tertiary
+936795652,Orchard Street,tertiary
+1079249630,New Cut Road,primary
+1083291659,Wellington Street,unclassified
+1083583068,Wellington Street,unclassified
+1083583069,Wellington Street,unclassified
+1083583071,Wellington Street,unclassified
+1083583072,Oystermouth Road,primary
+1083583074,West Way,tertiary
+1102860145,Convent Street,residential
+1159252617,Carmarthen Road,primary
+1159252618,Carmarthen Road,primary
+1159252619,Carmarthen Road,primary
+1159252621,Carmarthen Road,primary
+1216629054,Carmarthen Road,primary
+1216629055,Carmarthen Road,primary
+1216629056,Carmarthen Road,primary
+1216629057,Carmarthen Road,primary
+1216629059,West Way,tertiary
+1217914837,Oystermouth Road,tertiary_link
+1233081858,North Hill Road,residential
+1233443972,Grove Place,secondary
+1235921272,Bond Street,residential
+1235921273,Rodney Street,residential
+1290142651,Castle Bailey Street,pedestrian
+1290772727,Albert Row,unclassified
+1327110230,The Kingsway,tertiary
+1327110231,The Kingsway,tertiary
+1396066910,Dunvant Place,unclassified
+1417915416,Quay Parade,primary
+1417915417,Quay Parade,primary
+1417915423,Parc Tawe Link Road,tertiary
+1417915424,Parc Tawe Link Road,tertiary
+1417915425,New Cut Road,primary
+1417916331,Parc Tawe Link Road,tertiary
+1417916332,Parc Tawe Link Road,tertiary
+1417916333,Parc Tawe Link Road,tertiary
+1417916338,Parc Tawe Link Road,tertiary
+1417916339,Parc Tawe Link Road,tertiary
+1417916340,Parc Tawe Link Road,tertiary
+1446806892,Oystermouth Road,primary
+1467844625,Hanover Street,residential

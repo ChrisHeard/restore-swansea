@@ -1,0 +1,159 @@
+@id,name,highway
+7817455,Quay Parade,primary
+7817457,Quay Parade,primary
+10305523,Langdon Road,tertiary
+11358075,Quay Parade,primary
+11362056,King's Road,tertiary
+11362091,King's Road,tertiary
+12630171,Argyle Street,residential
+13636361,Somerset Place,residential
+13636619,Cambrian Place,residential
+13636654,Adelaide Street,unclassified
+13714176,Gloucester Place,residential
+13714251,East Burrows Road,unclassified
+13714287,Burrows Place,unclassified
+13850989,Dunvant Place,unclassified
+13851048,Dunvant Place,unclassified
+13851148,Bathurst Street,residential
+13851237,Trawler Road,residential
+13860666,Langdon Road,unclassified
+13860680,Bath Lane,unclassified
+13860685,Ferry Side,unclassified
+14028858,King's Road,tertiary
+14028939,King's Road,tertiary
+14029231,King's Road,unclassified
+14029381,Paxton Drive,residential
+14029429,Victoria Quay,residential
+15215845,Quay Parade,primary
+22733438,Victoria Road,primary
+23029168,King's Road,tertiary
+23613256,Oystermouth Road,primary
+24389280,Pier Street,unclassified
+26583359,Langdon Road,unclassified
+27326285,Slipway Road,unclassified
+27326286,Trawler Road,residential
+27326287,Trawler Road,residential
+27390597,Fishermans Way,residential
+27390598,Fishermans Way,residential
+27390599,St Margarets Court,residential
+27545815,St Stephens Court,residential
+28937352,Baldwin's Crescent,unclassified
+28937355,Baldwin's Crescent,unclassified
+28998687,Fabian Way,trunk
+30131657,Oystermouth Road,tertiary_link
+30486595,Guildhall Road South,secondary
+32057955,Langdon Road,unclassified
+32057975,Langdon Road,unclassified
+32058009,Langdon Road,unclassified
+32058026,Bevan's Row,residential
+32352792,Fabian Way,trunk
+32352797,Fabian Way,trunk
+32354188,Fabian Way,trunk
+32354190,Fabian Way,trunk
+32354193,Fabian Way,trunk
+33335073,East Burrows Road,unclassified
+37873035,St Stephens Court,residential
+37873036,St. Catherine's Court,residential
+37873037,St. Catherine's Court,residential
+37873038,St. Christopher's Court,residential
+37873039,St. Christopher's Court,residential
+37873040,Trawler Road,residential
+37873041,Abernethy Quay,residential
+40350163,Port Tennant Road,tertiary
+40350178,Langdon Road,tertiary
+40350179,Langdon Road,tertiary
+40350183,Langdon Road,unclassified
+40350185,Langdon Road,unclassified
+40350186,Lamberts Road,unclassified
+40350190,Lamberts Road,unclassified
+40487733,Lamberts Road,unclassified
+40487734,Lamberts Road,unclassified
+40567884,Highmoor,residential
+40567896,Goose Island,residential
+40567918,Camona Drive,residential
+41885836,Dunvant Place,unclassified
+41886385,Oystermouth Road,primary
+42751606,King's Road,tertiary
+44168184,Dunvant Place,unclassified
+60419918,Fabian Way,trunk
+60419920,Fabian Way,trunk
+60419921,Fabian Way,trunk
+88759903,Princess Way,tertiary
+88759905,Oystermouth Road,primary
+88759912,Oystermouth Road,tertiary_link
+93667462,Marina Villas,residential
+93671296,Dunvant Place,unclassified
+93671309,Dunvant Place,unclassified
+94111384,Trawler Road,residential
+101453735,Mumbles Road,primary
+119617010,Llys Jernegan,residential
+119617364,Padley Road,residential
+121613325,Fabian Way,trunk
+121613326,Fabian Way,trunk
+121613328,Fabian Way,trunk
+123934088,New Cut Road,primary
+123934093,East Bank Way,primary
+136489658,Emily Court,residential
+136489661,Langdon Road,unclassified
+136614330,Quay Parade,primary
+137611769,East Burrows Road,unclassified
+137611786,Victoria Road,primary
+137929573,Baldwin's Crescent,unclassified
+158827825,Langdon Road,tertiary
+158827833,Langdon Road,tertiary
+158827836,Fabian Way,trunk
+158827838,King's Road,unclassified
+158827840,King's Road,unclassified
+160132537,King's Road,tertiary
+160132538,King's Road,tertiary
+160132540,King's Road,tertiary
+165839534,Oystermouth Road,primary
+165839536,Oystermouth Road,primary
+281585444,Yr Hafan,residential
+306492914,Langdon Road,unclassified
+306492918,Langdon Road,tertiary
+347124844,Fabian Way,trunk
+363743696,Fabian Way,trunk
+389449567,Fabian Way,trunk
+471199746,King's Road,unclassified
+601804381,Yr Hafan,residential
+601804382,Emily Court,residential
+601806881,Sir Harry Secombe Court,residential
+601806882,Sir Harry Secombe Court,residential
+737655483,Guildhall Road South,secondary
+745358396,Glamorgan Street,residential
+745534427,Oystermouth Road,primary
+745534443,Oystermouth Road,primary
+745534444,Oystermouth Road,primary
+745534450,Princess Way,tertiary
+763214159,Victoria Road,primary
+763214160,Victoria Road,primary
+808935235,Fabian Way,trunk
+837596433,Quay Parade,primary
+837596443,Quay Parade,primary
+837596444,Quay Parade,primary
+837617207,Victoria Road,primary
+837617213,Quay Parade,primary
+837617214,Quay Parade,primary
+837642725,Quay Parade,primary
+837642726,Quay Parade,primary
+846740177,Fabian Way,trunk
+846740191,Fabian Way,trunk
+846740233,Baldwin's Crescent,unclassified
+925611365,King's Road,tertiary
+925611366,King's Road,tertiary
+957264353,Port Tennant Road,tertiary
+957264355,Fabian Way,trunk
+957264366,Quay Parade,primary
+1083583073,Oystermouth Road,primary
+1217910334,Oystermouth Road,primary
+1217910335,Oystermouth Road,primary
+1217910336,Oystermouth Road,primary
+1217910339,Oystermouth Road,primary
+1217914837,Oystermouth Road,tertiary_link
+1248142751,Swallow Street,residential
+1248142752,Swallow Street,residential
+1258971569,Victoria Road,primary
+1396066910,Dunvant Place,unclassified
+1417915418,Quay Parade,primary
+1489202228,Weavers' Place,residential

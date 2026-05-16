@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Swansea SVG Map</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main id="app">
+    <svg id="map" role="img" aria-label="Projected Swansea ward polygons"></svg>
+
+    <section id="panel" aria-live="polite">
+      <h1>Clean SVG map</h1>
+      <p id="status">Loading qgis2web data files…</p>
+      <div id="feature-readout"></div>
+    </section>
+  </main>
+
+  <script src="src/svg-map.js"></script>
+</body>
+</html>

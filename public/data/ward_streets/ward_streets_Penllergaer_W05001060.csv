@@ -1,0 +1,163 @@
+@id,name,highway
+4597300,Pontarddulais Road,primary
+4597301,Swansea Road,primary
+23612350,Pontarddulais Road,primary
+24540470,Pontardulais Road,primary
+26551275,Hospital Road,unclassified
+26551277,Brynrhos Crescent,residential
+26583563,Phoenix Way,unclassified
+26584558,Llwyn y Graig,unclassified
+26745398,Swansea Road,residential
+26745406,Swansea Road,primary
+27615949,Gorseinon Road,primary
+27639985,Hospital Road,tertiary
+31553223,Llewellyn Road,residential
+31553225,Gelli Hyll,residential
+31553227,Heol-yr-Eos,residential
+31553228,Heol y Gelli,residential
+31553230,Heol Dewi Sant,residential
+31553231,Dillwyn Road,residential
+33577242,Druidstone Way,residential
+33577243,Parc Mawr Close,residential
+33577245,St. David's Close,residential
+33577247,Dryslwyn Close,residential
+33577250,Heol y Felin,residential
+33577252,Clos Cilfwnwr,residential
+33577255,Clos Bryn Dafydd,residential
+33577257,Clos Tirffordd,residential
+33577260,Plas-y-Fforest,residential
+33577261,Plas-y-Fforest,residential
+33577262,Clos Penderri,residential
+33577264,Clos Tŷ Mawr,residential
+33577266,Broadwood,residential
+33577267,Broadwood,residential
+33577268,Glanyrafon Close,residential
+33577269,Glanyrafon Close,residential
+33577270,Bryn Deri Close,residential
+33590836,Home Farm Way,residential
+33590838,Spruce Way,residential
+33590840,Elm Crescent,residential
+33590842,Elm Crescent,residential
+33590844,Elm Crescent,residential
+33590846,Oak Way,residential
+33590848,Oak Way,residential
+33590850,Oak Way,residential
+33590852,Elm Crescent,residential
+33590853,Home Farm Way,residential
+33590855,Home Farm Way,residential
+33590857,Home Farm Way,residential
+33590859,Home Farm Way,residential
+33590861,Home Farm Way,residential
+33590862,Home Farm Way,residential
+33590863,Ffordd Dillwyn-Llewellyn,residential
+33590864,Clos Penbwl,residential
+33590865,Keeper's Close,residential
+33590866,Keeper's Close,residential
+33590867,Keeper's Close,residential
+33590868,Home Farm Way,residential
+33590869,Clos Llorwydden,residential
+33590870,Clos Llorwydden,residential
+35138773,Mount Crescent,residential
+35138774,Mount Crescent,residential
+41250577,Phoenix Way,unclassified
+41476611,Swansea Road,residential
+41476613,Llewellyn Road,residential
+41476614,Mount Crescent,residential
+42801982,Pleasant Road,residential
+42802016,Pleasant Road,unclassified
+42802017,Mountain Road,unclassified
+42802022,Gelli Gynore,unclassified
+42802026,Kestrel Way,unclassified
+42802028,Mountain Road,unclassified
+42802029,Mountain Road,residential
+43086373,Gors Road,residential
+43086374,Gelli Hyll,residential
+43086379,Orchard Grove,residential
+43086380,Orchard Grove,residential
+43086381,Gors Road,residential
+43086385,Golwg-y-Garn,residential
+43086386,Morgan Close,residential
+43086392,Talbot Road,residential
+43086397,Ryan Close,residential
+43086404,Gilfach,residential
+43086405,Y Garn,residential
+43093946,Mount Crescent,residential
+43585865,Gorseinon Road,primary
+43585866,Gorseinon Road,residential
+43585868,Swansea Road,residential
+43585869,Swansea Road,residential
+43585870,Broadwood,residential
+43585871,Broadwood,residential
+43585876,Gorseinon Road,primary
+43585877,Clos Tirffordd,residential
+43585881,Parc Mawr Close,residential
+43585883,Clos Cilfwnwr,residential
+43585884,Clos Bryn Dafydd,residential
+43585885,Clos Tŷ Mawr,residential
+43585886,St. David's Close,residential
+43585887,Heol y Felin,residential
+43585888,Clos Penderri,residential
+43585889,Plas-y-Fforest,residential
+43585890,Plas-y-Fforest,residential
+43585895,Ynys Werdd,residential
+43585897,Ynys Werdd,residential
+43585916,Plas Cadwgan,residential
+43585924,Plas Cadwgan,residential
+43585931,Dryslwyn Close,residential
+43978240,Old Llangfelach Road,residential
+43978241,North Lodge Close,residential
+43978242,Bryn Deri Close,residential
+43978244,Pen y Bryn Close,residential
+43978246,Gors Road,residential
+43978247,Penderri House,residential
+44092011,Llys Ael y Bryn,residential
+44092014,Pontardulais Road,primary
+49532875,Mansion Gardens,residential
+97051122,Hospital Road,tertiary
+97051127,Hospital Road,tertiary
+97051139,Gorseinon Road,primary
+97051142,Gorseinon Road,primary
+108831887,Home Farm Way,residential
+108831889,Home Farm Way,residential
+108831890,Home Farm Way,residential
+137611770,Gorseinon Road,primary
+139239933,Swansea Road,primary
+223440601,Parc Penderi,residential
+223440602,Holly Oak Road,residential
+223440603,Holly Oak Road,residential
+223440604,Heol Iorwg,residential
+223440605,Ffordd Y Meillion,residential
+223440607,Cherry Crescent,residential
+223440608,Elm Tree Road,residential
+223440609,Ffordd y Meillion,residential
+241363829,Parc Penderi,residential
+241363830,Llys Mieri,residential
+241363832,Cherry Crescent,residential
+361324050,Llys Mieri,residential
+411021767,Old Llangfelach Road,residential
+411021781,Gorseinon Road,primary
+623271822,Ryan Close,residential
+938155755,Mansion Gardens,residential
+938155759,Mansion Gardens,residential
+938155760,Mansion Gardens,residential
+938155761,Mansion Gardens,residential
+938155762,Mansion Gardens,residential
+938155763,Mansion Gardens,residential
+938155764,Mansion Gardens,residential
+938155765,Mansion Gardens,residential
+1041968584,Home Farm Way,residential
+1221558773,Gelli Gynore,unclassified
+1226737617,Home Farm Way,residential
+1253230263,Gorseinon Road,primary
+1364459858,Skylark Drive,residential
+1364459859,Fern Drive,residential
+1364459860,Thistle Street,residential
+1364459861,Fern Drive,residential
+1364459862,Fern Drive,residential
+1364459863,Golygfa Llysninni,residential
+1364459864,Golygfa Llysninni,residential
+1493448562,Fern Drive,residential
+1493448563,Clos Tir-Helyg,residential
+1493448564,Clos Tir-Helyg,residential
+1493448565,Clos Tir-Helyg,residential
+1499004758,Fern Drive,residential

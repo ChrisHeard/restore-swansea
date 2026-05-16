@@ -1,0 +1,168 @@
+@id,name,highway
+7817479,Jersey Road,primary
+7817485,Siemens Way,tertiary
+8166643,Nantong Way,tertiary
+10639391,Bryn Morfa,residential
+11090889,Carmel Road,tertiary
+11090991,Lan Coed,residential
+22598863,Pentre-dwr Road,unclassified
+22885154,Jersey Road,residential
+23036495,Bronllan,residential
+23036496,Wyngarth,residential
+23036497,Blaen Cefn,residential
+23036498,Cefn Hengoed Road,residential
+23129033,Crymlyn Road,tertiary
+23211177,Valley Way,tertiary
+23211178,Phoenix Way,tertiary
+23211179,Atlantic Close,unclassified
+24519016,Colwyn Avenue,residential
+24519017,Chepstow Place,residential
+24519019,Mansel Road,tertiary
+24628694,Mona Close,unclassified
+24645217,Llanerch Road,residential
+24645218,Ty Draw Crescent,unclassified
+24645219,Ty Draw Road,unclassified
+24645220,Caldicot Road,residential
+24645221,Bon-Y-Maen Road,tertiary
+24936118,Brokesby Road,residential
+24936119,Dartford Road,residential
+24936120,Talfan Road,residential
+24936121,Cwm Chapel Road,residential
+26170751,Nantyffin Road South,unclassified
+26170752,Viking Way,unclassified
+26431843,Jersey Road,secondary
+26431945,Carmel Road,secondary
+36610904,Nantong Way,tertiary
+40712911,Hafnant,residential
+40712913,Cefn Road,residential
+40712924,Ffordd Donaldson,residential
+40795335,Brandon Crescent,residential
+40802812,Jersey Road,primary
+40802813,Jersey Road,primary
+40802819,Carmel Road,secondary
+40802824,Cardigan Crescent,residential
+40802825,Criccieth Place,residential
+40802826,Cilgerran Place,residential
+40802827,Crickhowell Place,residential
+40802828,Crickhowell Place,residential
+42920563,Phoebe Road,residential
+44362710,Trallwn Road,tertiary
+44362711,Caldicot Road,residential
+44362712,Colwyn Avenue,residential
+44362713,Lan Coed,residential
+44362714,Carmel Road,tertiary
+44362715,Mansel Road,tertiary
+44362716,Cefn Road,residential
+44362717,Caernarvon Way,residential
+47492776,Brunel Way,unclassified
+47492777,Brunel Way,unclassified
+49537901,Nantong Way,tertiary
+84931573,Clos Llyn Cwm,unclassified
+91082524,Ger-y-ffrwd,residential
+91082527,Bog Road,unclassified
+91082530,Ger-y-ffrwd,residential
+91082532,Ger-y-ffrwd,residential
+91154644,Caldicot Close,residential
+91154645,Lan Deri,residential
+91154649,Princess of Wales Court,residential
+91154650,Myrddin Gardens,residential
+91154652,Cefn Llwyn,residential
+91154653,Princess of Wales Court,residential
+91154654,Morawel,residential
+91154656,Caerphilly Avenue,residential
+91154658,Caldicot Road,residential
+91154661,Bryn Helyg,residential
+91154662,Candleston Place,residential
+91154665,Chirk Gardens,residential
+91154666,Maes-Deri,residential
+91154669,Clyro Court,residential
+101906724,Jersey Road,primary
+115654392,Dinam Road,unclassified
+115654398,Bog Road,unclassified
+121574541,Pen-y-Garn,residential
+121574543,Pentre-Chwyth Road,secondary
+121574545,Rifleman's Row,residential
+121574547,Gwendraeth Place,residential
+121574548,Pen-y-Garn,residential
+121574550,Aeron Place,residential
+121574553,Grenfell Town,residential
+121574555,Pen-y-Garn,residential
+121574558,Pen-y-Garn,residential
+121574560,Dartford Drive,residential
+121574561,Dartford Place,residential
+121574564,Ogmore Place,residential
+121574565,Park Close,residential
+121574568,Taplow Terrace,residential
+121574569,Buckingham Road,residential
+121574570,Gwyndy Road,residential
+121574572,Grenfell Town,residential
+121574573,Wye Close,residential
+121574575,Dartford Drive,residential
+121574576,Kenfig Place,residential
+121574577,Wye Close,residential
+121578158,Coch-y-Cwm Road,unclassified
+121578160,Myrddin Road,residential
+121578164,Carreg Cennen Gardens,residential
+121578171,Carreg Cennen Gardens,residential
+121578176,Ty-Draw Place,residential
+121746702,Pentre-Chwyth Road,secondary
+121746706,Pentre-Chwyth Road,secondary
+159197953,Phoebe Road,residential
+159197960,Tonnant Road,residential
+159197977,Temeraire Court,residential
+165842344,Nantong Way,tertiary
+242240719,Brokesby Close,residential
+374546388,Crymlyn Road,tertiary
+446570203,Brunel Way,tertiary
+446570204,Brunel Way,tertiary
+446570205,Morris Drive,residential
+446570206,Morris Drive,residential
+446570207,Morris Drive,residential
+446570208,Morris Drive,residential
+446570209,Morris Drive,residential
+446570210,Morris Drive,residential
+616643919,Carmel Road,tertiary
+673626880,Bellerphon Court,residential
+673626882,Prince Apartments,residential
+673626885,Bellerphon Court,residential
+673626887,Minotaur Way,residential
+687200402,Nantyffin Road,primary
+687214976,Phoenix Way,tertiary
+687214977,Phoenix Way,tertiary
+687214978,Phoenix Way,tertiary
+687214979,Phoenix Way,tertiary
+687214980,Phoenix Way,tertiary
+687215515,Phoenix Way,tertiary
+687215518,Phoenix Way,tertiary
+687215977,Atlantic Close,unclassified
+687215979,Atlantic Close,unclassified
+687216595,Siemens Way,tertiary
+687216596,Siemens Way,tertiary
+687216597,Siemens Way,tertiary
+687216598,Siemens Way,tertiary
+687358393,Clos Llyn Cwm,unclassified
+688465125,Cefn Road,residential
+735480263,Townsend Street,residential
+735480264,Townsend Street,residential
+735480265,Vale Street,residential
+758875880,Tonnant Road,residential
+758875881,Naiad Road,residential
+923197981,Nantong Way,tertiary
+936335871,Candleston Place,residential
+940404951,Vale Street,residential
+940404952,Morris Drive,residential
+941377802,Scotts Road,residential
+965221140,Scotts Road,residential
+965223161,Morris Drive,residential
+1077371656,Carmel Road,secondary
+1087038218,Minotaur Way,residential
+1087040541,Nantong Way,tertiary
+1087040542,Nantong Way,tertiary
+1087040543,Nantong Way,tertiary
+1087040544,Ffordd Donaldson,residential
+1087040545,Brunel Way,unclassified
+1087040546,Ffordd Donaldson,residential
+1087040547,Brunel Way,unclassified
+1215062353,Cefn Road,residential
+1346925642,Smiths Drive,residential
+1383287181,Nantyffin Road South,unclassified

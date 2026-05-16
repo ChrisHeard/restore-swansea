@@ -1,0 +1,303 @@
+@id,name,highway
+7817461,Ferryboat Close,unclassified
+7817464,Fendrod Way,tertiary
+7817466,Fendrod Way,tertiary
+7817471,Morganite Roundabout,primary
+7817473,Valley Way,tertiary
+10633412,Samlet Road,primary
+10633413,Bran Close,unclassified
+10639389,Lon Enfys,residential
+10639390,Bethel Road,tertiary
+22776220,Ffordd Tregof,unclassified
+22779008,Upper Fforest Way,unclassified
+22779010,Upper Fforest Way,unclassified
+22779011,Heron Way,unclassified
+22779012,Riverside Roundabout,secondary
+22885241,Trallwn Road,tertiary
+23036340,Peniel Green Road,primary
+23036343,Walters Road,tertiary
+23036344,Walters Road Roundabout,secondary
+23211177,Valley Way,tertiary
+23639880,Peniel Green Road,primary
+24416775,Llwyn Crwn Road,residential
+24416776,Station Road,residential
+24628685,Mill Stream Way,unclassified
+24645303,Lon Heddwch,residential
+24645304,Y Gefnen,residential
+24645305,Rhyd y Felin,residential
+24645306,Maes Yr Haf,residential
+24645307,Heol Hafdy,residential
+24645308,Frederick Place,residential
+24645309,Glan Y-Wern Road,residential
+24645310,Tyn y Waun,residential
+24651997,Midland Place,residential
+24651999,Ffordd Llundain,residential
+24758011,Pen-y-fan,residential
+24758012,Heol Cae Glas,residential
+24758013,Maes-lan,residential
+24758014,Summer Place,residential
+24758031,Church Road,tertiary
+25745201,Valley Way,tertiary
+25745219,Samlet Road,primary
+25745241,Clase Road,primary
+25745269,Upper Fforest Way,unclassified
+25816303,Saint David's Road,unclassified
+25936854,Lion Way,unclassified
+26170705,Clarion Close,unclassified
+26170706,Camffrwd Way,unclassified
+26170710,Kemys Way,unclassified
+26431920,Nantyffin Road,primary
+26626086,Peniel Green Road,primary
+27638217,Peniel Green Road,primary
+27740931,Gwernllwynchwyth Road,unclassified
+27741406,Maes y Deri,unclassified
+30851874,Saint David's Road,unclassified
+31013666,Peniel Green Road,primary
+31259497,Castell Close,unclassified
+38790937,Llys Llwyfen,residential
+38790938,Llys Llwyfen,residential
+40715856,Tower Court,unclassified
+40715858,Fendrod Way,tertiary
+40715860,Fendrod Way,tertiary
+40715899,Saint David's Road,unclassified
+44362699,Peniel Green Road,primary
+44362701,Peniel Green Road,primary
+44362703,Maes Yr Haf,residential
+44362704,Maes Yr Haf,residential
+44362705,Maes Yr Haf,residential
+44362706,Heol Dalycopa,residential
+44362707,Station Road,residential
+44362708,Bethel Road,residential
+44362709,Bethel Road,tertiary
+44362710,Trallwn Road,tertiary
+49537734,Maes y Deri,unclassified
+50250535,Heol Hafdy,residential
+50250537,Greenfield Crescent,residential
+50250542,Heol Hafdy,residential
+50250563,Lon Brynawel,residential
+50250572,Lon Brynawel,residential
+50250573,Bryn Teg,residential
+50250574,Eileen Road,residential
+50250575,Frederick Place,residential
+68911232,Pant-y-Blawd Road,residential
+68911233,Cwrt y Fedwen,residential
+68911234,Clos yr Onnen,residential
+68911235,Heol y Celyn,residential
+68911238,Clos yr Hesg,residential
+68911239,Clos yr Hesg,residential
+68911241,Clos Cadno,residential
+68911242,Clos yr Hesg,residential
+68911244,Coed Ceirios,residential
+68911248,Sycamore Avenue,residential
+68911251,Ffordd y Wiwer,residential
+70509113,Heron Drive,unclassified
+70509126,Mallard Way,residential
+74772567,Gwernllwynchwyth Road,residential
+81403185,Mannesmann Close,unclassified
+81403189,Cynon Close,unclassified
+81403191,Melrose Close,unclassified
+81403195,Dyffryn Close,unclassified
+84931593,Llys Felin Newydd,unclassified
+84931619,Coronet Way,unclassified
+84931624,Minster Close,unclassified
+84931626,Parc Landwr,unclassified
+90446793,Maes-y-dderwen,residential
+90446795,Tegfan,residential
+90446800,Blaencwm Road,residential
+90446802,Fair View Close,residential
+90446804,Delfan,residential
+90446806,Blaencoed Road,residential
+90446807,Rhyd-y-glyn,residential
+90446810,Heol Dalycopa,residential
+90446814,Lon Ty'r Haul,residential
+90446816,Clos Blaen Crymlyn,residential
+90446818,Ffordd Dawel,residential
+90446821,Lon Ty'r Haul,residential
+90446823,Llwyn Brwydrau,residential
+90446829,Lon Brynawel,residential
+90446830,Heol Rhuddos,residential
+90446834,Heol Pentyla,residential
+90446837,Meadow View,residential
+90446840,Lon Brynawel,residential
+90446843,Troed-y-rhiw,residential
+90446848,Clos yr Ysgol,residential
+90446856,Clos Derwen,residential
+90446860,Bryn Celyn,residential
+90446861,Bryn Celyn,residential
+90446863,Heol Gwanwyn,residential
+90446867,Clos Derwen,residential
+90446873,Clos yr Ysgol,residential
+90446875,Meadow View,residential
+91178032,Croeso'r Gwanwyn,residential
+91178033,Clos Glan-y-wern,residential
+91178035,Heol Elfed,residential
+91178036,Clos Eileen Chilcott,residential
+91178038,Tyn-y-cae Road,residential
+91178040,Heol Gwili,residential
+91178042,Llwyn Crwn Road,residential
+91178045,Croeso'r Gwanwyn,residential
+91178046,Clos Eileen Chilcott,residential
+91178049,Lon Enfys,residential
+91178054,Lon Enfys,residential
+91178057,Dyffryn Aur Road,residential
+91178058,Heol Elfed,residential
+91178059,Clos Eileen Chilcott,residential
+91178061,Trallwn Place,residential
+91178063,Clos Eileen Chilcott,residential
+91180138,Ryw Blodyn,residential
+91180139,Cwrt Hocys,residential
+91180140,Clos Alaw,residential
+91180142,Ffordd Melyn Mair,residential
+91180143,Ryw Blodyn,residential
+91180144,Ryw Blodyn,residential
+91180147,Cwrt Rhosyn,residential
+91180148,Heol Eifion Wyn,residential
+91180150,Clos Ysgallen,residential
+91180151,Ffordd Melyn Mair,residential
+91180153,Cwrt Lafant,residential
+91180154,Clos Celyn,residential
+91180156,Ffordd Briallu,residential
+91180157,Ffordd Melyn Mair,residential
+91180158,Clos Ysgallen,residential
+91180159,Ryw Blodyn,residential
+91180161,Clos Alaw,residential
+91180162,Clos Ysgallen,residential
+91180163,Cwrt Rhosyn,residential
+91180164,Cwrt Lafant,residential
+91180165,Cwrt Hocys,residential
+91180166,Clos Celyn,residential
+91180168,Clos Ysgallen,residential
+91181865,Stadwen Road,residential
+91181866,Ffynnon Samlet,residential
+91181867,Ffordd Gwyn,residential
+91181869,Ffordd Cynghordy,residential
+91181870,Midland Road,residential
+91181871,Ffordd Tollborth,residential
+91181872,Maes Meillion,residential
+91181873,Ffordd Tollborth,residential
+91181874,Ffordd Gwyn,residential
+91181875,Ffordd Gwyn,residential
+91181877,Walters Road,tertiary
+91181881,Tawe Road,residential
+91181882,Pant-y-blawd Road,residential
+91181883,Nant y Creyr,residential
+91181884,Clos Y Fendrod,residential
+91181886,Clos Fendrod,residential
+91181888,Church Close,residential
+91181889,Ffordd Cynghordy,residential
+92162132,Felin Fran,residential
+92164002,Millbrook Drive,unclassified
+92164012,Water Wheel Drive,unclassified
+96536480,Viking Way,unclassified
+102481670,Maes Briallu,residential
+102481677,Maes-yr-Awel,residential
+111657775,Bethel Road,tertiary
+111657781,Bethel Road,tertiary
+121816392,Nantyffin Road South,unclassified
+132682755,Trallwn Road,tertiary
+135849132,Walters Road,tertiary
+135849138,Walters Road,tertiary
+135849140,Walters Road,tertiary
+139239504,Samlet Road,primary
+152899517,Cedar Court,residential
+153045851,Heol y Celyn,residential
+157265658,Heron Way,unclassified
+157265674,Heron Way,unclassified
+157272179,Clarion Close,unclassified
+157272215,Clarion Close,unclassified
+157272219,Samlet Road,primary
+157272234,Samlet Road,primary
+157272240,Fendrod Way,tertiary
+160119611,Clase Road,primary
+160119614,Clase Road,primary
+160119617,Clase Road,primary
+241632803,Moorhen Close,unclassified
+241632805,Moorhen Close,unclassified
+242245918,Fairfield Court,residential
+242245919,Fairfield Court,residential
+368371161,Clos yr Hesg,residential
+368371164,Clos yr Onnen,residential
+368371166,Nant y Creyr,residential
+368371168,Sycamore Avenue,residential
+374546388,Crymlyn Road,tertiary
+374546391,Crymlyn Road,tertiary
+382318959,Peniel Green Road,primary
+411021738,Pant-y-Blawd Road,residential
+411021739,Pant-y-Blawd Road,residential
+687197632,Fendrod Way,tertiary
+687197633,Fendrod Way,tertiary
+687200392,Fendrod Way,tertiary
+687200393,Nantyffin Road,primary
+687200394,Nantyffin Road,primary
+687200395,Nantyffin Road,primary
+687200397,Nantyffin Road,primary
+687200400,Nantyffin Road,primary
+687200402,Nantyffin Road,primary
+687205022,Samlet Road,primary
+687205023,Samlet Road,primary
+687205024,Samlet Road,primary
+687205025,Samlet Road,primary
+687205026,Samlet Road,primary
+687212721,Fendrod Way,tertiary
+687212722,Fendrod Way,tertiary
+687212723,Fendrod Way,tertiary
+687212724,Fendrod Way,tertiary
+687214980,Phoenix Way,tertiary
+687214981,Phoenix Way,tertiary
+687214982,Phoenix Way,tertiary
+687214983,Phoenix Way,tertiary
+687214984,Phoenix Way,tertiary
+687214985,Phoenix Way,tertiary
+687214986,Phoenix Way,tertiary
+687214987,Phoenix Way,tertiary
+687214988,Phoenix Way,tertiary
+687214989,Phoenix Way,tertiary
+687214993,Phoenix Way,tertiary
+687214996,Phoenix Way,tertiary
+687214998,Phoenix Way,tertiary
+687215001,Phoenix Way,tertiary
+687215004,Phoenix Way,tertiary
+687215007,Phoenix Way,tertiary
+687215010,Phoenix Way,tertiary
+687215012,Phoenix Way,tertiary
+687215013,Phoenix Way,tertiary
+687215014,Phoenix Way,tertiary
+687215015,Phoenix Way,tertiary
+687217848,Bran Close,unclassified
+687217850,Bran Close,unclassified
+687220869,Nantyffin Road South,unclassified
+697829068,Valley Way,tertiary
+697829069,Valley Way,tertiary
+779052203,Frederick Place,residential
+779052204,Bethel Road,tertiary
+857268932,Greenfield Close,residential
+866670796,Samlet Road,primary
+923197984,Fendrod Way,tertiary
+923197985,Fendrod Way,tertiary
+1040247880,Lon Brynawel,residential
+1218907297,Walters Road Roundabout,secondary
+1218907298,Walters Road Roundabout,secondary
+1218907299,Walters Road Roundabout,secondary
+1225781282,Lon Brynawel,residential
+1225781283,Lon Brynawel,residential
+1225781284,Lon Brynawel,residential
+1225781285,Lon Brynawel,residential
+1225781286,Bryn Teg,residential
+1225781287,Bryn Teg,residential
+1225781288,Bryn Teg,residential
+1225781289,Bryn Teg,residential
+1253601392,Walters Road,tertiary
+1370730230,Gwernllwynchwyth Road,residential
+1370730231,Gwernllwynchwyth Road,residential
+1375378190,Station Road,residential
+1375378191,Station Road,residential
+1383287181,Nantyffin Road South,unclassified
+1414157192,Nantyffin Road,primary
+1414157195,Nantyffin Road South,unclassified
+1414312007,Samlet Road,primary
+1414312008,Samlet Road,primary
+1414312012,Samlet Road,primary
+1414312017,Frederick Place,residential
+1414312018,Frederick Place,residential
+1414312019,Frederick Place,residential
+1414312020,Bethel Road,tertiary

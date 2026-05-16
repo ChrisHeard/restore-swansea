@@ -1,0 +1,206 @@
+@id,name,highway
+5712267,Long View Road,tertiary
+5712268,Rheidol Avenue,tertiary
+10594618,Heol Pentre-Felen,tertiary
+10594622,Cwmgelli Road,residential
+10594624,Maytree Close,residential
+10633406,Heol Nant Gelli,residential
+10639381,Mynydd Garnlwyd Road,residential
+10639382,Llewelyn Park Drive,residential
+24269954,Eaton Road,tertiary
+24652169,Caemawr Road,tertiary
+24652172,Mynydd Garnlwyd Road,tertiary
+25836051,Long View Road,residential
+26431708,Heol Gerrig,residential
+26433301,Llangyfelach Road,secondary
+26433305,Llangyfelach Road,secondary
+26433307,Clasemont Road,primary
+26551095,Roger Street,residential
+26551100,Crwys Terrace,residential
+26551101,Pengwern Road,residential
+26821894,Glaslyn Place,residential
+26821897,Beacons View Road,residential
+26821898,Beacons View Road,residential
+26821899,Beacons View Road,residential
+26821900,Hill View Crescent,residential
+26821901,Ewenny Place,residential
+26821903,Ewenny Place,residential
+26821904,Ewenny Place,pedestrian
+26821905,Solva Road,residential
+26821906,Creswell Road,residential
+26821907,Severn Road,residential
+26822123,Heol Penar,residential
+26822206,Quarry Road,residential
+26841785,Penlan Road,residential
+26841832,Heol Fach,residential
+26841834,Heol Fach,residential
+27012163,Heol Ddu,tertiary
+27046399,Garnlwyd Close,residential
+27046400,Bryn Eglur Road,residential
+27046401,Glasbury Road,residential
+27046402,Gellifawr Road,residential
+27046403,Gelli Gwyn Road,residential
+27664445,Heol Hermas,residential
+27664446,Plover Close,residential
+27730601,Mynydd Garnlwyd Road,tertiary
+27730612,Caemawr Road,tertiary
+28486467,Gelli Aur,residential
+40647079,Waltham Close,residential
+40647080,Gellifach Crescent,residential
+40647081,Gelli Glas Road,residential
+40657799,Gelli Glas Road,residential
+40657800,Waltham Close,residential
+41015379,Second Avenue,residential
+41015385,First Avenue,residential
+41436659,Crwys Terrace,residential
+41474516,Penfilia Road,tertiary
+41474758,Llangyfelach Road,secondary
+41474759,Penlan Road,residential
+41474760,Llangyfelach Road,secondary
+41474824,Cwmgelli Road,residential
+41474829,Bryn Eglur Road,residential
+41474831,Mynydd Garnlwyd Road,tertiary
+41474836,Gellifawr Road,residential
+41474838,Mynydd Garnlwyd Road,tertiary
+41475067,Cwmgelli Road,residential
+41475679,Swansea Road,secondary
+41881807,Llangyfelach Road,secondary
+46758696,Trewyddfa Road,residential
+47251235,Trewyddfa Road,residential
+47269985,Graig Road,residential
+48976735,Hollett Road,residential
+48976737,Lloyd Road,residential
+48976739,Hollett Road,residential
+48976740,Penlan Terrace,residential
+48976741,Llangyfelach Road,secondary
+48976742,Parkhill Terrace,residential
+48976743,Lloyd Road,residential
+48976746,Hollett Road,residential
+48976747,Wynter Court,residential
+48976748,Waun Gron Road,residential
+48976749,Waun Gron Close,residential
+48976750,Glaslyn Place,residential
+48976751,Glaslyn Place,residential
+48981681,Moriah Road,residential
+48981685,Heol y Cnap,residential
+48981688,New Road,residential
+48981692,Heol Gwell,residential
+48981693,Brynawel Crescent,residential
+49023011,Windermere Road,residential
+49023012,Windermere Road,residential
+49023018,Windermere Road,residential
+49023019,Ullswater Crescent,residential
+49023190,Llewelyn Park Drive,residential
+49023652,Clos Caersalem,residential
+49234466,Clos Ddu,residential
+49234471,Bryn Hedydd,residential
+49234472,Bryn Hedydd,residential
+49234473,Bryn Hedydd,residential
+49619002,Trewyddfa Road,residential
+49619008,Gelli Aur,residential
+49619019,Maple Tree Close,residential
+49619026,Cwmgelli Drive,residential
+49619038,Cwmgelli Close,residential
+49619040,Oakwood Avenue,residential
+49619041,Beech Tree Close,residential
+49619042,Maple Tree Close,residential
+49619044,Beech Tree Close,residential
+49619045,Honeysuckle Drive,residential
+49619046,Elan Avenue,residential
+49619047,Third Avenue,residential
+49619049,Fourth Avenue,residential
+49619052,Fifth Avenue,residential
+49619057,Furze Crescent,residential
+49619061,Penyryrfa,residential
+49619064,Arwelfa,residential
+49619066,Tenth Avenue,residential
+49619067,Ninth Avenue,residential
+49619069,Beacons View Road,residential
+49619070,Beacons View Road,residential
+49619074,Beacons View Road,residential
+49619076,Beacons View Road,residential
+49619078,Penrhiw Road,residential
+49619085,Ystwyth Place,residential
+49619097,Mount Crescent,residential
+49619098,Clos Pen y Banc,residential
+49876872,Siloh Road,residential
+50249400,Hollett Road,residential
+50249403,Hollett Road,residential
+50249404,Villa Terrace,residential
+50249408,Parkhill Road,residential
+50249409,Tudor Road,residential
+50249410,Tudor Road,residential
+55880326,Peniel Road,residential
+61695685,Trewyddfa Road,residential
+61696366,Elan Avenue,residential
+69906441,Pleasant View Terrace,residential
+69906442,Albany Close,residential
+69906443,Lynsdale Road,residential
+69906446,Lynsdale Road,residential
+69906448,Lynsdale Road,residential
+70948298,Bryngelli Road,residential
+70948299,Bryngelli Park,residential
+70948300,Carno Place,residential
+70948316,Gwynfi Street,residential
+70948317,Clifton Court,residential
+70948318,Knoyle Street,residential
+70948319,Knoyle Drive,residential
+70948320,Bryngelli Drive,residential
+70948336,Pineway,residential
+70948337,Cae-pys Road,residential
+70948338,Gelert Street,residential
+70948629,Can-yr-eos,residential
+70948630,Gwladygan,residential
+70948631,Penmachno,residential
+70948633,Brangwyn Close,residential
+70948634,Telyn Aur,residential
+70948635,Godre'r Coed,residential
+70948636,Can-yr-aderyn,residential
+70948637,Llwyn-yr-eos,residential
+70948641,Pine Crescent,residential
+70948806,Eighth Avenue,residential
+70948807,Banwy Road,residential
+70948810,Ramsey Drive,residential
+70948811,Ruggles Terrace,residential
+70948995,Clase Drive,residential
+96570796,Cwm Level Road,tertiary
+96570847,Graig Road,residential
+96570938,Graig Road,residential
+103598245,Clasemont Road,primary
+129108754,Roger Street,residential
+129215671,Hollett Road,residential
+129399734,Penfilia Road,tertiary
+130006548,Hollett Road,residential
+130006561,Woodland House,residential
+133203307,New Quarr Road,residential
+133205919,St Jude's Close,residential
+133205920,St Jude's Close,residential
+133206152,Tirdeunaw Close,residential
+170091748,Mynydd Garnlwyd Road,residential
+170091749,Quarry Road,residential
+170091751,Trewyddfa Road,residential
+170629276,Graig Road,residential
+170629281,Trewyddfa Road,residential
+176169876,Hill View Crescent,residential
+176169881,Hill View Crescent,residential
+176169882,Llangyfelach Road,secondary
+176169883,Llangyfelach Road,secondary
+176169884,Pinewood Close,residential
+176172865,Beacons View Road,residential
+176488079,Beacons View Road,residential
+176488080,Caemawr Road,tertiary
+176488081,Hollett Road,residential
+176488082,Mynydd Garnlwyd Road,residential
+194817311,Llangyfelach Road,secondary
+194817312,Llangyfelach Road,secondary
+238540817,Ladysmith Road,residential
+245796095,Llys Pentrefelen,residential
+281583109,Knoyle Terrace,residential
+296677378,Cwm Level Road,tertiary
+296677380,Cwmlan Terrace,residential
+1218909178,Cwmgelli Road,residential
+1218909179,Cwmgelli Road,residential
+1218909180,Cwmgelli Road,residential
+1219850234,Clasemont Road,primary
+1236708656,Heol Gwyrosydd,tertiary
+1236708657,Heol Gwyrosydd,tertiary

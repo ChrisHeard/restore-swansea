@@ -1,0 +1,265 @@
+@id,name,highway
+4479884,Mumbles Road,primary
+4542910,Ernald Place,residential
+4542913,Glanbrydan Avenue,residential
+4542914,Bernard Street,residential
+4542915,Alexandra Terrace,residential
+4542916,Rhyddings Terrace,residential
+4542918,Marlborough Road,residential
+4542921,Glanmor Road,tertiary
+4570967,King Edward Road,tertiary
+4570969,Westbury Street,tertiary
+4570970,Gwydr Crescent,residential
+4570972,Brunswick Street,tertiary
+4697663,Park Place,residential
+4697880,Bryn Road,tertiary
+4697881,Gorse Lane,tertiary
+5666756,St. Helens Avenue,residential
+5666757,Francis Street,residential
+5666758,St. Helens Crescent,residential
+5666761,Guildhall Road South,secondary
+5666763,Saint Helen's Road,residential
+9473485,Townhill Road,tertiary
+10755243,Aylesbury Road,residential
+10755322,Finsbury Terrace,residential
+10755374,St. Albans Road,residential
+10805044,Waterloo Place,residential
+10805092,Trafalgar Place,residential
+10805112,De Breos Street,residential
+10805136,Kemble Street,residential
+10805330,Langland Terrace,residential
+11177093,Canterbury Road,residential
+11256692,Knoll Avenue,residential
+11256718,Pant Y Gwydr Road,residential
+11257026,Oakwood Road,residential
+11354739,Rhyddings Terrace,residential
+11355081,Richmond Terrace,residential
+11355098,Uplands Terrace,residential
+11355113,Mirador Crescent,residential
+11355158,St James's Crescent,residential
+11489999,Penbryn Terrace,residential
+11490035,Malvern Terrace,residential
+11651660,Chesshyre Street,residential
+11679247,Beechwood Road,residential
+12092674,Brynmill Crescent,residential
+12504328,Guildhall Road South,secondary
+12504949,Catherine Street,residential
+13303728,Bay View Terrace,residential
+13303904,Victoria Terrace,residential
+13305270,Glanmor Crescent,residential
+13305399,Hawthorne Avenue,residential
+13305595,Victoria Street,residential
+13305890,Pinewood Road,residential
+13637603,Cambridge Street,residential
+14359993,Duke Street,residential
+14360058,Henrietta Street,residential
+14605928,Brynmill Avenue,residential
+15238951,Bryn-y-mor Road,tertiary
+15243818,Bay View Crescent,residential
+15243952,Oxford Street,residential
+15399346,Osbourne Terrace,residential
+15588984,Eaton Crescent,residential
+15589073,Bonville Terrace,residential
+15597665,Llythrid Avenue,residential
+15598388,Windsor Street,residential
+15904838,Caswell Street,residential
+15905200,The Cloisters,unclassified
+17364945,Edgeware Road,residential
+17365356,Hazel Road,residential
+17365486,Masefield Way,residential
+20894397,Le Breos Avenue,residential
+21990971,Walter Road,primary
+21990974,Uplands Crescent,primary
+22564929,Rhyddings Park Road,residential
+22650036,Gwydr Square,residential
+22650072,Penlan Crescent,residential
+22650073,Cwmdonkin Drive,residential
+22650080,Hillside Crescent,residential
+22650084,Coults Hill,residential
+22650087,Ffynone Road,residential
+22650093,St. James's Gardens,residential
+22650096,St. James's Gardens,residential
+22650112,Richmond Road,residential
+22650121,Cwmdonkin Terrace,residential
+22650126,Clevedon Court,residential
+22650146,Humphrey Street,residential
+22650787,Hanover Street,residential
+22650815,Oaklands Terrace,residential
+22650816,Woodlands Terrace,residential
+22652380,Penmaen Terrace,residential
+22652386,Brooklands Terrace,residential
+22652390,Rosehill Terrace,residential
+22652394,Montpelier Terrace,residential
+22652398,Burman Street,residential
+22652400,Crole Street,residential
+22652401,White Street,residential
+22661553,Park Drive,residential
+22661554,Eden Avenue,residential
+22661555,Westfa Road,residential
+22677120,Glanmor Park Road,residential
+22677121,Maple Crescent,residential
+22677122,Myrtle Grove,residential
+22690353,Bullins Lane,residential
+22690383,Belgrave Lane,residential
+22690428,Glanbrydan Avenue,residential
+22690429,Beechwood Road,residential
+22727740,Beechwood Road,residential
+22727744,Beechwood Road,residential
+22727746,Beechwood Road,residential
+22752242,Gwydr Crescent,residential
+22752243,Gwydr Crescent,residential
+22752261,Brunswick Street,tertiary
+22883372,Lôn Cynfor,residential
+22883388,Notts Gardens,residential
+22883392,Notts Gardens,residential
+22883485,Rose Hill,residential
+22885375,Rhianfa Lane,residential
+22885405,Cromwell Street,residential
+22905793,Tavistock Road,residential
+22905848,Maple Grove,residential
+22905857,Roger Beck Way,residential
+22907024,The Causeway,residential
+22963000,Constitution Hill,residential
+22963001,Rose Hill,residential
+22963002,Rose Hill,residential
+22963009,Rose Hill,residential
+23105088,Richmond Mews,residential
+23107884,Vaughan Thomas Lane,residential
+23275965,The Quadrant,residential
+23694233,The Grove,residential
+23695328,Lôn Cedwyn,residential
+23695334,Lôn Cynlais,residential
+23695340,Lôn Cadog,residential
+23695341,Lôn Caron,residential
+23695345,Lôn Gwynfryn,residential
+23695351,Lôn Illtyd,residential
+23695358,Lôn Cwmgwyn,residential
+23695364,Lôn Dan-y-Coed,residential
+23707613,Lôn Ger-y-Coed,residential
+23707616,Lôn Coed Bran,residential
+23707618,Lôn Bryngwyn,residential
+23707619,Arfryn Road,residential
+24824426,Ffynone Drive,residential
+24824427,Ffynone Close,residential
+24824432,Ffynone Close,residential
+24824442,Rhianfa Gardens,residential
+24824445,Rhianfa Gardens,residential
+24824465,Constitution Hill,residential
+25816080,Pentyla Road,residential
+26172577,Penlan Crescent,unclassified
+27326284,The Grove,residential
+27332885,Saint Helen's Road,secondary
+28761725,Long Oaks Court,residential
+30131563,Brynmill Lane,tertiary
+40610882,Averil Vivian Grove,residential
+41883675,King Edward Road,tertiary
+44139261,Mumbles Road,primary
+44139264,Mumbles Road,primary
+44289580,Hillside Crescent,residential
+44289581,Richmond Road,residential
+44289582,Ffynone Road,residential
+44289584,Hawthorne Avenue,residential
+44289585,Glanmor Park Road,residential
+44289586,Glanmor Road,tertiary
+44289587,Glanmor Road,tertiary
+44289588,Penlan Crescent,residential
+44289589,Sketty Road,primary
+44289590,Bryn-y-mor Road,tertiary
+48674605,Long Oaks Mews,residential
+48674606,Long Oaks Mews,residential
+48674611,Long Oaks Avenue,residential
+48674613,Long Oaks Court,residential
+48677110,Newnham Crescent,residential
+48677113,Somerville Court,residential
+48908023,Long Oaks Mews,residential
+48908318,Runnymede,residential
+59434325,Park Place,residential
+59434327,Bernard Street,residential
+59434331,King Edward Road,tertiary
+59434336,Marlborough Road,residential
+59434338,Uplands Crescent,primary
+59434341,Sketty Road,primary
+59434342,Bernard Street,residential
+59434346,Rhyddings Terrace,residential
+59434348,Brynmill Avenue,residential
+59434352,Rhyddings Park Road,residential
+79603298,Lôn Coed Parc,residential
+79603304,Lôn Pen-y-Coed,residential
+82856481,The Grove,residential
+82856488,Cwmdonkin Close,residential
+96897356,Cockett Road,primary
+96897359,Sketty Road,primary
+96897361,Broadway,tertiary
+96897367,Sketty Road,primary
+96897371,Llythrid Avenue,residential
+96897376,Parc Wern Road,residential
+96897381,Fairfield Terrace,residential
+96897385,Glanmor Road,tertiary
+101453735,Mumbles Road,primary
+105714023,St. Albans Road,residential
+105714024,Bryn Road,tertiary
+105714029,Canterbury Road,residential
+106362617,Brynmill Avenue,residential
+106512686,Bryn Road,tertiary
+106512688,Waterloo Place,residential
+106512689,Trafalgar Place,residential
+106517225,Brynmill Avenue,residential
+106517227,Marlborough Road,residential
+121346941,Gwydr Mews,residential
+123433442,Gower Road,primary
+123570686,Brynmill Lane,tertiary
+123570687,Brynmill Lane,tertiary
+123570688,Brynmill Lane,tertiary
+123570689,Brynmill Lane,tertiary
+123570691,Mumbles Road,primary
+123570692,Mumbles Road,primary
+123570693,Park Place,residential
+123699304,Bryn Road,tertiary
+123699305,Bryn Road,tertiary
+123699306,Bryn Road,tertiary
+123699307,Bryn Road,tertiary
+123699308,Brynmill Lane,tertiary
+123699310,Cockett Road,primary
+123699314,Glanbrydan Avenue,residential
+123699316,Gorse Lane,tertiary
+123699319,Graiglwyd Road,residential
+123699322,Graiglwyd Road,residential
+123699324,Pen Y Graig Road,tertiary
+123699325,Phillip's Parade,residential
+123699327,Saint Helen's Road,secondary
+123699328,Saint Helen's Road,secondary
+123699329,Saint Helen's Road,secondary
+123699340,Terrace Road,residential
+123699341,Terrace Road,residential
+123699343,Walter Road,primary
+123699344,Walter Road,primary
+123723623,Pen Y Graig Road,tertiary
+123723624,Pen Y Graig Road,tertiary
+123723625,Townhill Road,tertiary
+133209434,Dylan's View,residential
+463440810,Mumbles Road,primary
+463440811,Mumbles Road,primary
+463440812,Mumbles Road,primary
+737655480,Guildhall Road South,secondary
+737655482,Guildhall Road South,secondary
+737655483,Guildhall Road South,secondary
+741043770,Bryn Road,tertiary
+835458075,Uplands Crescent,primary
+835458076,Sketty Road,primary
+835458077,Sketty Road,primary
+836332267,Park Place,residential
+1032762491,Rhianfa Gardens,residential
+1052322115,Clevedon Court,residential
+1053369645,Oakwood Road,residential
+1090377066,Tycoch Road,tertiary
+1191711939,Bullins Lane,residential
+1214101629,Uplands Crescent,primary
+1218834714,Glanmor Road,tertiary
+1222938793,Walter Road,primary
+1222938794,St James's Crescent,residential
+1235505077,Walter Road,primary
+1253252077,Cockett Road,primary
+1253255775,Townhill Road,tertiary
+1253255776,Lôn Cadog,residential
+1460864516,Francis Street,residential
+1467844625,Hanover Street,residential

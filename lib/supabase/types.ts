@@ -1,0 +1,1 @@
+export type StreetStatus = 'not_started' | 'delivered' | 'needs_revisit'

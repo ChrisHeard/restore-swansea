@@ -1,0 +1,156 @@
+@id,name,highway
+9473487,Townhill Road,tertiary
+9473489,Pen Y Graig Road,tertiary
+10260001,Gwynedd Avenue,residential
+10298186,Gors Avenue,tertiary
+22724654,Townhill Road,tertiary
+22724655,Gwent Road,tertiary
+22962990,Powys Avenue,tertiary
+22962991,Dyfed Avenue,residential
+22962994,Merlin Crescent,residential
+22963163,Dyfed Avenue,residential
+22963165,Merlin Crescent,residential
+22964007,Ceiriog Road,residential
+22964025,Dyfed Close,residential
+23695651,Llewelyn Circle,residential
+23695662,Tan y Marian Road,residential
+23695664,Cadwaladr Circle,residential
+23707632,Taliesyn Road,residential
+23707653,Islwyn Road,residential
+23707654,Elfed Road,residential
+23801134,Nicander Place,residential
+23801178,Eigen Crescent,residential
+23801181,Teilo Crescent,residential
+23801182,Berw Road,residential
+23801184,Berw Road,residential
+23815401,Alun Road,residential
+23943267,Carig Crescent,residential
+23943272,Carig Crescent,residential
+23943318,Granogwen Road,residential
+23943330,Emlyn Road,residential
+23943354,Cadwaladr Circle,residential
+23943441,Creidiol Road,residential
+23943447,High View,residential
+23943450,Long Ridge,residential
+23943457,Granogwen Road,residential
+23943464,Mayhill Gardens,residential
+23943466,Branwen Gardens,residential
+23943544,Cadwaladr Circle,residential
+23943551,Cadrawd Road,residential
+23943613,Gwili Terrace,residential
+23943652,Townhill Road,tertiary
+23943722,Townhill Road,tertiary
+23943751,Townhill Road,tertiary
+23943769,Waun Wen Road,residential
+23950067,Carig Crescent,residential
+23950068,Emlyn Road,residential
+23950112,Granogwen Road,unclassified
+24044946,Dewi Terrace,unclassified
+24044947,Pedrog Terrace,residential
+24044985,Emlyn Gardens,residential
+24044994,Tegid Road,residential
+24045008,Tegid Road,residential
+24606042,Gwynedd Avenue,tertiary
+25653236,Ceri Road,residential
+25789604,Elwy Crescent,residential
+25789610,Gors Avenue,tertiary
+25789611,Elphin Road,residential
+25789612,Geiriol Road,residential
+25789613,Gwylfa Road,residential
+25789614,Gomer Road,residential
+25816081,Goronwy Road,residential
+25939692,Heol-y-Gors,tertiary
+25939693,Webbons Way,unclassified
+26254809,Heol-y-Gors,tertiary
+26566171,Geiriol Gardens,residential
+26566173,Gwynfor Road,residential
+27012504,Meadow Street,residential
+30385611,Powys Avenue,tertiary
+30385631,Powys Avenue,tertiary
+30385781,Ceiriog Road,residential
+30385949,Caradog Place,residential
+30385952,Glyndwr Place,residential
+30385982,Dyfed Avenue,residential
+30385994,Dyfed Avenue,residential
+30386004,Dyfed Avenue,tertiary
+30386005,Dyfed Avenue,tertiary
+30386009,Powys Avenue,residential
+35471212,Elwy Gardens,residential
+35471213,Elwy Gardens,residential
+35471214,Tower Gardens,residential
+35471215,Tower Gardens,residential
+35471216,Tower Court,residential
+35471242,Tower Court,residential
+35471243,Gors Avenue,tertiary
+35471244,Gors Avenue,tertiary
+35471245,Gors Avenue,tertiary
+35471246,Gors Avenue,tertiary
+35770350,Gwynedd Gardens,residential
+36606891,Gwent Gardens,residential
+41464792,Carmarthen Road,primary
+41464793,Gors Avenue,tertiary
+41496788,Pen Y Graig Road,tertiary
+41496789,Teilo Crescent,residential
+41497040,Mayhill Road,residential
+41497041,Townhill Road,tertiary
+41497042,Townhill Road,tertiary
+41497046,Cadwaladr Circle,residential
+41882295,Gwent Road,tertiary
+41882296,Gors Avenue,tertiary
+60270054,Gomer Gardens,residential
+60270062,Elphin Gardens,residential
+73212789,Gwynedd Gardens,residential
+73369903,Townhill Road,residential
+73369905,Clos Morgannwg,residential
+73369909,Dyfed Avenue,residential
+79603300,Paradise View,residential
+96570788,Nicander Parade,residential
+96897368,Dyfed Avenue,tertiary
+96897375,Townhill Road,tertiary
+96897378,Pantycelyn Road,residential
+96897379,Townhill Gardens,residential
+96904597,Elphin Road,residential
+96904603,Geiriol Road,residential
+96904612,Gomer Road,residential
+121818942,Glyndwr Place,residential
+121818943,Powys Gardens,residential
+121818945,Carig Gardens,residential
+121818946,Cadfan Road,residential
+122959018,Webbons Way,unclassified
+122959024,Heol-y-Gors,tertiary
+123699318,Graiglwyd Road,residential
+123723621,Nicander Parade,residential
+123845488,Creidiol Road,residential
+123845519,Baptist Well Place,unclassified
+123882121,Townhill Road,tertiary
+123937315,Gors Avenue,tertiary
+123937316,Gors Avenue,tertiary
+123937317,Gors Avenue,tertiary
+123937318,Gwili Terrace,residential
+123937319,Mayhill Road,residential
+123937320,Townhill Road,tertiary
+124073464,Heol-y-Gors,tertiary
+124073466,Heol-y-Gors,tertiary
+124073467,Heol-y-Gors,tertiary
+124317772,Geiriol Road,residential
+124317775,Gwynedd Avenue,residential
+124317776,Heol-y-Gors,tertiary
+125492788,Heol-y-Gors,tertiary
+137491585,Gors Avenue,tertiary
+137491593,Townhill Road,tertiary
+340367123,Long Ridge,residential
+779824791,Teilo Crescent,residential
+779824792,Glyndwr Place,residential
+1080680399,Gwent Road,tertiary
+1159252612,Gors Avenue,tertiary
+1216629057,Carmarthen Road,primary
+1216629058,Carmarthen Road,primary
+1216629067,Gors Avenue,tertiary
+1217571387,Llewelyn Circle,residential
+1217571388,Llewelyn Circle,residential
+1217571389,Llewelyn Circle,residential
+1217571390,Llewelyn Circle,residential
+1232780605,Tower Gardens,residential
+1307143524,Townhill Road,tertiary
+1307143525,Townhill Road,tertiary
+1483708227,Elphin Road,residential
