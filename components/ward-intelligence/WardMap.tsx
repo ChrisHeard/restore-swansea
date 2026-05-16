@@ -32,7 +32,7 @@ export default function WardMap({ data = [], selectedWardCode = null, onWardSele
             d={ward.path}
             fill={fill}
             stroke={selected ? '#051b3a' : '#1e3a8a'}
-            strokeWidth={selected ? 1.8 : 1}
+            strokeWidth={selected ? 2 : 1}
             className="cursor-pointer transition-opacity hover:opacity-80"
             onClick={() => onWardSelect?.(ward.wardCode)}
           >
