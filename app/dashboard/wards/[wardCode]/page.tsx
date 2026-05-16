@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import { StreetUpdateForm, WardMessageForm } from './street-update-form'
+import { isStreetStatus, type StreetStatus } from '@/lib/domain/street-status'
+import { WardMessageForm } from './street-update-form'
 import { WardStreetList } from './ward-street-list'
 
 
@@ -10,7 +11,7 @@ type Street = {
   street_name: string
   road_type: string | null
   ward_code: string
-  status: 'not_started' | 'delivered' | 'needs_revisit' | 'no_residences'  
+  status: StreetStatus
   notes: string | null
   updated_at: string
 }
@@ -58,13 +59,6 @@ type ElectionResult2022 = {
   votes: number | null
   vote_share_pct: number | null
 }
-const allowedStatuses = [
-  'not_started',
-  'delivered',
-  'needs_revisit',
-  'no_residences',
-] as const
-
 export default async function WardDetailPage({
   params,
   searchParams,
@@ -82,9 +76,7 @@ export default async function WardDetailPage({
 
   const q = (filters.q ?? '').trim().toLowerCase()
   const rawStatusFilter = filters.status ?? ''
-  const statusFilter = allowedStatuses.includes(
-    rawStatusFilter as (typeof allowedStatuses)[number]
-  )
+  const statusFilter = isStreetStatus(rawStatusFilter)
     ? rawStatusFilter
     : ''
   const roadTypeFilter = filters.road_type ?? ''

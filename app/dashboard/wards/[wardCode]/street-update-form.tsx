@@ -3,13 +3,18 @@
 import { useState, useTransition } from 'react'
 import { postWardMessageAction, updateStreetAction } from './actions'
 import Image from 'next/image'
+import {
+  streetStatusLabel,
+  streetStatusOptions,
+  type StreetStatus,
+} from '@/lib/domain/street-status'
 
 type Street = {
   id: string
   street_name: string
   road_type: string | null
   ward_code: string
-  status: 'not_started' | 'delivered' | 'needs_revisit' | 'no_residences'  
+  status: StreetStatus
   notes: string | null
   updated_at: string
 }
@@ -17,13 +22,6 @@ type Street = {
 function formatDate(value: string | null) {
   if (!value) return 'Not updated'
   return new Date(value).toISOString().slice(0, 16).replace('T', ' ')
-}
-
-function statusLabel(status: Street['status']) {
-  if (status === 'not_started') return 'Not started'
-  if (status === 'needs_revisit') return 'Needs revisit'
-  if (status === 'no_residences') return 'No residences'
-  return 'Delivered'
 }
 
 function statusClasses(status: Street['status']) {
@@ -94,7 +92,7 @@ export function StreetUpdateForm({
                 street.status
               )}`}
             >
-              {statusLabel(street.status)}
+              {streetStatusLabel(street.status)}
             </span>
           </div>
         </div>
@@ -134,10 +132,11 @@ export function StreetUpdateForm({
                   defaultValue={street.status}
                   className="w-full rounded border px-2 py-2 text-sm"
                 >
-                  <option value="not_started">Not started</option>
-                  <option value="delivered">Delivered</option>
-                  <option value="needs_revisit">Needs revisit</option>
-                  <option value="no_residences">No residences</option>
+                  {streetStatusOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </label>
 

@@ -14,10 +14,23 @@ Restore Swansea is a private member platform for coordinating Restore Britain ac
 
 ## Local development
 
-```bash
-npm install
-npm run dev
-```
+1. Copy environment template:
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Fill in `.env.local` with your Supabase project values:
+
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+3. Install and run:
+
+   ```bash
+   npm install
+   npm run dev
+   ```
 
 ## Production checks
 
@@ -37,62 +50,17 @@ For stable local development, enable password auth and use a fixed development u
 
 > Magic links can hit Supabase email rate limits during rapid local testing. Keep them as optional fallback rather than your primary local auth flow.
 
-### Supabase SQL setup
+## Database schema notes
 
-Run this in the Supabase SQL editor:
+Detailed, code-observed database object expectations are documented in:
 
-```sql
-create extension if not exists pgcrypto;
+- `docs/database-schema.md`
 
-create table if not exists public.profiles (
-  id uuid primary key references auth.users(id) on delete cascade,
-  email text,
-  created_at timestamptz default now()
-);
+## Auth and permissions design notes
 
-create table if not exists public.streets (
-  id uuid primary key default gen_random_uuid(),
-  user_id uuid not null references auth.users(id) on delete cascade,
-  street_name text not null,
-  area text,
-  postcode text,
-  status text not null default 'not_started' check (status in ('not_started', 'delivered', 'needs_revisit')),
-  notes text,
-  created_at timestamptz default now(),
-  updated_at timestamptz default now()
-);
+Planned roles and permissions design (pre-implementation) is documented in:
 
-alter table public.streets enable row level security;
-
-create policy "Users can view own streets"
-  on public.streets for select
-  using (auth.uid() = user_id);
-
-create policy "Users can insert own streets"
-  on public.streets for insert
-  with check (auth.uid() = user_id);
-
-create policy "Users can update own streets"
-  on public.streets for update
-  using (auth.uid() = user_id)
-  with check (auth.uid() = user_id);
-
-create policy "Users can delete own streets"
-  on public.streets for delete
-  using (auth.uid() = user_id);
-
-create or replace function public.handle_updated_at()
-returns trigger language plpgsql as $$
-begin
-  new.updated_at = now();
-  return new;
-end;
-$$;
-
-create trigger set_streets_updated_at
-before update on public.streets
-for each row execute function public.handle_updated_at();
-```
+- `docs/auth-and-permissions.md`
 
 ## Migration note
 
