@@ -20,7 +20,6 @@ function colourForValue(value: number | null, min: number, max: number) {
 }
 
 export default function WardIntelligenceShell({ metricRows, metricsError }: Props) {
-  const [selectedWardCode, setSelectedWardCode] = useState<string | null>(null)
   const [hoveredWardCode, setHoveredWardCode] = useState<string | null>(null)
   const [popupWardCode, setPopupWardCode] = useState<string | null>(null)
   const [isPopupVisible, setIsPopupVisible] = useState(false)
@@ -77,7 +76,6 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
   }
 
   const handleWardSelect = (wardCode: string) => {
-    setSelectedWardCode(wardCode)
     handleWardHover(wardCode)
   }
 
@@ -115,8 +113,8 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
       : null
 
   return (
-    <section className="surface h-[calc(100vh-230px)] min-h-[620px] overflow-hidden p-0">
-      <div className="grid h-full lg:grid-cols-[220px_minmax(0,1fr)] xl:grid-cols-[230px_minmax(0,1fr)]">
+    <section className="surface overflow-hidden p-0">
+      <div className="grid min-h-[620px] lg:grid-cols-[210px_minmax(0,1fr)] xl:grid-cols-[220px_minmax(0,1fr)]">
         <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">Map layers</h2>
           <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
@@ -129,7 +127,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-lg border px-3 py-2 text-sm leading-snug transition-colors ${
+                    className={`block cursor-pointer rounded-md border px-2.5 py-1.5 text-[13px] leading-snug transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -144,8 +142,8 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                       onChange={(event) => setSelectedMetricKey(event.target.value)}
                       className="sr-only"
                     />
-                    <span className="block text-sm font-medium">{option.label}</span>
-                    {option.year ? <span className="mt-0.5 block text-[11px] leading-4 text-zinc-500">Source: {option.year}</span> : null}
+                    <span className="block text-[13px] font-medium leading-snug">{option.label}</span>
+                    {option.year ? <span className="mt-0.5 block text-[10px] leading-3 text-zinc-500">Source: {option.year}</span> : null}
                   </label>
                 )
               })}
@@ -166,7 +164,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
         </aside>
 
         <article className="border-b border-zinc-200 p-3 sm:p-4 lg:border-b-0">
-          <section className="relative h-full min-h-[620px] overflow-hidden rounded-xl bg-slate-50 p-4">
+          <section className="relative min-h-[620px] overflow-hidden bg-slate-50 p-4">
             <div className="mb-2 flex flex-wrap items-center justify-between gap-2 pr-24">
               <div>
                 <h2 className="text-base font-semibold text-[#051b3a]">Swansea ward map</h2>
@@ -178,7 +176,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
             </div>
             {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
 
-            <div className="pointer-events-none absolute bottom-4 right-4 z-20">
+            <div className="pointer-events-none absolute bottom-4 right-4 z-30">
               <div
                 className={`w-56 rounded-xl border border-zinc-200 bg-white/95 p-3 shadow-lg backdrop-blur transition-all duration-200 ease-out ${
                   popupWard && isPopupVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-1 opacity-0'
@@ -205,11 +203,10 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
               </div>
             </div>
 
-            <div className="relative h-[520px] overflow-hidden rounded-xl bg-slate-50 lg:h-[calc(100%-2.25rem)]">
-              <div className="absolute inset-2 flex items-center justify-center lg:inset-4">
+            <div className="absolute inset-x-4 bottom-4 top-16 z-0 overflow-hidden rounded-xl bg-slate-50">
+              <div className="h-full w-full">
                 <WardMap
                   data={mapData}
-                  selectedWardCode={selectedWardCode}
                   hoveredWardCode={hoveredWardCode}
                   onWardSelect={handleWardSelect}
                   onWardHover={handleWardHover}
