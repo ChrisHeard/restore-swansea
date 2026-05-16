@@ -11,7 +11,7 @@ export type WardMapDatum = {
 }
 
 export type WardMapProps = {
-  data?: WardMapDatum[]
+  data?: WardMapDatum[] | null
   selectedWardCode?: string | null
   hoveredWardCode?: string | null
   onWardSelect?: (wardCode: string) => void
@@ -27,33 +27,56 @@ export default function WardMap({
   onWardHover,
   onWardLeave,
 }: WardMapProps) {
-  const datumByCode = useMemo(() => new Map(data.map((d) => [d.wardCode, d])), [data])
+  const safeData = Array.isArray(data) ? data : []
+
+  const datumByCode = useMemo(
+    () => new Map(safeData.map((datum) => [datum.wardCode, datum])),
+    [safeData]
+  )
 
   return (
-    <svg viewBox={wardMap.viewBox} preserveAspectRatio="xMidYMid meet" role="img" aria-label="Swansea ward map" className="block h-full w-full">
+    <svg
+      viewBox={wardMap.viewBox}
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      aria-label="Swansea ward map"
+      className="block h-full w-full"
+    >
       {wardMap.wards.map((ward) => {
         const datum = datumByCode.get(ward.wardCode)
         const selected = ward.wardCode === selectedWardCode
         const hovered = ward.wardCode === hoveredWardCode
-        const fill = datum?.colour ?? (selected ? '#0f52b0' : '#dbeafe')
+        const isActive = hovered || selected
+
+        const fill = datum?.colour ?? '#dbeafe'
+        const stroke = isActive ? '#051b3a' : '#1e3a8a'
+        const strokeWidth = isActive ? 2 : 1
 
         return (
           <path
             key={ward.wardCode}
             d={ward.path}
             fill={fill}
-            stroke={hovered || selected ? '#051b3a' : '#1e3a8a'}
-            strokeWidth={hovered || selected ? 2 : 1}
-            opacity={hovered ? 0.9 : 1}
+            stroke={stroke}
+            strokeWidth={strokeWidth}
+            opacity={hovered ? 0.92 : 1}
             tabIndex={0}
-            className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-80 focus-visible:opacity-80 focus-visible:outline-none"
+            role="button"
+            aria-label={`${ward.wardName} ward${
+              datum?.label ? `, ${datum.label}` : ''
+            }`}
+            className="cursor-pointer transition-[fill,stroke,stroke-width,opacity] duration-300 ease-out hover:opacity-90 focus-visible:opacity-90 focus-visible:outline-none"
             onClick={() => onWardSelect?.(ward.wardCode)}
             onPointerEnter={() => onWardHover?.(ward.wardCode)}
             onPointerLeave={() => onWardLeave?.()}
             onFocus={() => onWardHover?.(ward.wardCode)}
             onBlur={() => onWardLeave?.()}
           >
-            <title>{`${ward.wardName} (${ward.wardCode})${datum?.label ? ` - ${datum.label}` : ''}`}</title>
+            <title>
+              {`${ward.wardName} (${ward.wardCode})${
+                datum?.label ? ` - ${datum.label}` : ''
+              }`}
+            </title>
           </path>
         )
       })}
