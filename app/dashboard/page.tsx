@@ -44,9 +44,9 @@ const dashboardModules: DashboardModule[] = [
   {
     title: 'Ward Intelligence',
     description: 'Explore ward context, demographics, turnout, and local campaign data.',
-    status: 'Planned',
-    href: '#coming-soon',
-    actionLabel: 'Coming soon',
+    status: 'Active',
+    href: '/dashboard/ward-intelligence',
+    actionLabel: 'Open map',
   },
   {
     title: 'Canvassing Guide',
@@ -190,7 +190,7 @@ export default async function DashboardPage() {
             Choose a ward
           </Link>
           <a
-            href="#coming-soon"
+            href="/dashboard/ward-intelligence"
             className="inline-flex items-center justify-center rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
           >
             View ward intelligence
