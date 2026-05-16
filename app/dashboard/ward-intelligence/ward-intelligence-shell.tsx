@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import WardMap, { type WardMapDatum } from '@/components/ward-intelligence/WardMap'
 import { formatMetricValue } from '@/components/ward-intelligence/formatMetricValue'
 import wardMap from '@/lib/ward-map/swansea-ward-paths.json'
@@ -21,6 +21,11 @@ function colourForValue(value: number | null, min: number, max: number) {
 
 export default function WardIntelligenceShell({ metricRows, metricsError }: Props) {
   const [selectedWardCode, setSelectedWardCode] = useState<string | null>(null)
+  const [hoveredWardCode, setHoveredWardCode] = useState<string | null>(null)
+  const [popupWardCode, setPopupWardCode] = useState<string | null>(null)
+  const [isPopupVisible, setIsPopupVisible] = useState(false)
+  const popupHideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const POPUP_FADE_DURATION_MS = 200
 
   const metricOptions = useMemo(() => {
     const byKey = new Map<string, { key: string; label: string; year: number | null; unit: string | null }>()
@@ -45,10 +50,38 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
   const [selectedMetricKey, setSelectedMetricKey] = useState<string | null>(null)
   const activeMetricKey = selectedMetricKey ?? defaultMetric
 
-  const selectedWard = useMemo(
-    () => wardMap.wards.find((ward) => ward.wardCode === selectedWardCode) ?? null,
-    [selectedWardCode]
-  )
+  const clearPopupHideTimeout = () => {
+    if (popupHideTimeoutRef.current) {
+      clearTimeout(popupHideTimeoutRef.current)
+      popupHideTimeoutRef.current = null
+    }
+  }
+
+  useEffect(() => () => clearPopupHideTimeout(), [])
+
+  const handleWardHover = (wardCode: string) => {
+    clearPopupHideTimeout()
+    setHoveredWardCode(wardCode)
+    setPopupWardCode(wardCode)
+    setIsPopupVisible(true)
+  }
+
+  const handleWardLeave = () => {
+    setHoveredWardCode(null)
+    setIsPopupVisible(false)
+    clearPopupHideTimeout()
+    popupHideTimeoutRef.current = setTimeout(() => {
+      setPopupWardCode(null)
+      popupHideTimeoutRef.current = null
+    }, POPUP_FADE_DURATION_MS)
+  }
+
+  const handleWardSelect = (wardCode: string) => {
+    setSelectedWardCode(wardCode)
+    handleWardHover(wardCode)
+  }
+
+  const popupWard = useMemo(() => wardMap.wards.find((ward) => ward.wardCode === popupWardCode) ?? null, [popupWardCode])
 
   const selectedMetricRows = useMemo(
     () => metricRows.filter((row) => row.metric_key === activeMetricKey),
@@ -73,7 +106,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
   }, [activeMetricKey, maxValue, minValue, selectedMetricRows])
 
   const selectedMetric = metricOptions.find((option) => option.key === activeMetricKey) ?? null
-  const selectedWardMetric = selectedMetricRows.find((row) => row.ward_code === selectedWardCode) ?? null
+  const popupWardMetric = selectedMetricRows.find((row) => row.ward_code === popupWardCode) ?? null
 
   const mapStateMessage = metricsError
     ? 'Ward intelligence metrics are not available yet.'
@@ -83,7 +116,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
 
   return (
     <section className="surface h-[calc(100vh-230px)] min-h-[620px] overflow-hidden p-0">
-      <div className="grid h-full lg:grid-cols-[260px_minmax(0,1fr)] xl:grid-cols-[280px_minmax(0,1fr)]">
+      <div className="grid h-full lg:grid-cols-[220px_minmax(0,1fr)] xl:grid-cols-[230px_minmax(0,1fr)]">
         <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">Map layers</h2>
           <p className="mt-1 text-xs text-zinc-500">Choose a ward-level metric to colour the map.</p>
@@ -96,7 +129,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-lg border px-3 py-1.5 transition-colors ${
+                    className={`block cursor-pointer rounded-lg border px-3 py-2 text-sm leading-snug transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -111,7 +144,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
                       onChange={(event) => setSelectedMetricKey(event.target.value)}
                       className="sr-only"
                     />
-                    <span className="block text-sm/5 font-medium">{option.label}</span>
+                    <span className="block text-sm font-medium">{option.label}</span>
                     {option.year ? <span className="mt-0.5 block text-[11px] leading-4 text-zinc-500">Source: {option.year}</span> : null}
                   </label>
                 )
@@ -137,7 +170,7 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
             <div className="mb-2 flex flex-wrap items-center justify-between gap-2 pr-24">
               <div>
                 <h2 className="text-base font-semibold text-[#051b3a]">Swansea ward map</h2>
-                <p className="text-xs text-zinc-500">Click a ward to inspect local context.</p>
+                <p className="text-xs text-zinc-500">Hover a ward to inspect local context.</p>
               </div>
               <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-[#0f52b0]">
                 2021 Census
@@ -145,57 +178,43 @@ export default function WardIntelligenceShell({ metricRows, metricsError }: Prop
             </div>
             {mapStateMessage ? <p className="mb-3 rounded-md bg-zinc-100 p-3 text-sm text-zinc-700">{mapStateMessage}</p> : null}
 
-            <div className="lg:absolute lg:right-4 lg:top-4 lg:z-20 lg:w-[280px]">
-              <div className="rounded-lg border border-zinc-200 bg-white/95 p-3 shadow-sm backdrop-blur">
-                {!selectedWard ? (
-                  <>
-                    <p className="text-sm font-semibold text-[#051b3a]">Select a ward</p>
-                    <p className="mt-1 text-xs text-zinc-600">Click the map to inspect local context.</p>
-                  </>
-                ) : (
+            <div className="pointer-events-none absolute bottom-4 right-4 z-20">
+              <div
+                className={`w-56 rounded-xl border border-zinc-200 bg-white/95 p-3 shadow-lg backdrop-blur transition-all duration-200 ease-out ${
+                  popupWard && isPopupVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-1 opacity-0'
+                }`}
+              >
+                {popupWard ? (
                   <div className="space-y-2">
-                    <div className="flex items-start justify-between gap-2">
-                      <div>
-                        <p className="text-sm font-semibold text-[#051b3a]">{selectedWard.wardName}</p>
-                        <p className="text-xs font-medium tracking-wide text-zinc-500">{selectedWard.wardCode}</p>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => setSelectedWardCode(null)}
-                        className="rounded-md border border-zinc-200 px-2 py-1 text-xs font-medium text-zinc-600 transition hover:bg-zinc-100"
-                        aria-label="Clear selected ward"
-                      >
-                        Clear
-                      </button>
+                    <div>
+                      <p className="text-sm font-semibold text-[#051b3a]">{popupWard.wardName}</p>
+                      <p className="text-xs font-medium tracking-wide text-zinc-500">{popupWard.wardCode}</p>
                     </div>
                     <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">Selected layer</p>
-                      <p className="mt-0.5 text-xs font-medium text-zinc-700">{selectedMetric?.label ?? 'Not available'}</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-semibold text-[#051b3a]">
-                        {selectedWardMetric
-                          ? formatMetricValue(selectedWardMetric.metric_value, selectedWardMetric.metric_unit)
-                          : 'No value available for this layer.'}
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">
+                        {selectedMetric?.label ?? 'Selected layer'}
                       </p>
-                      {selectedWardMetric?.metric_value !== null && minValue !== null && maxValue !== null && minValue !== maxValue ? (
-                        <p className="mt-1 text-xs text-zinc-500">
-                          {selectedWardMetric.metric_value <= minValue + (maxValue - minValue) / 3
-                            ? 'Lower range'
-                            : selectedWardMetric.metric_value >= maxValue - (maxValue - minValue) / 3
-                              ? 'Higher range'
-                              : 'Mid range'}
-                        </p>
-                      ) : null}
+                      <p className="mt-0.5 text-sm font-semibold text-[#051b3a]">
+                        {popupWardMetric
+                          ? formatMetricValue(popupWardMetric.metric_value, popupWardMetric.metric_unit)
+                          : 'No value available'}
+                      </p>
                     </div>
                   </div>
-                )}
+                ) : null}
               </div>
             </div>
 
             <div className="relative h-[520px] overflow-hidden rounded-xl bg-slate-50 lg:h-[calc(100%-2.25rem)]">
               <div className="absolute inset-2 flex items-center justify-center lg:inset-4">
-                <WardMap data={mapData} selectedWardCode={selectedWardCode} onWardSelect={setSelectedWardCode} />
+                <WardMap
+                  data={mapData}
+                  selectedWardCode={selectedWardCode}
+                  hoveredWardCode={hoveredWardCode}
+                  onWardSelect={handleWardSelect}
+                  onWardHover={handleWardHover}
+                  onWardLeave={handleWardLeave}
+                />
               </div>
             </div>
           </section>
