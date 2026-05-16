@@ -160,7 +160,7 @@ export default function WardIntelligenceShell({
 
   return (
     <section className="surface overflow-hidden p-0">
-      <div className="grid min-h-[620px] lg:grid-cols-[210px_minmax(0,1fr)] xl:grid-cols-[220px_minmax(0,1fr)]">
+      <div className="grid min-h-[620px] lg:grid-cols-[190px_minmax(0,1fr)] xl:grid-cols-[200px_minmax(0,1fr)]">
         <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
           <h2 className="text-base font-semibold text-[#051b3a]">
             Map layers
@@ -175,6 +175,7 @@ export default function WardIntelligenceShell({
             disabled={metricOptions.length === 0}
           >
             <legend className="sr-only">Ward map layer options</legend>
+            <div className="h-full space-y-1 overflow-y-auto pr-1">
 
             <div className="h-full space-y-1.5 overflow-y-auto pr-1">
               {metricOptions.map((option) => {
@@ -184,7 +185,7 @@ export default function WardIntelligenceShell({
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-md border px-2.5 py-1.5 text-[13px] leading-snug transition-colors ${
+                    className={`block cursor-pointer rounded-md border px-2 py-1.5 text-[12px] leading-snug transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -262,7 +263,7 @@ export default function WardIntelligenceShell({
               </p>
             ) : null}
 
-            <div className="pointer-events-none absolute bottom-4 right-4 z-30">
+            <div className="pointer-events-none absolute left-4 top-20 z-30">
               <div
                 className={`w-56 rounded-xl border border-zinc-200 bg-white/95 p-3 shadow-lg backdrop-blur transition-all duration-200 ease-out ${
                   popupWard && isPopupVisible
