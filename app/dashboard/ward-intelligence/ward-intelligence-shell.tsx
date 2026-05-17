@@ -18,7 +18,9 @@ const POPUP_FADE_DURATION_MS = 200
 // Temporarily hidden until complete candidate-level 2022 results are imported.
 const HIDDEN_METRIC_KEYS = new Set(['conservative_vote_share_2022_pct'])
 
-function sourceBadgeForMetric(metric: { key: string; year: number | null } | null) {
+function sourceBadgeForMetric(
+  metric: { key: string; year: number | null } | null
+) {
   if (!metric) return 'Ward data'
 
   if (metric.key === 'election_2022_turnout_pct') {
@@ -49,22 +51,6 @@ function colourForValue(value: number | null, min: number, max: number) {
   const lightness = 88 - ratio * 46
 
   return `hsl(214 90% ${lightness}%)`
-}
-
-function sourceBadgeForMetric(
-  metric: { key: string; year: number | null } | null
-) {
-  if (!metric) return 'Ward data'
-
-  if (metric.key === 'election_2022_turnout_pct') {
-    return '2022 local election'
-  }
-
-  if (metric.year) {
-    return `${metric.year} Census`
-  }
-
-  return 'Ward data'
 }
 
 export default function WardIntelligenceShell({
@@ -155,10 +141,10 @@ export default function WardIntelligenceShell({
     return selectedMetricRows.map((row) => ({
       wardCode: row.ward_code,
       value: row.metric_value,
-      label: `${displayMetricLabel(row.metric_label, row.metric_key)}: ${formatMetricValue(
-        row.metric_value,
-        row.metric_unit
-      )}`,
+      label: `${displayMetricLabel(
+        row.metric_label,
+        row.metric_key
+      )}: ${formatMetricValue(row.metric_value, row.metric_unit)}`,
       colour: colourForValue(row.metric_value, minValue, maxValue),
     }))
   }, [activeMetricKey, maxValue, minValue, selectedMetricRows])
@@ -221,9 +207,8 @@ export default function WardIntelligenceShell({
             disabled={metricOptions.length === 0}
           >
             <legend className="sr-only">Ward map layer options</legend>
-            <div className="h-full space-y-1.5 overflow-y-auto pr-1">
 
-            <div className="h-full space-y-1 overflow-y-auto pr-1">
+            <div className="h-full space-y-1.5 overflow-y-auto pr-1">
               {metricOptions.map((option) => {
                 const isActive = activeMetricKey === option.key
 
@@ -311,21 +296,22 @@ export default function WardIntelligenceShell({
                     : 'translate-y-1 opacity-0'
                 }`}
               >
-          {popupWard ? (
-            <div>
-              <p className="font-semibold text-[#051b3a]">
-                {popupWard.wardName}
-              </p>
-              <p className="font-medium text-[#051b3a]">
-                {popupWardMetric
-                  ? formatMetricValue(
-                      popupWardMetric.metric_value,
-                      popupWardMetric.metric_unit
-                    )
-                  : 'No value'}
-              </p>
-            </div>
-          ) : null}
+                {popupWard ? (
+                  <div>
+                    <p className="font-semibold text-[#051b3a]">
+                      {popupWard.wardName}
+                    </p>
+
+                    <p className="font-medium text-[#051b3a]">
+                      {popupWardMetric
+                        ? formatMetricValue(
+                            popupWardMetric.metric_value,
+                            popupWardMetric.metric_unit
+                          )
+                        : 'No value'}
+                    </p>
+                  </div>
+                ) : null}
               </div>
             </div>
 
