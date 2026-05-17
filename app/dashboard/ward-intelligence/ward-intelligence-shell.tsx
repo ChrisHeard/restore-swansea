@@ -25,6 +25,22 @@ function colourForValue(value: number | null, min: number, max: number) {
   return `hsl(214 90% ${lightness}%)`
 }
 
+function sourceBadgeForMetric(
+  metric: { key: string; year: number | null } | null
+) {
+  if (!metric) return 'Ward data'
+
+  if (metric.key === 'election_2022_turnout_pct') {
+    return '2022 local election'
+  }
+
+  if (metric.year) {
+    return `${metric.year} Census`
+  }
+
+  return 'Ward data'
+}
+
 export default function WardIntelligenceShell({
   metricRows,
   metricsError = null,
@@ -37,6 +53,10 @@ export default function WardIntelligenceShell({
   const [hoveredWardCode, setHoveredWardCode] = useState<string | null>(null)
   const [popupWardCode, setPopupWardCode] = useState<string | null>(null)
   const [isPopupVisible, setIsPopupVisible] = useState(false)
+  const [selectedMetricKey, setSelectedMetricKey] = useState<string | null>(
+    null
+  )
+
   const popupHideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const clearPopupHideTimeout = useCallback(() => {
@@ -79,42 +99,10 @@ export default function WardIntelligenceShell({
     )
   }, [metricOptions])
 
-  const [selectedMetricKey, setSelectedMetricKey] = useState<string | null>(null)
   const activeMetricKey = selectedMetricKey ?? defaultMetric
 
-  const handleWardHover = useCallback(
-    (wardCode: string) => {
-      clearPopupHideTimeout()
-      setHoveredWardCode(wardCode)
-      setPopupWardCode(wardCode)
-      setIsPopupVisible(true)
-    },
-    [clearPopupHideTimeout]
-  )
-
-  const handleWardLeave = useCallback(() => {
-    setHoveredWardCode(null)
-    setIsPopupVisible(false)
-    clearPopupHideTimeout()
-
-    popupHideTimeoutRef.current = setTimeout(() => {
-      setPopupWardCode(null)
-      popupHideTimeoutRef.current = null
-    }, POPUP_FADE_DURATION_MS)
-  }, [clearPopupHideTimeout])
-
-  const handleWardSelect = useCallback(
-    (wardCode: string) => {
-      handleWardHover(wardCode)
-    },
-    [handleWardHover]
-  )
-
-  const popupWard = useMemo(
-    () =>
-      wardMap.wards.find((ward) => ward.wardCode === popupWardCode) ?? null,
-    [popupWardCode]
-  )
+  const selectedMetric =
+    metricOptions.find((option) => option.key === activeMetricKey) ?? null
 
   const selectedMetricRows = useMemo(
     () => safeMetricRows.filter((row) => row.metric_key === activeMetricKey),
@@ -146,11 +134,42 @@ export default function WardIntelligenceShell({
     }))
   }, [activeMetricKey, maxValue, minValue, selectedMetricRows])
 
-  const selectedMetric =
-    metricOptions.find((option) => option.key === activeMetricKey) ?? null
+  const popupWard = useMemo(
+    () =>
+      wardMap.wards.find((ward) => ward.wardCode === popupWardCode) ?? null,
+    [popupWardCode]
+  )
 
   const popupWardMetric =
     selectedMetricRows.find((row) => row.ward_code === popupWardCode) ?? null
+
+  const handleWardHover = useCallback(
+    (wardCode: string) => {
+      clearPopupHideTimeout()
+      setHoveredWardCode(wardCode)
+      setPopupWardCode(wardCode)
+      setIsPopupVisible(true)
+    },
+    [clearPopupHideTimeout]
+  )
+
+  const handleWardLeave = useCallback(() => {
+    setHoveredWardCode(null)
+    setIsPopupVisible(false)
+    clearPopupHideTimeout()
+
+    popupHideTimeoutRef.current = setTimeout(() => {
+      setPopupWardCode(null)
+      popupHideTimeoutRef.current = null
+    }, POPUP_FADE_DURATION_MS)
+  }, [clearPopupHideTimeout])
+
+  const handleWardSelect = useCallback(
+    (wardCode: string) => {
+      handleWardHover(wardCode)
+    },
+    [handleWardHover]
+  )
 
   const mapStateMessage = metricsError
     ? 'Ward intelligence metrics are not available yet.'
@@ -160,24 +179,21 @@ export default function WardIntelligenceShell({
 
   return (
     <section className="surface overflow-hidden p-0">
-      <div className="grid min-h-[620px] lg:grid-cols-[190px_minmax(0,1fr)] xl:grid-cols-[200px_minmax(0,1fr)]">
-        <aside className="flex flex-col border-b border-zinc-200 p-4 sm:p-5 lg:border-r lg:border-b-0">
-          <h2 className="text-base font-semibold text-[#051b3a]">
-            Map layers
-          </h2>
+      <div className="grid min-h-[620px] lg:grid-cols-[160px_minmax(0,1fr)] xl:grid-cols-[170px_minmax(0,1fr)]">
+        <aside className="flex min-h-0 flex-col border-b border-zinc-200 p-4 lg:border-r lg:border-b-0">
+          <h2 className="text-base font-semibold text-[#051b3a]">Layers</h2>
 
           <p className="mt-1 text-xs text-zinc-500">
-            Choose a ward-level metric to colour the map.
+            Choose a ward-level metric.
           </p>
 
           <fieldset
-            className="mt-3 flex-1 overflow-hidden"
+            className="mt-3 min-h-0 flex-1 overflow-hidden"
             disabled={metricOptions.length === 0}
           >
             <legend className="sr-only">Ward map layer options</legend>
-            <div className="h-full space-y-1 overflow-y-auto pr-1">
 
-            <div className="h-full space-y-1.5 overflow-y-auto pr-1">
+            <div className="h-full space-y-1 overflow-y-auto pr-1">
               {metricOptions.map((option) => {
                 const isActive = activeMetricKey === option.key
 
@@ -185,7 +201,7 @@ export default function WardIntelligenceShell({
                   <label
                     key={option.key}
                     htmlFor={`metric-layer-${option.key}`}
-                    className={`block cursor-pointer rounded-md border px-2 py-1.5 text-[12px] leading-snug transition-colors ${
+                    className={`block cursor-pointer rounded-md border px-2 py-1 text-[11px] leading-tight transition-colors ${
                       isActive
                         ? 'border-[#0f52b0] bg-blue-50 text-[#051b3a]'
                         : 'border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50'
@@ -203,15 +219,9 @@ export default function WardIntelligenceShell({
                       className="sr-only"
                     />
 
-                    <span className="block text-[13px] font-medium leading-snug">
+                    <span className="block text-[11px] font-medium leading-tight">
                       {option.label}
                     </span>
-
-                    {option.year ? (
-                      <span className="mt-0.5 block text-[10px] leading-3 text-zinc-500">
-                        Source: {option.year}
-                      </span>
-                    ) : null}
                   </label>
                 )
               })}
@@ -239,9 +249,9 @@ export default function WardIntelligenceShell({
           </div>
         </aside>
 
-        <article className="border-b border-zinc-200 p-3 sm:p-4 lg:border-b-0">
-          <section className="relative min-h-[620px] overflow-hidden bg-slate-50 p-4">
-            <div className="relative z-10 mb-2 flex flex-wrap items-center justify-between gap-2 pr-24">
+        <article className="min-w-0 border-b border-zinc-200 p-2 lg:border-b-0">
+          <section className="relative min-h-[620px] overflow-hidden bg-slate-50 p-3">
+            <div className="relative z-10 mb-2 flex flex-wrap items-center justify-between gap-2">
               <div>
                 <h2 className="text-base font-semibold text-[#051b3a]">
                   Swansea ward map
@@ -253,7 +263,7 @@ export default function WardIntelligenceShell({
               </div>
 
               <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-[#0f52b0]">
-                2021 Census
+                {sourceBadgeForMetric(selectedMetric)}
               </span>
             </div>
 
@@ -265,44 +275,31 @@ export default function WardIntelligenceShell({
 
             <div className="pointer-events-none absolute left-4 top-20 z-30">
               <div
-                className={`w-56 rounded-xl border border-zinc-200 bg-white/95 p-3 shadow-lg backdrop-blur transition-all duration-200 ease-out ${
+                className={`rounded-md bg-white/75 px-2.5 py-1.5 text-xs shadow-sm backdrop-blur transition-all duration-200 ease-out ${
                   popupWard && isPopupVisible
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-1 opacity-0'
                 }`}
               >
-                {popupWard ? (
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-sm font-semibold text-[#051b3a]">
-                        {popupWard.wardName}
-                      </p>
-
-                      <p className="text-xs font-medium tracking-wide text-zinc-500">
-                        {popupWard.wardCode}
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-500">
-                        {selectedMetric?.label ?? 'Selected layer'}
-                      </p>
-
-                      <p className="mt-0.5 text-sm font-semibold text-[#051b3a]">
-                        {popupWardMetric
-                          ? formatMetricValue(
-                              popupWardMetric.metric_value,
-                              popupWardMetric.metric_unit
-                            )
-                          : 'No value available'}
-                      </p>
-                    </div>
-                  </div>
-                ) : null}
+          {popupWard ? (
+            <div>
+              <p className="font-semibold text-[#051b3a]">
+                {popupWard.wardName}
+              </p>
+              <p className="font-medium text-[#051b3a]">
+                {popupWardMetric
+                  ? formatMetricValue(
+                      popupWardMetric.metric_value,
+                      popupWardMetric.metric_unit
+                    )
+                  : 'No value'}
+              </p>
+            </div>
+          ) : null}
               </div>
             </div>
 
-            <div className="absolute inset-x-4 bottom-4 top-16 z-0 overflow-hidden rounded-xl bg-slate-50">
+            <div className="absolute inset-x-2 bottom-2 top-14 z-0 overflow-hidden rounded-xl bg-slate-50">
               <div className="h-full w-full">
                 <WardMap
                   data={mapData}

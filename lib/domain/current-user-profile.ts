@@ -5,7 +5,10 @@ type SupabaseServerClient = {
   from: (table: string) => {
     select: (columns: string) => {
       eq: (column: string, value: string) => {
-        maybeSingle: () => Promise<{ data: Record<string, unknown> | null; error: unknown }>
+        maybeSingle: () => Promise<{
+          data: Record<string, unknown> | null
+          error: unknown
+        }>
       }
     }
   }
@@ -25,24 +28,28 @@ function fallbackAccountRole(email: string | null): AccountRole {
 }
 
 export async function getCurrentUserProfile(
-  supabase: SupabaseServerClient,
+  supabase: unknown,
   user: User
 ): Promise<CurrentUserProfile> {
+  const client = supabase as SupabaseServerClient
   const fallbackRole = fallbackAccountRole(user.email ?? null)
 
   try {
-    const { data } = await supabase
+    const { data } = await client
       .from('profiles')
       .select('id,email,display_name,global_role')
       .eq('id', user.id)
       .maybeSingle()
 
-    const roleValue = typeof data?.global_role === 'string' ? data.global_role : null
-    const accountRole = roleValue && isAccountRole(roleValue) ? roleValue : fallbackRole
+    const roleValue =
+      typeof data?.global_role === 'string' ? data.global_role : null
+
+    const accountRole =
+      roleValue && isAccountRole(roleValue) ? roleValue : fallbackRole
 
     return {
       id: typeof data?.id === 'string' ? data.id : user.id,
-      email: typeof data?.email === 'string' ? data.email : (user.email ?? null),
+      email: typeof data?.email === 'string' ? data.email : user.email ?? null,
       displayName:
         typeof data?.display_name === 'string' ? data.display_name : null,
       accountRole,

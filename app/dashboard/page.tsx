@@ -137,65 +137,58 @@ export default async function DashboardPage() {
   }
 
   return (
-    <main className="mx-auto max-w-6xl space-y-8 p-4 sm:p-6 lg:py-8">
-      <header className="space-y-5">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <Image
-            src="/images/restore_swansea_white.png"
-            alt="Restore Swansea"
-            width={320}
-            height={90}
-            priority
-            className="h-auto w-full max-w-[260px] object-contain"
-          />
+    <main className="mx-auto max-w-6xl space-y-5 p-4 sm:p-6 lg:py-6">
+      <header className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-start">
+        <Image
+          src="/images/restore_swansea_white.png"
+          alt="Restore Swansea"
+          width={320}
+          height={90}
+          priority
+          className="h-auto w-full max-w-[250px] object-contain"
+        />
 
-          <div className="w-full max-w-md rounded-2xl border border-white/15 bg-white/10 p-4 text-white backdrop-blur-sm sm:w-auto">
-            <p className="text-xs uppercase tracking-[0.14em] text-zinc-100/90">Account</p>
-            <p className="mt-1 break-all text-sm font-medium text-white">
-              {currentUser.email ?? user.email ?? 'Unknown user'}
-            </p>
-            <p className="mt-2 text-xs text-zinc-100/90">
-              Account type:{' '}
-              <span className="font-semibold text-white">
-                {accountRoleLabel(currentUser.accountRole)}
-              </span>
-            </p>
-            <p className="mt-1 text-xs text-zinc-100/80">
-              {accountRoleDescription(currentUser.accountRole)}
-            </p>
-            <div className="mt-3">
+        <div className="w-full rounded-2xl border border-white/15 bg-white/10 px-5 py-4 text-white backdrop-blur-sm sm:min-w-[560px] lg:w-auto">
+          <p className="text-[11px] uppercase tracking-[0.14em] text-zinc-100/80">
+            Account
+          </p>
+
+          <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="truncate text-sm font-semibold text-white">
+                  {currentUser.email ?? user.email ?? 'Unknown user'}
+                </p>
+
+                <span className="rounded-full border border-white/15 bg-white/10 px-2 py-0.5 text-[11px] font-semibold text-white">
+                  {accountRoleLabel(currentUser.accountRole)}
+                </span>
+              </div>
+
+              <p className="mt-1 text-xs text-zinc-100/70">
+                {accountRoleDescription(currentUser.accountRole)}
+              </p>
+            </div>
+
+            <div className="shrink-0">
               <SignOutLink />
             </div>
           </div>
         </div>
+      </header>
 
-        <div className="space-y-2">
-          <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Member Dashboard</h1>
-          <p className="max-w-3xl text-sm text-zinc-200 sm:text-base">
+      <section className="surface overflow-hidden p-0">
+        <div className="border-b border-zinc-200 px-6 py-6 sm:px-8">
+          <h1 className="text-3xl font-semibold tracking-tight text-[#051b3a] sm:text-4xl">
+            Member Dashboard
+          </h1>
+
+          <p className="mt-2 max-w-3xl text-sm text-zinc-600 sm:text-base">
             Organise local activity, understand Swansea wards, and access campaign guidance.
           </p>
         </div>
-      </header>
 
-      <section className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/12 to-white/5 p-5 text-white shadow-lg sm:p-6">
-        <p className="text-xs uppercase tracking-[0.18em] text-zinc-100/90">Today&apos;s briefing</p>
-        <p className="mt-3 max-w-3xl text-sm text-zinc-100 sm:text-base">
-          Use this dashboard to coordinate leafletting, review local ward context, and access campaign guidance for Swansea.
-        </p>
-        <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-          <Link
-            href="#ward-grid"
-            className="inline-flex items-center justify-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-sky-950 transition hover:bg-zinc-100"
-          >
-            Choose a ward
-          </Link>
-          <a
-            href="/dashboard/ward-intelligence"
-            className="inline-flex items-center justify-center rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            View ward intelligence
-          </a>
-        </div>
+     
       </section>
 
       <section aria-label="Dashboard modules">
@@ -209,11 +202,19 @@ export default async function DashboardPage() {
                   className="surface group flex min-h-40 flex-col justify-between p-5 transition hover:-translate-y-1 hover:shadow-xl"
                 >
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">{module.status}</p>
-                    <h2 className="mt-2 text-lg font-semibold">{module.title}</h2>
-                    <p className="mt-2 text-sm text-zinc-600">{module.description}</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
+                      {module.status}
+                    </p>
+                    <h2 className="mt-2 text-lg font-semibold">
+                      {module.title}
+                    </h2>
+                    <p className="mt-2 text-sm text-zinc-600">
+                      {module.description}
+                    </p>
                   </div>
-                  <p className="mt-5 text-sm font-medium text-sky-900">{module.actionLabel}</p>
+                  <p className="mt-5 text-sm font-medium text-sky-900">
+                    {module.actionLabel}
+                  </p>
                 </a>
               )
             }
@@ -224,11 +225,19 @@ export default async function DashboardPage() {
                 className="surface flex min-h-40 flex-col justify-between p-5 opacity-85"
               >
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">{module.status}</p>
-                  <h2 className="mt-2 text-lg font-semibold">{module.title}</h2>
-                  <p className="mt-2 text-sm text-zinc-600">{module.description}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
+                    {module.status}
+                  </p>
+                  <h2 className="mt-2 text-lg font-semibold">
+                    {module.title}
+                  </h2>
+                  <p className="mt-2 text-sm text-zinc-600">
+                    {module.description}
+                  </p>
                 </div>
-                <p className="mt-5 text-sm font-medium text-zinc-500">Coming soon</p>
+                <p className="mt-5 text-sm font-medium text-zinc-500">
+                  Coming soon
+                </p>
               </article>
             )
           })}
@@ -237,8 +246,12 @@ export default async function DashboardPage() {
 
       <section id="leafletting-operations" className="space-y-6">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-300">Leafletting Operations</p>
-          <h2 className="mt-2 text-2xl font-semibold text-white">Campaign delivery tracker</h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-300">
+            Leafletting Operations
+          </p>
+          <h2 className="mt-2 text-2xl font-semibold text-white">
+            Campaign delivery tracker
+          </h2>
           <p className="mt-2 max-w-2xl text-sm text-zinc-300">
             Track delivery progress, build routes, and update ward coverage.
           </p>
@@ -304,12 +317,16 @@ export default async function DashboardPage() {
                     </div>
 
                     <div className="rounded bg-zinc-100 p-2">
-                      <p className="text-lg font-semibold">{ward.needs_revisit}</p>
+                      <p className="text-lg font-semibold">
+                        {ward.needs_revisit}
+                      </p>
                       <p className="text-xs text-zinc-500">Revisit</p>
                     </div>
 
                     <div className="rounded bg-zinc-100 p-2">
-                      <p className="text-lg font-semibold">{ward.not_started}</p>
+                      <p className="text-lg font-semibold">
+                        {ward.not_started}
+                      </p>
                       <p className="text-xs text-zinc-500">Left</p>
                     </div>
                   </div>

@@ -30,8 +30,7 @@ export default async function WardIntelligencePage() {
   const metricRows: WardIntelligenceMetricRow[] = Array.isArray(data) ? data : []
 
   return (
-    <main className="mx-auto max-w-[1500px] space-y-4 p-4 sm:p-6 lg:space-y-5 lg:py-6">
-      <div>
+      <main className="mx-auto w-full max-w-[850px] space-y-4 px-4 py-4 sm:px-6 lg:space-y-5 lg:px-10 lg:py-6">      <div>
         <Link href="/dashboard" className="text-sm text-zinc-200 hover:underline">
           ← Back to dashboard
         </Link>
