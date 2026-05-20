@@ -11,6 +11,11 @@ type MaybeSingleResult = Promise<{
   error: unknown
 }>
 
+type QueryBuilder = {
+  eq: (column: string, value: string) => QueryBuilder
+  maybeSingle: () => MaybeSingleResult
+}
+
 type SupabaseServerClient = {
   auth: {
     getUser: () => Promise<{
@@ -19,11 +24,7 @@ type SupabaseServerClient = {
     }>
   }
   from: (table: string) => {
-    select: (columns: string) => {
-      eq: (column: string, value: string) => {
-        maybeSingle: () => MaybeSingleResult
-      }
-    }
+    select: (columns: string) => QueryBuilder
   }
 }
 
