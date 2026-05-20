@@ -1,5 +1,9 @@
 import type { User } from '@supabase/supabase-js'
-import { isAccountRole, type AccountRole } from '@/lib/domain/account-role'
+import {
+  fallbackAccountRoleForEmail,
+  isAccountRole,
+  type AccountRole,
+} from '@/lib/domain/account-role'
 
 type SupabaseServerClient = {
   from: (table: string) => {
@@ -21,18 +25,12 @@ type CurrentUserProfile = {
   accountRole: AccountRole
 }
 
-const SPECIAL_GUEST_EMAIL = 'specialguest@restoreswansea.local'
-
-function fallbackAccountRole(email: string | null): AccountRole {
-  return email === SPECIAL_GUEST_EMAIL ? 'guest' : 'member'
-}
-
 export async function getCurrentUserProfile(
   supabase: unknown,
   user: User
 ): Promise<CurrentUserProfile> {
   const client = supabase as SupabaseServerClient
-  const fallbackRole = fallbackAccountRole(user.email ?? null)
+  const fallbackRole = fallbackAccountRoleForEmail(user.email ?? null)
 
   try {
     const { data } = await client
