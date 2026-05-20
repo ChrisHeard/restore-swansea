@@ -300,7 +300,7 @@ export default async function DashboardPage() {
                 {accountRoleDescription(currentUser.accountRole)}
               </p>
             </div>
-
+            <Link href="/account">Account</Link>
             <div className="shrink-0">
               <SignOutLink />
             </div>

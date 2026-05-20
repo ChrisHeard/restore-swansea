@@ -133,12 +133,12 @@ async function getAccountRole(
   try {
     const { data } = await client
       .from('profiles')
-      .select('global_role')
+      .select('role')
       .eq('id', user.id)
       .maybeSingle()
 
     const roleValue =
-      typeof data?.global_role === 'string' ? data.global_role : null
+      typeof data?.role === 'string' ? data.role : null
 
     return roleValue && isAccountRole(roleValue) ? roleValue : fallbackRole
   } catch {

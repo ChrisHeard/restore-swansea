@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Restore Britain Leafletting",
-    short_name: "Leafletting",
-    description: "Leafletting and canvassing route planner",
+    name: "Restore Swansea",
+    short_name: "Restore Swansea",
+    description: "Membership platform for Restore Swansea. Organise leafletting, canvassing routes, manage volunteers, and more.",
     start_url: "/",
     scope: "/",
     display: "standalone",

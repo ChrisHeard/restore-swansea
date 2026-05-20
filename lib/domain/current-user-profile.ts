@@ -35,12 +35,12 @@ export async function getCurrentUserProfile(
   try {
     const { data } = await client
       .from('profiles')
-      .select('id,email,display_name,global_role')
+      .select('id,email,display_name,role')
       .eq('id', user.id)
       .maybeSingle()
 
     const roleValue =
-      typeof data?.global_role === 'string' ? data.global_role : null
+      typeof data?.role === 'string' ? data.role : null
 
     const accountRole =
       roleValue && isAccountRole(roleValue) ? roleValue : fallbackRole
