@@ -5,6 +5,7 @@ import SignOutLink from '@/app/dashboard/sign-out-link'
 import Image from 'next/image'
 import { accountRoleDescription, accountRoleLabel } from '@/lib/domain/account-role'
 import { getCurrentUserProfile } from '@/lib/domain/current-user-profile'
+import InstallPwaPrompt from '@/components/InstallPwaPrompt'
 
 type WardProgress = {
   ward_code: string
@@ -31,6 +32,124 @@ type DashboardModule = {
   status: 'Active' | 'Planned'
   href: string
   actionLabel: string
+  icon: string
+  accent: string
+}
+
+const iconPath = (iconName: string) => `/graphics/icons/${iconName}.svg`
+
+function ModuleIcon({
+  src,
+  color,
+}: {
+  src: string
+  color: string
+}) {
+  return (
+    <span
+      aria-hidden="true"
+      className="block h-7 w-7"
+      style={{
+        backgroundColor: color,
+        WebkitMaskImage: `url(${src})`,
+        maskImage: `url(${src})`,
+        WebkitMaskRepeat: 'no-repeat',
+        maskRepeat: 'no-repeat',
+        WebkitMaskPosition: 'center',
+        maskPosition: 'center',
+        WebkitMaskSize: 'contain',
+        maskSize: 'contain',
+      }}
+    />
+  )
+}
+
+function ModuleCard({ module }: { module: DashboardModule }) {
+  const isActive = module.status === 'Active'
+
+  const cardInner = (
+    <>
+      <div
+        className="absolute -right-12 -top-12 h-40 w-40 rounded-full blur-3xl"
+        style={{
+          backgroundColor: `${module.accent}22`,
+        }}
+      />
+
+      <div className="relative flex flex-1 gap-4 p-5 sm:gap-5 sm:p-6">
+        <div
+          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl sm:h-16 sm:w-16"
+          style={{
+            backgroundColor: `${module.accent}14`,
+          }}
+        >
+          <ModuleIcon src={module.icon} color={module.accent} />
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-3">
+            <h2 className="text-base font-semibold leading-tight text-[#051b3a] sm:text-lg">
+              {module.title}
+            </h2>
+
+            <span
+              className="shrink-0 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.08em] sm:text-[11px]"
+              style={{
+                color: module.accent,
+                backgroundColor: `${module.accent}18`,
+              }}
+            >
+              {module.status}
+            </span>
+          </div>
+
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            {module.description}
+          </p>
+        </div>
+      </div>
+
+      <div className="relative mx-5 border-t border-slate-200/80 sm:mx-6" />
+
+      <div className="relative flex items-center justify-between px-5 py-4 sm:px-6">
+        <span
+          className="text-sm font-semibold"
+          style={{
+            color: isActive ? module.accent : '#64748b',
+          }}
+        >
+          {module.actionLabel}
+        </span>
+
+        {isActive && (
+          <span
+            aria-hidden="true"
+            className="text-xl leading-none transition group-hover:translate-x-1"
+            style={{ color: module.accent }}
+          >
+            →
+          </span>
+        )}
+      </div>
+    </>
+  )
+
+  if (isActive) {
+    return (
+      <Link
+        href={module.href}
+        className="surface group relative flex min-h-[190px] flex-col overflow-hidden p-0 transition hover:-translate-y-1 hover:shadow-xl"
+      >
+        {cardInner}
+      </Link>
+    )
+  }
+
+  return (
+    <article className="surface relative flex min-h-[190px] flex-col overflow-hidden p-0 opacity-85">
+      {cardInner}
+    </article>
+  )
 }
 
 const dashboardModules: DashboardModule[] = [
@@ -40,6 +159,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Active',
     href: '#ward-grid',
     actionLabel: 'Choose a ward',
+    icon: iconPath('book-open'),
+    accent: '#2563eb',
   },
   {
     title: 'Ward Intelligence',
@@ -47,6 +168,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Active',
     href: '/dashboard/ward-intelligence',
     actionLabel: 'Open map',
+    icon: iconPath('chart-pie-slice'),
+    accent: '#16a34a',
   },
   {
     title: 'Canvassing Guide',
@@ -54,6 +177,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Planned',
     href: '#coming-soon',
     actionLabel: 'Coming soon',
+    icon: iconPath('user-circle'),
+    accent: '#7c3aed',
   },
   {
     title: 'Campaign Literature',
@@ -61,6 +186,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Planned',
     href: '#coming-soon',
     actionLabel: 'Coming soon',
+    icon: iconPath('file'),
+    accent: '#c9972b',
   },
   {
     title: 'Local Briefing',
@@ -68,6 +195,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Planned',
     href: '#coming-soon',
     actionLabel: 'Coming soon',
+    icon: iconPath('books'),
+    accent: '#0ea5e9',
   },
   {
     title: 'Team Updates',
@@ -75,6 +204,8 @@ const dashboardModules: DashboardModule[] = [
     status: 'Planned',
     href: '#coming-soon',
     actionLabel: 'Coming soon',
+    icon: iconPath('users'),
+    accent: '#0891b2',
   },
 ]
 
@@ -177,70 +308,62 @@ export default async function DashboardPage() {
         </div>
       </header>
 
-      <section className="surface overflow-hidden p-0">
-        <div className="border-b border-zinc-200 px-6 py-6 sm:px-8">
-          <h1 className="text-3xl font-semibold tracking-tight text-[#051b3a] sm:text-4xl">
-            Member Dashboard
-          </h1>
+      <section className="surface relative overflow-hidden p-0">
+        <div className="relative min-h-[270px] overflow-hidden rounded-[inherit] bg-white sm:h-[205px] sm:min-h-0 lg:h-[225px]">
+          {/* Mobile image treatment */}
+          <div
+            className="
+              absolute inset-x-0 bottom-0 h-[135px] bg-no-repeat
+              bg-[length:155%_auto]
+              bg-[position:right_-18px]
+              sm:hidden
+            "
+            style={{
+              backgroundImage: "url('/graphics/waterfront_landscape.png')",
+            }}
+          />
 
-          <p className="mt-2 max-w-3xl text-sm text-zinc-600 sm:text-base">
-            Organise local activity, understand Swansea wards, and access campaign guidance.
-          </p>
+          {/* Desktop/tablet image treatment */}
+          <div
+            className="
+              absolute inset-0 hidden bg-no-repeat
+              bg-[length:85%_auto]
+              bg-[position:right_-38px]
+              sm:block
+              lg:bg-[length:86%_auto]
+              lg:bg-[position:right_-46px]
+            "
+            style={{
+              backgroundImage: "url('/graphics/waterfront_landscape.png')",
+            }}
+          />
+
+          <div
+            className="
+              relative z-10 px-6 pb-[150px] pt-7
+              sm:flex sm:h-full sm:items-center sm:px-10 sm:py-6
+            "
+          >
+            <div className="max-w-xl">
+              <h1 className="text-3xl font-bold tracking-tight text-[#051b3a] sm:text-4xl">
+                Member Dashboard
+              </h1>
+
+              <p className="mt-3 max-w-md text-sm leading-6 text-slate-700 sm:text-base">
+                Organise local activity, understand Swansea wards, and access campaign guidance.
+              </p>
+
+              <div className="mt-5 h-1 w-14 rounded-full bg-blue-500" />
+            </div>
+          </div>
         </div>
-
-     
       </section>
 
       <section aria-label="Dashboard modules">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {dashboardModules.map((module) => {
-            if (module.status === 'Active') {
-              return (
-                <a
-                  key={module.title}
-                  href={module.href}
-                  className="surface group flex min-h-40 flex-col justify-between p-5 transition hover:-translate-y-1 hover:shadow-xl"
-                >
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                      {module.status}
-                    </p>
-                    <h2 className="mt-2 text-lg font-semibold">
-                      {module.title}
-                    </h2>
-                    <p className="mt-2 text-sm text-zinc-600">
-                      {module.description}
-                    </p>
-                  </div>
-                  <p className="mt-5 text-sm font-medium text-sky-900">
-                    {module.actionLabel}
-                  </p>
-                </a>
-              )
-            }
-
-            return (
-              <article
-                key={module.title}
-                className="surface flex min-h-40 flex-col justify-between p-5 opacity-85"
-              >
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                    {module.status}
-                  </p>
-                  <h2 className="mt-2 text-lg font-semibold">
-                    {module.title}
-                  </h2>
-                  <p className="mt-2 text-sm text-zinc-600">
-                    {module.description}
-                  </p>
-                </div>
-                <p className="mt-5 text-sm font-medium text-zinc-500">
-                  Coming soon
-                </p>
-              </article>
-            )
-          })}
+          {dashboardModules.map((module) => (
+            <ModuleCard key={module.title} module={module} />
+          ))}
         </div>
       </section>
 
@@ -380,6 +503,8 @@ export default async function DashboardPage() {
       <p id="coming-soon" className="sr-only">
         Additional campaign modules are planned.
       </p>
+      <InstallPwaPrompt />
     </main>
+    
   )
 }

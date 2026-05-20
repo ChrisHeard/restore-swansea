@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FormEvent, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
+import InstallPwaPrompt from '@/components/InstallPwaPrompt'
 
 export default function HomePage() {
   const router = useRouter()
@@ -187,6 +188,7 @@ async function handlePasswordSignIn(e: FormEvent<HTMLFormElement>) {
           )}
         </form>
       </section>
+      <InstallPwaPrompt />
     </main>
   )
 }
