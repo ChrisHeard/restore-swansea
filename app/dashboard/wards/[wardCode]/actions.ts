@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
+import { requireCampaignWriteAccess } from '@/lib/domain/permissions'
 import { isStreetStatus } from '@/lib/domain/street-status'
 
 export async function updateStreetAction(formData: FormData) {
@@ -24,6 +25,20 @@ export async function updateStreetAction(formData: FormData) {
     throw new Error(`Invalid street status: ${status}`)
   }
 
+  const { user } = await requireCampaignWriteAccess(supabase, wardCode)
+
+  const { data: street, error: streetError } = await supabase
+    .from('streets')
+    .select('id,ward_code')
+    .eq('id', streetId)
+    .maybeSingle()
+
+  if (streetError) throw streetError
+
+  if (!street || street.ward_code !== wardCode) {
+    throw new Error('Street does not belong to this ward')
+  }
+
   const { error } = await supabase
     .from('streets')
     .update({
@@ -32,12 +47,9 @@ export async function updateStreetAction(formData: FormData) {
       updated_at: new Date().toISOString(),
     })
     .eq('id', streetId)
+    .eq('ward_code', wardCode)
 
   if (error) throw error
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
 
   const { error: flyerTableError } = await supabase
     .from('flyer_logs')
@@ -48,7 +60,7 @@ export async function updateStreetAction(formData: FormData) {
       ward_code: wardCode,
       street_id: streetId,
       action: 'street_status_updated',
-      user_id: user?.id ?? null,
+      user_id: user.id,
     })
   }
 
@@ -68,11 +80,7 @@ export async function postWardMessageAction(formData: FormData) {
 
   if (!message) return
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
-  if (!user) return
+  const { user } = await requireCampaignWriteAccess(supabase, wardCode)
 
   const { error } = await supabase.from('ward_messages').insert({
     ward_code: wardCode,
