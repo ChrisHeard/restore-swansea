@@ -6,19 +6,35 @@ This document summarizes what the app currently expects from Supabase based on r
 
 ## profiles
 
-- **Purpose**: Intended member profile metadata linked to auth users.
+- **Purpose**: Member profile metadata linked to auth users.
 - **Key fields currently used by the app**:
   - `id`
   - `email`
   - `display_name`
-  - `global_role` (validated as `administrator | member | guest` for display fallback logic)
-- **Likely object type**: Likely a **table** (based on historical setup docs and naming convention).
-- **Uncertainty / Observed app usage**:
-  - Observed app usage now attempts to read `profiles` for dashboard account display, but falls back safely when profile rows/table are unavailable.
-  - Schema details remain intended design unless confirmed directly from the live database.
-- **Intended design note (not authoritative SQL)**:
-  - Intended eventual role column shape: `global_role text not null default 'member'`
-  - Intended eventual role constraint: `check (global_role in ('administrator', 'member', 'guest'))`
+  - `global_role` (validated as `administrator | member | guest` for display and permissions fallback logic)
+- **Likely object type**: Likely a **table**.
+- **Observed app usage**:
+  - Dashboard account display reads `profiles` and falls back safely when profile rows/table are unavailable.
+  - The permissions layer reads `global_role` to decide global account authority.
+- **Recommended constraint**:
+  - `check (global_role in ('administrator', 'member', 'guest'))`
+
+## ward_memberships
+
+- **Purpose**: Ward-scoped team membership and ward leadership assignments.
+- **Key fields currently used by the app**:
+  - `id`
+  - `user_id`
+  - `ward_code`
+  - `ward_role` (validated as `ward_leader | member`)
+  - `created_at`
+- **Likely object type**: **Table**.
+- **Observed app usage**:
+  - The permissions layer reads `ward_memberships` by `user_id` and `ward_code` to determine whether the current user is a leader or member for a ward.
+  - A user can be ward leader for more than one ward by having multiple rows with `ward_role = 'ward_leader'`.
+- **Recommended constraints**:
+  - `unique (user_id, ward_code)`
+  - `check (ward_role in ('ward_leader', 'member'))`
 
 ## streets
 
@@ -31,10 +47,11 @@ This document summarizes what the app currently expects from Supabase based on r
   - `status`
   - `notes`
   - `updated_at`
-- **Likely object type**: **Table** (queried for row updates).
-- **Uncertainty / Observed app usage**:
-  - Observed app usage performs `.update(...)` and `.eq('id', ...)`, confirming mutable row records.
-  - Additional fields may exist but are not required by currently checked-in pages/actions.
+- **Likely object type**: **Table**.
+- **Observed app usage**:
+  - Ward pages read street rows by `ward_code`.
+  - Server actions update `status`, `notes`, and `updated_at` after permission checks.
+  - Server actions verify that the submitted street belongs to the submitted ward before update.
 
 ## ward_progress
 
@@ -49,9 +66,8 @@ This document summarizes what the app currently expects from Supabase based on r
   - `latest_updated_at`
   - `delivered_pct`
 - **Likely object type**: Likely a **view** (aggregate-style naming and usage), but not guaranteed.
-- **Uncertainty / Observed app usage**:
-  - Observed app usage reads only (`select`, `order`, `single`) and does not mutate.
-  - Could be a table maintained by jobs/triggers, but code alone does not prove this.
+- **Observed app usage**:
+  - The app reads only (`select`, `order`, `single`) and does not mutate.
 
 ## ward_summaries
 
@@ -71,9 +87,8 @@ This document summarizes what the app currently expects from Supabase based on r
   - `election_2022_last_elected_votes`
   - `election_2022_parties_contesting`
 - **Likely object type**: Likely a **view** (summary naming and read-only usage), but not guaranteed.
-- **Uncertainty / Observed app usage**:
-  - Observed app usage reads via `.maybeSingle()` by `ward_code`.
-  - Exact derivation/source tables are not visible from application code alone.
+- **Observed app usage**:
+  - The app reads via `.maybeSingle()` by `ward_code`.
 
 ## ward_election_results_2022
 
@@ -87,9 +102,8 @@ This document summarizes what the app currently expects from Supabase based on r
   - `votes`
   - `vote_share_pct`
 - **Likely object type**: Could be a **table** or **view**.
-- **Uncertainty / Observed app usage**:
-  - Observed app usage is read-only (`select`, `order`) with ward filtering.
-  - No writes observed, so mutability/type cannot be concluded definitively.
+- **Observed app usage**:
+  - The app is read-only (`select`, `order`) with ward filtering.
 
 ## flyer_logs
 
@@ -99,12 +113,13 @@ This document summarizes what the app currently expects from Supabase based on r
   - `ward_code`
   - `street_id`
   - `action`
-  - `user_id` (write path)
+  - `user_id`
   - `created_at`
-- **Likely object type**: **Table** (app inserts records).
-- **Uncertainty / Observed app usage**:
-  - Observed app usage first probes existence (`select head`) and conditionally inserts.
-  - `street_id` type may differ from page-local TypeScript assumptions; confirm directly in DB.
+- **Likely object type**: **Table**.
+- **Observed app usage**:
+  - App inserts records after successful street updates.
+  - `user_id` now comes from an explicitly authenticated user in the permissions layer.
+  - App still probes table existence before inserting for compatibility with incomplete local schema.
 
 ## ward_messages
 
@@ -115,10 +130,11 @@ This document summarizes what the app currently expects from Supabase based on r
   - `user_id`
   - `message`
   - `created_at`
-- **Likely object type**: **Table** (app inserts and lists messages).
-- **Uncertainty / Observed app usage**:
-  - Observed app usage probes table existence before read path.
-  - Exact constraints/permissions are not inferable from app code alone.
+- **Likely object type**: **Table**.
+- **Observed app usage**:
+  - App inserts messages after permission checks.
+  - App lists recent messages by ward.
+  - App still probes table existence before read path for compatibility with incomplete local schema.
 
 ## ward_census_2021_characteristics
 
