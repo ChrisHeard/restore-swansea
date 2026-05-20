@@ -97,14 +97,15 @@ export async function requireCampaignWriteAccess(
 
   if (
     context.accountRole === 'administrator' ||
-    context.accountRole === 'member' ||
     context.wardRole === 'ward_leader' ||
     context.wardRole === 'member'
   ) {
     return context
   }
 
-  throw new PermissionDeniedError()
+  throw new PermissionDeniedError(
+    'Only administrators or assigned ward team members can change campaign data'
+  )
 }
 
 export async function requireWardLeaderAccess(
