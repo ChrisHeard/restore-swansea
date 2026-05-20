@@ -10,31 +10,27 @@ type BeforeInstallPromptEvent = Event & {
   }>;
 };
 
+type PromptMode = "browser" | "ios" | null;
+
 export default function InstallPwaPrompt() {
   const [installPrompt, setInstallPrompt] =
     useState<BeforeInstallPromptEvent | null>(null);
-
-  const [showPrompt, setShowPrompt] = useState(false);
-  const [isIOS, setIsIOS] = useState(false);
-  const [isStandalone, setIsStandalone] = useState(false);
+  const [promptMode, setPromptMode] = useState<PromptMode>(null);
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
 
-    const ios =
+    const isIOS =
       /iphone|ipad|ipod/.test(userAgent) ||
       (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 
-    const standalone =
+    const isStandalone =
       window.matchMedia("(display-mode: standalone)").matches ||
       // iOS Safari
       (window.navigator as Navigator & { standalone?: boolean }).standalone ===
         true;
 
-    setIsIOS(ios);
-    setIsStandalone(standalone);
-
-    if (standalone) return;
+    if (isStandalone) return;
 
     const dismissed = localStorage.getItem("pwa-install-dismissed");
     if (dismissed === "true") return;
@@ -43,15 +39,15 @@ export default function InstallPwaPrompt() {
       event.preventDefault();
 
       setInstallPrompt(event as BeforeInstallPromptEvent);
-      setShowPrompt(true);
+      setPromptMode("browser");
     };
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
     // iOS fallback: show manual instructions after a short delay.
-    if (ios) {
+    if (isIOS) {
       const timer = window.setTimeout(() => {
-        setShowPrompt(true);
+        setPromptMode("ios");
       }, 1500);
 
       return () => {
@@ -79,7 +75,7 @@ export default function InstallPwaPrompt() {
     const choice = await installPrompt.userChoice;
 
     if (choice.outcome === "accepted") {
-      setShowPrompt(false);
+      setPromptMode(null);
     }
 
     setInstallPrompt(null);
@@ -87,10 +83,12 @@ export default function InstallPwaPrompt() {
 
   function handleDismiss() {
     localStorage.setItem("pwa-install-dismissed", "true");
-    setShowPrompt(false);
+    setPromptMode(null);
   }
 
-  if (isStandalone || !showPrompt) return null;
+  if (!promptMode) return null;
+
+  const isIOS = promptMode === "ios";
 
   return (
     <div className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-md rounded-2xl border border-white/10 bg-slate-950 p-4 text-white shadow-2xl">
@@ -116,7 +114,7 @@ export default function InstallPwaPrompt() {
           )}
 
           <div className="mt-4 flex gap-2">
-            {!isIOS && installPrompt ? (
+            {promptMode === "browser" && installPrompt ? (
               <button
                 type="button"
                 onClick={handleInstallClick}
